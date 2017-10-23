@@ -1,22 +1,17 @@
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
+;; bootstrap straight.el
+(let ((bootstrap-file (concat user-emacs-directory "straight/bootstrap.el"))
+      (bootstrap-version 2))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
-;; first we're gonna get cask and pallet set up correctly following
-;; the instructions at http://www.lambdacat.com/modern-emacs-package-management-with-cask-and-pallet/
-;;
-;;I've installed cask with homebrew, so it's in a weird location under /usr/local.
-(require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
-(cask-initialize)
-
-(require 'pallet)
-(pallet-mode t)
-
-;; use-package! At this point, our bootstrapping is done and we can
-;; use pallet+use-package to initialize everything else.
-(require 'use-package)
+(straight-use-package 'use-package)
+(setq use-package-always-ensure t)
 
 ;; time for some general philosophizing: I really like Spacemacs'
 ;; approach to keybindings. Put everything under `SPC`, and all the
@@ -24,6 +19,7 @@
 ;; ones I need as I need them. If I can get them working in which-key,
 ;; so much the better!
 
+;; vim has nice keybindings, emacs has nice other things, so let's use both.
 (use-package evil
   :config
   (evil-mode 1)
