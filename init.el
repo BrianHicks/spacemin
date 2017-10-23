@@ -54,7 +54,11 @@
     (setq-default evil-escape-key-sequence "fd"))
   )
 
-;; TODO: magit
+(use-package magit
+  :config
+  (evil-leader/set-key "gs" 'magit-status)
+  (use-package evil-magit))
+
 ;; TODO: projectile and perspectives
 ;; TODO: ivy or smex or something
 ;; TODO: which-key
