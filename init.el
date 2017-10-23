@@ -14,3 +14,4 @@
 (pallet-mode t)
 
 ;; use-package!
+(require 'use-package)
