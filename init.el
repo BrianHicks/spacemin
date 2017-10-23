@@ -15,3 +15,8 @@
 
 ;; use-package! At this point, our bootstrapping is done and we can use pallet+use-package to initialize everything else.
 (require 'use-package)
+
+(use-package evil
+  :ensure t
+  :config (evil-mode 1)
+  )
