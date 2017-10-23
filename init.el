@@ -62,6 +62,9 @@
 ;; TODO: projectile and perspectives
 ;; TODO: ivy or smex or something
 ;; TODO: which-key
+;; TODO: <SPC>fs
+;; TODO: <SPC>1 through 9 for window jumps?
+;; TODO: <SPC>w prefix
 ;; TODO: better fonts and themes. And a theme switcher would be super nice too.
 ;; TODO: all the evil plugins one could desire, especially evil-surround
 ;; TODO: nice bindings for making stuff with make
