@@ -25,7 +25,6 @@
 ;; so much the better!
 
 (use-package evil
-  :ensure t
   :config
   (evil-mode 1)
   (with-eval-after-load 'evil-maps
@@ -33,34 +32,27 @@
     (define-key evil-motion-state-map (kbd ";") 'evil-ex))
 
   (use-package evil-surround
-    :ensure t
     :config (global-evil-surround-mode 1))
 
   ;; TODO: this may be in the wrong place and will not get scratch and messages.
   (use-package evil-leader
-    :ensure t
     :config 
     (global-evil-leader-mode 1)
     (setq evil-leader/leader "<SPC>"))
 
   (use-package evil-commentary
-    :ensure t
     :config (evil-commentary-mode 1))
 
   (use-package evil-matchit
-    :ensure t
     :config (global-evil-matchit-mode 1))
 
   (use-package evil-exchange
-    :ensure t
     :config (evil-exchange-install))
 
   (use-package evil-visualstar
-    :ensure t
     :config (global-evil-visualstar-mode 1))
 
   (use-package evil-escape
-    :ensure t
     :config
     (evil-escape-mode 1)
     (setq-default evil-escape-key-sequence "fd"))
