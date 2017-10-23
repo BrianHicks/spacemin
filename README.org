@@ -13,7 +13,8 @@ If I can get them working in which-key, so much the better!
 1. Install this repo as your ~.emacs.d`~
 2. Start emacs. Wait a while while watching the blinkenlights in the message line.
 3. Probably restart it or whatever, I don't care.
-4. You've won. Go to Disneyland?
+4. ~M-x all-the-icons-install-fonts RET yes RET~... wait a bunch.
+5. You've won. Go to Disneyland?
 
 ** Things That Are Done
 
@@ -50,6 +51,7 @@ If I can get them working in which-key, so much the better!
 - [ ] a good theme (TODO: steal Doom's theme.)
 - [ ] hide the top bar and scroll bars
 - [ ] A neat l'il status bar
+- [ ] icons in the neat l'il status bar (done already: all-the-icons)
 
 *** Performance
 

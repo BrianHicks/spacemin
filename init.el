@@ -30,6 +30,7 @@
 (load "evil") ;; prerequisite for anything that uses leader keys
 (load "basics")
 (load "git")
+(load "icons")
 
 ;; emacs auto-generated nonsense
 
