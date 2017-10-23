@@ -32,19 +32,4 @@
 (load "git")
 (load "icons")
 
-;; emacs auto-generated nonsense
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (evil-escape evil-visualstar evil-exchange evil-matchit use-package-chords pallet exec-path-from-shell evil-visual-mark-mode evil-surround evil-nerd-commenter evil-leader evil-commentary))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; emacs auto-generated nonsense follows
