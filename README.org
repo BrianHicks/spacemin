@@ -12,6 +12,8 @@ Likely not useful for anyone else.
    
 ** TODOs
 
+- [X] evil
+- [X] magit
 - [ ] projectile and perspectives
 - [ ] ivy or smex or something
 - [ ] which-key
