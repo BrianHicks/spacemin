@@ -27,8 +27,8 @@
 ;; automatic solution couldn't handle unless it was reasonably
 ;; smart. I'm too lazy to write a proper graph walk right now, and
 ;; there are not many, so manual it is.
-(load "basics")
 (load "evil") ;; prerequisite for anything that uses leader keys
+(load "basics")
 (load "git")
 
 ;; emacs auto-generated nonsense
