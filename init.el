@@ -13,5 +13,5 @@
 (require 'pallet)
 (pallet-mode t)
 
-;; use-package!
+;; use-package! At this point, our bootstrapping is done and we can use pallet+use-package to initialize everything else.
 (require 'use-package)
