@@ -39,9 +39,9 @@
   ;; TODO: this may be in the wrong place and will not get scratch and messages.
   (use-package evil-leader
     :ensure t
-    :config (progn
-	      (global-evil-leader-mode 1)
-	      (evil-leader/set-leader "<SPC>")))
+    :config 
+    (global-evil-leader-mode 1)
+    (setq evil-leader/leader "<SPC>"))
 
   (use-package evil-commentary
     :ensure t
