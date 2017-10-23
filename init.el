@@ -19,57 +19,26 @@
 ;; ones I need as I need them. If I can get them working in which-key,
 ;; so much the better!
 
-;; exec-path-from-shell looks for environment variables set in SHELL
-;; and brings them into emacs. This stops having to set things like
-;; PATH twice. It's useful for me in particular because git is set to
-;; sign each commit with GPG, which is installed in a non-default
-;; (homebrewed) path.
-(use-package exec-path-from-shell
-  :config
-  (when (memq window-system '(mac ns x))
-    (exec-path-from-shell-initialize)))
+;; set up some basic things (load paths, etc.) that we will use later.
+(defvar emacs-d
+  (file-name-directory (file-chase-links load-file-name))
+  "Our .emacs.d location")
 
-;; vim has nice keybindings, emacs has nice other things, so let's use both.
-(use-package evil
-  :config
-  (evil-mode 1)
-  (with-eval-after-load 'evil-maps
-    (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
-    (define-key evil-motion-state-map (kbd ";") 'evil-ex))
+(add-to-list 'load-path (expand-file-name "spacemin" emacs-d))
 
-  (use-package evil-surround
-    :config (global-evil-surround-mode 1))
-
-  ;; TODO: this may be in the wrong place and will not get scratch and messages.
-  (use-package evil-leader
-    :config 
-    (global-evil-leader-mode 1)
-    (setq evil-leader/leader "<SPC>"))
-
-  (use-package evil-commentary
-    :config (evil-commentary-mode 1))
-
-  (use-package evil-matchit
-    :config (global-evil-matchit-mode 1))
-
-  (use-package evil-exchange
-    :config (evil-exchange-install))
-
-  (use-package evil-visualstar
-    :config (global-evil-visualstar-mode 1))
-
-  (use-package evil-escape
-    :config
-    (evil-escape-mode 1)
-    (setq-default evil-escape-key-sequence "fd"))
-  )
-
-(use-package magit
-  :config
-  (evil-leader/set-key "gs" 'magit-status)
-  (use-package evil-magit))
+;; load each of the configuration modules independently. "Wait", you
+;; may ask, "why is this specified manually instead of by looking at
+;; the files locally?" Well, there are some dependencies (like
+;; multiple things depending on `evil-leader/set-key`) that an
+;; automatic solution couldn't handle unless it was reasonably
+;; smart. I'm too lazy to write a proper graph walk right now, and
+;; there are not many, so manual it is.
+(load "basics")
+(load "evil") ;; prerequisite for anything that uses leader keys
+(load "git")
 
 ;; emacs auto-generated nonsense
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
