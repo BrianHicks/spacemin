@@ -44,6 +44,7 @@ Likely not useful for anyone else.
 - [ ] nicer default fonts with ligatures
 - [ ] a good theme (TODO: steal Doom's theme.)
 - [ ] hide the top bar and scroll bars
+- [ ] A neat l'il status bar
 
 *** Performance
 
