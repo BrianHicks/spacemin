@@ -1,8 +1,12 @@
 (source gnu)
 (source melpa)
 
+(depends-on "evil")
+(depends-on "evil-commentary")
+(depends-on "evil-exchange")
+(depends-on "evil-leader")
+(depends-on "evil-matchit")
+(depends-on "evil-surround")
+(depends-on "evil-visualstar")
 (depends-on "pallet")
 (depends-on "use-package")
-
-;; all the evil stuff in one place, please
-(depends-on "evil")
