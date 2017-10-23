@@ -1,32 +1,31 @@
 * Spacemin
 
-A ground-up `.emacs.d` with just stuff I like from Spacemacs.
+A ground-up ~.emacs.d~ with just stuff I like from Spacemacs.
 Likely not useful for anyone else.
 
 ** Installing
 
-1. Install this repo as your `.emacs.d`.
+1. Install this repo as your ~.emacs.d`~
 2. Start emacs. Wait a while while watching the blinkenlights in the message line.
 3. Probably restart it or whatever, I don't care.
 4. You've won. Go to Disneyland?
    
 ** TODOs
 
-- [X] evil
-- [X] magit
-- [ ] projectile and perspectives
-- [ ] ivy or smex or something
-- [ ] which-key
-- [ ] `<SPC>fs`
-- [ ] `<SPC>1` through `9` for window jumps?
-- [ ] `<SPC>w` prefix
-- [ ] better fonts and themes. And a theme switcher would be super nice too.
-- [ ] all the evil plugins one could desire, especially evil-surround
-- [ ] nice bindings for making stuff with make
-- [ ] a shell, maybe? Probably not though.
-- [ ] hide the top bar, I don't really need it.
-- [ ] compile everything to byte code to avoid long startup times
-- [ ] go over the default Cask packages and add them as needed:
+*** DONE evil
+*** DONE magit
+*** TODO ~<SPC>fs~
+*** TODO which-key
+*** TODO ~<SPC>w~ prefix
+*** TODO projectile and perspectives
+*** TODO ivy or smex or something
+*** TODO better fonts and themes. And a theme switcher would be super nice too.
+*** TODO ~<SPC>1~ through ~9~ for window jumps?
+*** TODO nice bindings for making stuff with make
+*** TODO a shell, maybe? Probably not though.
+*** TODO hide the top bar, I don't really need it.
+*** TODO compile everything to byte code to avoid long startup times
+*** TODO go over the default Cask packages and add them as needed
  
 #+BEGIN_SRC elisp-mode
 (depends-on "dash")
