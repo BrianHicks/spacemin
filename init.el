@@ -69,44 +69,6 @@
   (evil-leader/set-key "gs" 'magit-status)
   (use-package evil-magit))
 
-;; TODO: projectile and perspectives
-;; TODO: ivy or smex or something
-;; TODO: which-key
-;; TODO: <SPC>fs
-;; TODO: <SPC>1 through 9 for window jumps?
-;; TODO: <SPC>w prefix
-;; TODO: better fonts and themes. And a theme switcher would be super nice too.
-;; TODO: all the evil plugins one could desire, especially evil-surround
-;; TODO: nice bindings for making stuff with make
-;; TODO: a shell, maybe? Probably not though.
-;; TODO: hide the top bar, I don't really need it.
-;; TODO: compile everything to byte code to avoid long startup times
-
-;; TODO: go over the default Cask packages and add them as needed:
-;(depends-on "bind-key")
-;(depends-on "cask")
-;(depends-on "dash")
-;(depends-on "drag-stuff")
-;(depends-on "expand-region")
-;(depends-on "f")
-;(depends-on "flycheck")
-;(depends-on "flycheck-cask")
-;(depends-on "htmlize")
-;(depends-on "idle-highlight-mode")
-;(depends-on "magit")
-;(depends-on "multiple-cursors")
-;(depends-on "nyan-mode")
-;(depends-on "pallet")
-;(depends-on "popwin")
-;(depends-on "prodigy")
-;(depends-on "projectile")
-;(depends-on "s")
-;(depends-on "smartparens")
-;(depends-on "smex")
-;(depends-on "use-package")
-;(depends-on "web-mode")
-;(depends-on "yasnippet")
-
 ;; emacs auto-generated nonsense
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
