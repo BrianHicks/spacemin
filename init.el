@@ -26,7 +26,11 @@
 
 (use-package evil
   :ensure t
-  :config (evil-mode 1)
+  :config
+  (evil-mode 1)
+  (with-eval-after-load 'evil-maps
+    (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
+    (define-key evil-motion-state-map (kbd ";") 'evil-ex))
 
   (use-package evil-surround
     :ensure t
@@ -54,9 +58,14 @@
   (use-package evil-visualstar
     :ensure t
     :config (global-evil-visualstar-mode 1))
+
+  (use-package evil-escape
+    :ensure t
+    :config
+    (evil-escape-mode 1)
+    (setq-default evil-escape-key-sequence "fd"))
   )
 
-;; TODO: vim keybindings like fd for escaping and ; instead of :
 ;; TODO: magit
 ;; TODO: projectile and perspectives
 ;; TODO: ivy or smex or something
@@ -76,7 +85,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (evil-visualstar evil-exchange evil-matchit use-package-chords pallet exec-path-from-shell evil-visual-mark-mode evil-surround evil-nerd-commenter evil-leader evil-commentary))))
+    (evil-escape evil-visualstar evil-exchange evil-matchit use-package-chords pallet exec-path-from-shell evil-visual-mark-mode evil-surround evil-nerd-commenter evil-leader evil-commentary))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

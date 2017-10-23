@@ -3,6 +3,7 @@
 
 (depends-on "evil")
 (depends-on "evil-commentary")
+(depends-on "evil-escape")
 (depends-on "evil-exchange")
 (depends-on "evil-leader")
 (depends-on "evil-matchit")
