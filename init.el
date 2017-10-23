@@ -13,12 +13,6 @@
 (straight-use-package 'use-package)
 (setq use-package-always-ensure t)
 
-;; time for some general philosophizing: I really like Spacemacs'
-;; approach to keybindings. Put everything under `SPC`, and all the
-;; mode-local bindings under `,` (or `SPC m`.) I'm gonna steal all the
-;; ones I need as I need them. If I can get them working in which-key,
-;; so much the better!
-
 ;; set up some basic things (load paths, etc.) that we will use later.
 (defvar emacs-d
   (file-name-directory (file-chase-links load-file-name))

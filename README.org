@@ -3,6 +3,11 @@
 A ground-up ~.emacs.d~ with just stuff I like from Spacemacs.
 Likely not useful for anyone else.
 
+Time for some general philosophizing: I really like Spacemacs' approach to keybindings.
+Put everything under `SPC`, and all the mode-local bindings under `,` (or `SPC m`.)
+I'm gonna steal all the ones I need as I need them.
+If I can get them working in which-key, so much the better!
+
 ** Installing
 
 1. Install this repo as your ~.emacs.d`~
