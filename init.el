@@ -19,6 +19,16 @@
 ;; ones I need as I need them. If I can get them working in which-key,
 ;; so much the better!
 
+;; exec-path-from-shell looks for environment variables set in SHELL
+;; and brings them into emacs. This stops having to set things like
+;; PATH twice. It's useful for me in particular because git is set to
+;; sign each commit with GPG, which is installed in a non-default
+;; (homebrewed) path.
+(use-package exec-path-from-shell
+  :config
+  (when (memq window-system '(mac ns x))
+    (exec-path-from-shell-initialize)))
+
 ;; vim has nice keybindings, emacs has nice other things, so let's use both.
 (use-package evil
   :config
@@ -77,7 +87,6 @@
 ;(depends-on "cask")
 ;(depends-on "dash")
 ;(depends-on "drag-stuff")
-;(depends-on "exec-path-from-shell")
 ;(depends-on "expand-region")
 ;(depends-on "f")
 ;(depends-on "flycheck")
