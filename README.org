@@ -9,24 +9,48 @@ Likely not useful for anyone else.
 2. Start emacs. Wait a while while watching the blinkenlights in the message line.
 3. Probably restart it or whatever, I don't care.
 4. You've won. Go to Disneyland?
-   
-** TODOs
 
-*** DONE evil
-*** DONE magit
-*** TODO ~<SPC>fs~
-*** TODO which-key
-*** TODO ~<SPC>w~ prefix
-*** TODO projectile and perspectives
-*** TODO ivy or smex or something
-*** TODO better fonts and themes. And a theme switcher would be super nice too.
-*** TODO ~<SPC>1~ through ~9~ for window jumps?
-*** TODO nice bindings for making stuff with make
-*** TODO a shell, maybe? Probably not though.
-*** TODO hide the top bar, I don't really need it.
-*** TODO compile everything to byte code to avoid long startup times
-*** TODO go over the default Cask packages and add them as needed
- 
+** Things That Are Done
+
+- evil (mostly)
+- magit
+
+** Still To Do
+
+*** Better Keybindings
+
+- [ ] ~<SPC>fs~ to save a file
+- [ ] ~<SPC>w~ prefix for window operations (splits, navigation)
+- [ ] ~which-key~ to remember all these
+- [ ] ~<SPC>1~ through ~9~ for window jumps? (I don't frequently use these but they can be handy!)
+- [ ] ~]<SPC>~ to insert a newline below, ~[<SPC>~ to insert a newline above
+- [ ] ~<SPC><SPC>~ to bring up ~M-x~
+
+*** Project Management
+
+- [ ] projectile and perspectives
+- [ ] ivy or smex or something
+- [ ] integration with ~make~
+
+*** Day-to-day ergonomics
+
+- [ ] completion framework? Or turn it on?
+- [ ] snippets (but just the auto-inserted ones... I never really use the fill-in-the-blanks ones)
+- [ ] flycheck
+- [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
+
+*** Appearance
+
+- [ ] nicer default fonts with ligatures
+- [ ] a good theme (TODO: steal Doom's theme.)
+- [ ] hide the top bar and scroll bars
+
+*** Performance
+
+- [ ] compile everything to byte code to avoid long startup times
+
+*** go over the default Cask packages and add them as needed
+
 #+BEGIN_SRC elisp-mode
 (depends-on "dash")
 (depends-on "drag-stuff")
