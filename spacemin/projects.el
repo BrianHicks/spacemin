@@ -34,6 +34,10 @@
    "pq" 'projectile-switch-open-project
    "pr" 'projectile-replace
    "pu" 'projectile-run-project
-   "ps" 'projectile-ag))
+   "ps" 'projectile-ag)
+
+  (use-package counsel-projectile
+    :config
+    (counsel-projectile-on)))
 
 (use-package ag)
