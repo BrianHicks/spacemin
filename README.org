@@ -34,7 +34,7 @@ If I can get them working in which-key, so much the better!
 
 *** Project Management
 
-- [ ] projectile and perspectives
+- [ ] perspectives
 - [ ] ivy or smex or something
 - [ ] integration with ~make~
 
