@@ -3,6 +3,8 @@
 A ground-up `.emacs.d` with just stuff I like from Spacemacs.
 Likely not useful for anyone else.
 
+<img src="spacemin.png" width="500px" alt="screenshot of spacemin" style="text-align: center" />
+
 Time for some general philosophizing: I really like Spacemacs' approach to keybindings.
 Put everything under `SPC`, and all the mode-local bindings under `,` (or `SPC m`.)
 I'm gonna steal all the ones I need as I need them.
