@@ -1,3 +1,10 @@
+;; turn off scroll bars (it's in modeline)
+(scroll-bar-mode -1)
+
+;; turn off the tool bar (which-key works fine and I've been vimming
+;; for long enough that I never use it.)
+(tool-bar-mode -1)
+
 ;; themes!
 (use-package doom-themes
   :config
