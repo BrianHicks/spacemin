@@ -24,6 +24,10 @@ If I can get them working in which-key, so much the better!
 - magit (mostly)
 - projectile (kinda)
 - looks kinda nice
+- a couple languages (TBQH I don't really care about refactorings etc in `*-mode`... but syntax highlighting is nice!)
+  - markdown
+  - basic Ruby
+  - basic Elm
 
 But what is "done", really?
 
@@ -53,9 +57,8 @@ But what is "done", really?
 
 ### Languages
 
-- [ ] Ruby / Rails
-- [ ] Elm
-- [ ] Nice markdown stuff would be great
+- [ ] Better Ruby / any Rails
+- [ ] more fully featured Elm integration (keybindings? we don't need no steenking keybindings!)
 
 ### go over the default Cask packages and add them as needed
 
