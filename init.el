@@ -36,6 +36,7 @@
 
 ;; languages
 (load "markdown")
+(load "ruby")
 
 ;; emacs auto-generated nonsense follows
 (custom-set-variables
