@@ -12,8 +12,14 @@
   ;; TODO: this may be in the wrong place and will not get scratch and messages.
   (use-package evil-leader
     :config
+    (setq evil-leader/leader "<SPC>")
+
     (global-evil-leader-mode 1)
-    (setq evil-leader/leader "<SPC>"))
+
+    (evil-leader/set-key
+      ;; files
+      "fs" 'save-buffer)
+    )
 
   (use-package evil-commentary
     :config (evil-commentary-mode 1))

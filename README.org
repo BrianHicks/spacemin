@@ -29,7 +29,6 @@ But what is "done", really?
 
 *** Better Keybindings
 
-- [ ] ~<SPC>fs~ to save a file
 - [ ] ~<SPC>w~ prefix for window operations (splits, navigation)
 - [ ] ~<SPC>1~ through ~9~ for window jumps? (I don't frequently use these but they can be handy!)
 - [ ] ~]<SPC>~ to insert a newline below, ~[<SPC>~ to insert a newline above
