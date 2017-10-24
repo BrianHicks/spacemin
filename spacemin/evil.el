@@ -25,8 +25,8 @@
 
       ;; windowing
       "wh" 'evil-window-left
-      "wk" 'evil-window-down
-      "wj" 'evil-window-up
+      "wj" 'evil-window-down
+      "wk" 'evil-window-up
       "wl" 'evil-window-right
       "wv" 'evil-window-vsplit
       "ws" 'evil-window-split
