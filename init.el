@@ -28,6 +28,7 @@
 ;; smart. I'm too lazy to write a proper graph walk right now, and
 ;; there are not many, so manual it is.
 (load "evil") ;; prerequisite for anything that uses leader keys
+(load "ivy")
 (load "basics")
 (load "display")
 (load "git")
