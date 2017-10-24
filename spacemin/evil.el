@@ -17,20 +17,23 @@
     (global-evil-leader-mode 1)
 
     (evil-leader/set-key
-      ;; commands
-      "<SPC>" 'execute-extended-command
+      ;; *b*uffers
+      "bn" 'evil-next-buffer
+      "bp" 'evil-prev-buffer
 
-      ;; files
+      ;; *c*ommands
+      "<SPC>" 'counsel-M-x
+
+      ;; *f*iles
       "fs" 'save-buffer
 
-      ;; windowing
+      ;; *w*indowing
       "wh" 'evil-window-left
       "wj" 'evil-window-down
       "wk" 'evil-window-up
       "wl" 'evil-window-right
       "wv" 'evil-window-vsplit
-      "ws" 'evil-window-split
-      )
+      "ws" 'evil-window-split)
     )
 
   (use-package evil-commentary
