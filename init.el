@@ -31,5 +31,6 @@
 (load "basics")
 (load "git")
 (load "icons")
+(load "projects")
 
 ;; emacs auto-generated nonsense follows
