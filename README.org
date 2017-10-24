@@ -49,6 +49,12 @@ But what is "done", really?
 
 - [ ] compile everything to byte code to avoid long startup times
 
+*** Languages
+
+- [ ] Ruby / Rails
+- [ ] Elm
+- [ ] Nice markdown stuff would be great
+
 *** go over the default Cask packages and add them as needed
 
 #+BEGIN_SRC elisp-mode
