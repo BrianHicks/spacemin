@@ -1,2 +1,5 @@
 *.elc
 straight
+projectile-bookmarks.eld
+projectile.cache
+url/
