@@ -21,6 +21,7 @@ If I can get them working in which-key, so much the better!
 - evil (mostly)
 - magit (mostly)
 - projectile (kinda)
+- looks kinda nice
 
 But what is "done", really?
 
@@ -46,13 +47,6 @@ But what is "done", really?
 - [ ] snippets (but just the auto-inserted ones... I never really use the fill-in-the-blanks ones)
 - [ ] flycheck
 - [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
-
-*** Appearance
-
-- [ ] nicer default fonts with ligatures
-- [ ] hide the top bar and scroll bars
-- [ ] A neat l'il status bar
-- [ ] icons in the neat l'il status bar (done already: all-the-icons)
 
 *** Performance
 
