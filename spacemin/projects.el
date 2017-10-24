@@ -2,6 +2,7 @@
   :config
   (projectile-mode 1)
 
+  ;; workaround for https://github.com/bbatsov/projectile/issues/1183
   (setq projectile-mode-line
 	'(:eval (format "Projectile[%s]" (projectile-project-name))))
 
