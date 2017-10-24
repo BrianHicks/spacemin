@@ -36,5 +36,4 @@
    "pu" 'projectile-run-project
    "ps" 'projectile-ag))
 
-
 (use-package ag)
