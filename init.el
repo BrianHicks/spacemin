@@ -35,6 +35,7 @@
 (load "projects")
 
 ;; languages
+(load "elm")
 (load "markdown")
 (load "ruby")
 
