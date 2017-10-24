@@ -50,6 +50,7 @@ But what is "done", really?
 - [ ] snippets (but just the auto-inserted ones... I never really use the fill-in-the-blanks ones)
 - [ ] flycheck
 - [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
+- [ ] use spaces by default, or load editorconfig, or some other solution.
 
 ### Performance
 
@@ -59,6 +60,13 @@ But what is "done", really?
 
 - [ ] Better Ruby / any Rails
 - [ ] more fully featured Elm integration (keybindings? we don't need no steenking keybindings!)
+
+### Appearance
+
+- [ ] further customizations in the status line
+	- [ ] make git branch not prefixed in the status line
+	- [ ] call out projectile
+	- [ ] diminish other minor modes
 
 ### go over the default Cask packages and add them as needed
 
