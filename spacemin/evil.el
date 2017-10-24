@@ -17,8 +17,20 @@
     (global-evil-leader-mode 1)
 
     (evil-leader/set-key
+      ;; commands
+      "<SPC>" 'execute-extended-command
+
       ;; files
-      "fs" 'save-buffer)
+      "fs" 'save-buffer
+
+      ;; windowing
+      "wh" 'evil-window-left
+      "wk" 'evil-window-down
+      "wj" 'evil-window-up
+      "wl" 'evil-window-right
+      "wv" 'evil-window-vsplit
+      "ws" 'evil-window-split
+      )
     )
 
   (use-package evil-commentary
