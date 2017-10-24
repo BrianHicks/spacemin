@@ -19,7 +19,10 @@ If I can get them working in which-key, so much the better!
 ** Things That Are Done
 
 - evil (mostly)
-- magit
+- magit (mostly)
+- projectile (kinda)
+
+But what is "done", really?
 
 ** Still To Do
 
@@ -27,7 +30,6 @@ If I can get them working in which-key, so much the better!
 
 - [ ] ~<SPC>fs~ to save a file
 - [ ] ~<SPC>w~ prefix for window operations (splits, navigation)
-- [ ] ~which-key~ to remember all these
 - [ ] ~<SPC>1~ through ~9~ for window jumps? (I don't frequently use these but they can be handy!)
 - [ ] ~]<SPC>~ to insert a newline below, ~[<SPC>~ to insert a newline above
 - [ ] ~<SPC><SPC>~ to bring up ~M-x~
@@ -67,16 +69,13 @@ If I can get them working in which-key, so much the better!
 (depends-on "flycheck")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
-(depends-on "magit")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
 (depends-on "popwin")
 (depends-on "prodigy")
-(depends-on "projectile")
 (depends-on "s")
 (depends-on "smartparens")
 (depends-on "smex")
-(depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "yasnippet")
 #+END_SRC
