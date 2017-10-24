@@ -1,5 +1,5 @@
 (use-package enh-ruby-mode
-  :mode ("\\.rb\\'" . enh-ruby-mode)
+  :mode ("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode)
   :interpreter ("ruby" . enh-ruby-mode)
   :config
 
