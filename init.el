@@ -31,6 +31,7 @@
 (load "ivy")
 (load "basics")
 (load "display")
+(load "flycheck")
 (load "git")
 (load "icons")
 (load "projects")

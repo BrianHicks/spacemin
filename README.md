@@ -46,7 +46,6 @@ But what is "done", really?
 
 - [ ] completion framework? Or turn it on?
 - [ ] snippets (but just the auto-inserted ones... I never really use the fill-in-the-blanks ones)
-- [ ] flycheck
 - [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
 - [ ] use spaces by default, or load editorconfig, or some other solution.
 
