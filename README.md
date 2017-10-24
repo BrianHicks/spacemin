@@ -41,7 +41,6 @@ But what is "done", really?
 ### Project Management
 
 - [ ] perspectives
-- [ ] ivy or smex or something
 - [ ] integration with `make`
 
 ### Day-to-day ergonomics
