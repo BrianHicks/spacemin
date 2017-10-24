@@ -30,10 +30,23 @@
 ;; pretty modeline
 (use-package telephone-line
   :config
-  (setq telephone-line-primary-left-separator 'telephone-line-identity-left
-        telephone-line-secondary-left-separator 'telephone-line-identity-left
-        telephone-line-primary-right-separator 'telephone-line-identity-right
-        telephone-line-seconary-right-separator 'telephone-line-identity-right)
+  (setq telephone-line-primary-left-separator 'telephone-line-flat
+        telephone-line-secondary-left-separator 'telephone-line-flat
+        telephone-line-primary-right-separator 'telephone-line-flat
+        telephone-line-seconary-right-separator 'telephone-line-flat
+
+	telephone-line-height 30
+
+	telephone-line-hs '((evil   . (telephone-line-evil-tag-segment))
+                            (accent . (telephone-line-vc-segment
+                                       telephone-line-erc-modified-channels-segment
+                                       telephone-line-process-segment))
+                            (nil    . (telephone-line-minor-mode-segment
+                                       telephone-line-buffer-segment))))
+
+        telephone-line-rhs '((nil    . (telephone-line-misc-info-segment))
+                             (accent . (telephone-line-major-mode-segment))
+                             (evil   . (telephone-line-airline-position-segment)))
 
   (telephone-line-evil-config))
 
