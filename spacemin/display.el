@@ -30,6 +30,11 @@
 ;; pretty modeline
 (use-package telephone-line
   :config
+  (setq telephone-line-primary-left-separator 'telephone-line-identity-left
+        telephone-line-secondary-left-separator 'telephone-line-identity-left
+        telephone-line-primary-right-separator 'telephone-line-identity-right
+        telephone-line-seconary-right-separator 'telephone-line-identity-right)
+
   (telephone-line-evil-config))
 
 ;; fonts and ligatures
