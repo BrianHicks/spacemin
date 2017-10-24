@@ -19,3 +19,8 @@
     (add-hook 'minibuffer-setup-hook #'solaire-mode-in-minibuffer)
 
     (solaire-mode-swap-bg)))
+
+;; pretty modeline
+(use-package telephone-line
+  :config
+  (telephone-line-evil-config))
