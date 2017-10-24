@@ -29,8 +29,23 @@
 ;; there are not many, so manual it is.
 (load "evil") ;; prerequisite for anything that uses leader keys
 (load "basics")
+(load "display")
 (load "git")
 (load "icons")
 (load "projects")
 
 ;; emacs auto-generated nonsense follows
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

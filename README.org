@@ -50,7 +50,6 @@ But what is "done", really?
 *** Appearance
 
 - [ ] nicer default fonts with ligatures
-- [ ] a good theme (TODO: steal Doom's theme.)
 - [ ] hide the top bar and scroll bars
 - [ ] A neat l'il status bar
 - [ ] icons in the neat l'il status bar (done already: all-the-icons)
