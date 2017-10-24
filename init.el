@@ -34,6 +34,9 @@
 (load "icons")
 (load "projects")
 
+;; languages
+(load "markdown")
+
 ;; emacs auto-generated nonsense follows
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
