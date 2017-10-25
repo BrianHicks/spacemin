@@ -19,6 +19,8 @@
 
   (use-package hindent
     :config
+    (setq hindent-reformat-buffer-on-save t)
+
     (evil-leader/set-key-for-mode 'haskell-mode
       "mff" 'hindent-reformat-buffer
       "mfd" 'hindent-reformat-decl)))
