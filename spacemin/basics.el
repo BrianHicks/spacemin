@@ -14,6 +14,11 @@
   :config
   (popwin-mode 1))
 
+(use-package smartparens
+  :config
+  (require 'smartparens-config)
+  (smartparens-global-mode 1))
+
 ;; which-key helps me remember random keybindings and rediscover
 ;; things I had lost.
 (use-package which-key
