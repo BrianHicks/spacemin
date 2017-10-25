@@ -10,6 +10,10 @@
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize)))
 
+(use-package popwin
+  :config
+  (popwin-mode 1))
+
 ;; which-key helps me remember random keybindings and rediscover
 ;; things I had lost.
 (use-package which-key
