@@ -28,6 +28,7 @@ If I can get them working in which-key, so much the better!
   - markdown
   - basic Ruby
   - basic Elm
+  - basic Haskell
 
 But what is "done", really?
 

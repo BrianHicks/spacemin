@@ -46,6 +46,7 @@
 
 ;; languages
 (load "elm")
+(load "haskell")
 (load "markdown")
 (load "ruby")
 
