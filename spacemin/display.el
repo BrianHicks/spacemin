@@ -52,7 +52,7 @@
 
 ;; fonts and ligatures
 (when (window-system)
-  (set-default-font "Fira Code")
+  (set-frame-font "Fira Code")
   (set-face-attribute 'default nil :height 130))
 
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
