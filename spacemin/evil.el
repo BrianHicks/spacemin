@@ -17,12 +17,17 @@
     (global-evil-leader-mode 1)
 
     (evil-leader/set-key
+      ;; commands
+      "<SPC>" 'counsel-M-x
+
       ;; *b*uffers
       "bn" 'evil-next-buffer
       "bp" 'evil-prev-buffer
 
-      ;; *c*ommands
-      "<SPC>" 'counsel-M-x
+      ;; *c*ompilation
+      "cc" 'compile
+      "cr" 'recompile
+      "cd" 'popwin:close-popup-window
 
       ;; *f*iles
       "fs" 'save-buffer
