@@ -49,10 +49,6 @@ But what is "done", really?
 - [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
 - [ ] use spaces by default, or load editorconfig, or some other solution.
 
-### Performance
-
-- [ ] compile everything to byte code to avoid long startup times
-
 ### Languages
 
 - [ ] Better Ruby / any Rails
