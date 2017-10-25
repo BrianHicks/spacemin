@@ -48,6 +48,8 @@ But what is "done", really?
 - [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
 - [ ] use spaces by default, or load editorconfig, or some other solution.
 - [ ] prodigy!
+- [ ] make flycheck a popwin thingy
+- [ ] bind a key to dismiss popwin thingies
 
 ### Languages
 
