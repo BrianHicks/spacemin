@@ -56,9 +56,9 @@ But what is "done", really?
 ### Appearance
 
 - [ ] further customizations in the status line
-	- [ ] make git branch not prefixed in the status line
-	- [ ] call out projectile
-	- [ ] diminish other minor modes
+  - [ ] make git branch not prefixed in the status line
+  - [ ] call out projectile
+  - [ ] diminish other minor modes
 - [ ] ivy matches look weird because of the fuzzy finding (one color per character). Make this nicer.
 
 ### go over the default Cask packages and add them as needed
