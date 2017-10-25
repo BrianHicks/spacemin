@@ -5,6 +5,8 @@
 	elm-sort-imports-on-save t
 	elm-format-on-save t)
 
+  (add-to-list 'company-backends 'company-elm)
+
   ;; TODO: add keybindings listed at https://github.com/jcollard/elm-mode
   ;; but TBH it's not a super high priority for me since I mostly use
   ;; jetpack at work and elm reactor or other watchers for OSS

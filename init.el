@@ -37,6 +37,7 @@
 (load "evil") ;; prerequisite for anything that uses leader keys
 (load "ivy")
 (load "basics")
+(load "completion")
 (load "display")
 (load "flycheck")
 (load "git")
