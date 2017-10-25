@@ -1,3 +1,11 @@
+;; basics --- the junk drawer, by another name
+
+;;; Commentary:
+;;; Very few controversial decisions here, hopefully.  Just stuff that
+;;; makes Emacs better for me.  Experiments labelled as such.
+
+;;; Code:
+
 ;; exec-path-from-shell looks for environment variables set in SHELL
 ;; and brings them into emacs. This stops having to set things like
 ;; PATH twice. It's useful for me in particular because git is set to
@@ -29,3 +37,5 @@
 (use-package which-key
   :config
   (which-key-mode 1))
+
+;;; basics.el ends here
