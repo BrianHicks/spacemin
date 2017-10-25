@@ -73,7 +73,6 @@ But what is "done", really?
 (depends-on "idle-highlight-mode")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
-(depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "s")
 (depends-on "smartparens")
