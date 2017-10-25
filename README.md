@@ -47,6 +47,7 @@ But what is "done", really?
 - [ ] snippets (but just the auto-inserted ones... I never really use the fill-in-the-blanks ones)
 - [ ] maybe a shell? I don't often use a shell but maybe if I could get zsh in there nicely...
 - [ ] use spaces by default, or load editorconfig, or some other solution.
+- [ ] prodigy!
 
 ### Languages
 
@@ -60,23 +61,3 @@ But what is "done", really?
   - [ ] call out projectile
   - [ ] diminish other minor modes
 - [ ] ivy matches look weird because of the fuzzy finding (one color per character). Make this nicer.
-
-### go over the default Cask packages and add them as needed
-
-```elisp
-(depends-on "dash")
-(depends-on "drag-stuff")
-(depends-on "expand-region")
-(depends-on "f")
-(depends-on "flycheck")
-(depends-on "htmlize")
-(depends-on "idle-highlight-mode")
-(depends-on "multiple-cursors")
-(depends-on "nyan-mode")
-(depends-on "prodigy")
-(depends-on "s")
-(depends-on "smartparens")
-(depends-on "smex")
-(depends-on "web-mode")
-(depends-on "yasnippet")
-```
