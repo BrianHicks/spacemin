@@ -1,3 +1,10 @@
+;;; init.el --- user init file -*- no-byte-compile: t -*-
+
+;;; Commentary:
+;;; Bootstrap everything.  As little as possible should live here.
+
+;;; Code:
+
 ;; bootstrap straight.el
 (let ((bootstrap-file (concat user-emacs-directory "straight/bootstrap.el"))
       (bootstrap-version 2))
@@ -16,7 +23,7 @@
 ;; set up some basic things (load paths, etc.) that we will use later.
 (defvar emacs-d
   (file-name-directory (file-chase-links load-file-name))
-  "Our .emacs.d location")
+  "Our .emacs.d location.")
 
 (add-to-list 'load-path (expand-file-name "spacemin" emacs-d))
 
@@ -56,3 +63,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; init.el ends here
