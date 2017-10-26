@@ -2,6 +2,7 @@
   :mode ("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode)
   :interpreter ("ruby" . enh-ruby-mode)
   :config
+  (setq enh-ruby-add-encoding-comment-on-save nil)
 
   (use-package rbenv
     :config
