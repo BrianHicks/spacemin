@@ -5,8 +5,7 @@
 
   (use-package rbenv
     :config
-    ;; TODO: put this in a hook... probably when loading a ruby file
-    (global-rbenv-mode))
+    (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
 
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   ;; TODO: yard mode (https://github.com/pd/yard-mode.el)
