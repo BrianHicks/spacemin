@@ -15,7 +15,8 @@
     )
 
   (use-package intero
-    :mode ("\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'" . intero-mode))
+    :config
+    (add-hook 'haskell-mode-hook 'intero-mode))
 
   (use-package hindent
     :config
