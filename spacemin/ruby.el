@@ -1,3 +1,10 @@
+;;; ruby --- mine some gems
+
+;;; Commentary:
+;;; enh-ruby-mode seemed nicer than builtin, but is giving me
+;;; issues.  I don't know that it's long for this config.
+
+;;; Code:
 (use-package enh-ruby-mode
   :mode ("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode)
   :interpreter ("ruby" . enh-ruby-mode)
@@ -21,3 +28,5 @@
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   ;; TODO: yard mode (https://github.com/pd/yard-mode.el)
     )
+
+;;; ruby.el ends here
