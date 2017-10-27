@@ -21,6 +21,24 @@
 	enh-ruby-hanging-paren-indent-level 2
 	enh-ruby-indent-level 2)
 
+  (evil-leader/set-key-for-mode 'enh-ruby-mode
+    ;; *e*diting
+    "meb" 'enh-ruby-toggle-block
+    "mei" 'enh-ruby-indent-exp
+
+    ;; *g*o
+    ;; TODO: these feel like they should be in a hydra
+    "mgu" 'enh-ruby-forward-sexp
+    "mgU" 'enh-ruby-backward-sexp
+    "mgb" 'enh-ruby-beginning-of-block
+    "mgB" 'enh-ruby-end-of-defun
+    "mgd" 'enh-ruby-beginning-of-defun
+    "mgD" 'enh-ruby-end-of-defun
+
+    ;; *m*eta
+    "mmR" 'erm-reset
+    "mmF" 'enh-ruby-fontify-buffer)
+
   (use-package rbenv
     :config
     (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
