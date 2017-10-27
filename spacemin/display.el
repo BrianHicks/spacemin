@@ -37,6 +37,12 @@
 
 	telephone-line-height 30
 
+	;; TODO: make nice small names for all the minor modes, or diminish/delight them
+	;; TODO: remove Git: or Git- from the branch name
+
+	;; TODO:
+	;; NORMAL | project (git-branch) | filename --- minors | major | position
+
 	telephone-line-hs '((evil   . (telephone-line-evil-tag-segment))
                             (accent . (telephone-line-vc-segment
                                        telephone-line-erc-modified-channels-segment
