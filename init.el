@@ -45,6 +45,7 @@
 (load "projects")
 
 ;; languages
+(load "coffeescript")
 (load "elm")
 (load "haml")
 (load "haskell")
