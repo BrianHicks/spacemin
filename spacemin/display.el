@@ -43,18 +43,16 @@
 	;; TODO:
 	;; NORMAL | project (git-branch) | filename --- minors | major | position
 
-	telephone-line-hs '((evil   . (telephone-line-evil-tag-segment))
-                            (accent . (telephone-line-vc-segment
-                                       telephone-line-erc-modified-channels-segment
-                                       telephone-line-process-segment))
-                            (nil    . (telephone-line-minor-mode-segment
-                                       telephone-line-buffer-segment))))
+	telephone-line-lhs '((evil   . (telephone-line-evil-tag-segment))
+			     (accent . (telephone-line-vc-segment))
+			     (nil    . (telephone-line-minor-mode-segment
+					telephone-line-buffer-segment)))
 
-        telephone-line-rhs '((nil    . (telephone-line-misc-info-segment))
-                             (accent . (telephone-line-major-mode-segment))
-                             (evil   . (telephone-line-airline-position-segment)))
+	telephone-line-rhs '((nil    . (telephone-line-misc-info-segment))
+			     (accent . (telephone-line-major-mode-segment))
+			     (evil   . (telephone-line-airline-position-segment))))
 
-  (telephone-line-evil-config))
+  (telephone-line-mode 1))
 
 ;; fonts and ligatures
 (when (window-system)
