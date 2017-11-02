@@ -47,6 +47,7 @@
 ;; languages
 (load "coffeescript")
 (load "elm")
+(load "graphviz")
 (load "haml")
 (load "haskell")
 (load "markdown")
