@@ -51,6 +51,7 @@
 (load "haskell")
 (load "markdown")
 (load "ruby")
+(load "yaml")
 
 ;; emacs auto-generated nonsense follows
 (custom-set-variables
