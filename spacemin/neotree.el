@@ -15,31 +15,31 @@
     "ft" 'neotree-toggle
     "ff" 'neotree-project-dir)
 
-  (define-key evil-normal-state-local-map (kbd "-") 'neotree-project-dir)
+  (evil-global-set-key 'normal "-" 'neotree-project-dir)
 
   ;; keybindings for inside neotree
   (add-hook 'neotree-mode-hook
     (lambda ()
       ;; basics
-      (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
-      (define-key evil-normal-state-local-map (kbd "R") 'neotree-refresh)
-      (define-key evil-normal-state-local-map (kbd "-") 'neotree-select-up-node)
-      (define-key evil-normal-state-local-map (kbd "y") 'neotree-copy-filepath-to-yank-ring)
+      (evil-local-set-key 'normal "q" 'neotree-hide)
+      (evil-local-set-key 'normal "R" 'neotree-refresh)
+      (evil-local-set-key 'normal "-" 'neotree-select-up-node)
+      (evil-local-set-key 'normal "y" 'neotree-copy-filepath-to-yank-ring)
 
       ;; toggles
-      (define-key evil-normal-state-local-map (kbd "I") 'neotree-hidden-file-toggle)
-      (define-key evil-normal-state-local-map (kbd "z") 'neotree-stretch-toggle)
+      (evil-local-set-key 'normal "I" 'neotree-hidden-file-toggle)
+      (evil-local-set-key 'normal "z" 'neotree-stretch-toggle)
 
       ;; filesystem modification
-      (define-key evil-normal-state-local-map (kbd "m") 'neotree-rename-node)
-      (define-key evil-normal-state-local-map (kbd "c") 'neotree-create-node)
-      (define-key evil-normal-state-local-map (kbd "C") 'neotree-copy-node)
-      (define-key evil-normal-state-local-map (kbd "d") 'neotree-delete-node)
+      (evil-local-set-key 'normal "m" 'neotree-rename-node)
+      (evil-local-set-key 'normal "c" 'neotree-create-node)
+      (evil-local-set-key 'normal "C" 'neotree-copy-node)
+      (evil-local-set-key 'normal "d" 'neotree-delete-node)
 
       ;; opening
-      (define-key evil-normal-state-local-map (kbd "v") 'neotree-enter-vertical-split)
-      (define-key evil-normal-state-local-map (kbd "s") 'neotree-enter-horizontal-split)
-      (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
+      (evil-local-set-key 'normal "v" 'neotree-enter-vertical-split)
+      (evil-local-set-key 'normal "s" 'neotree-enter-horizontal-split)
+      (evil-local-set-key 'normal (kbd "RET") 'neotree-enter)
       )))
 
 (use-package find-file-in-project)
