@@ -10,6 +10,9 @@
   :config
   (doom-themes-neotree-config)
 
+  ;; configure neotree
+  (setq neo-window-width 30)
+
   ;; keybindings to get into neotree
   (evil-leader/set-key
     "ft" 'neotree-toggle
