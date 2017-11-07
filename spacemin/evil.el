@@ -17,9 +17,6 @@
     (global-evil-leader-mode 1)
 
     (evil-leader/set-key
-      ;; commands
-      "<SPC>" 'counsel-M-x
-
       ;; *b*uffers
       "bn" 'evil-next-buffer
       "bp" 'evil-prev-buffer
