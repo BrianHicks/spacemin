@@ -17,6 +17,10 @@
   (define-key company-active-map [tab] 'company-complete)
   (define-key company-active-map (kbd "C-n") 'company-select-next)
   (define-key company-active-map (kbd "C-p") 'company-select-previous)
+
+  (use-package company-statistics
+    :config
+    (company-statistics-mode))
   )
 
 ;;; completion.el ends here
