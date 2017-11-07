@@ -1,5 +1,6 @@
 *.elc
-straight
+straight/*
+!straight/versions
 projectile-bookmarks.eld
 projectile.cache
 url/
