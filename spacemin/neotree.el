@@ -16,9 +16,10 @@
   ;; keybindings to get into neotree
   (evil-leader/set-key
     "ft" 'neotree-toggle
-    "ff" 'neotree-project-dir)
+    "ff" 'neotree-find
+    "fp" 'neotree-project-dir)
 
-  (evil-global-set-key 'normal "-" 'neotree-project-dir)
+  (evil-global-set-key 'normal "-" 'neotree-find)
 
   ;; keybindings for inside neotree
   (add-hook 'neotree-mode-hook
