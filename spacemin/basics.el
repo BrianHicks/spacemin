@@ -38,4 +38,13 @@
   :config
   (which-key-mode 1))
 
+;; backup files somewhere outside of where project file watchers will
+;; pick them up
+(setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
+      backup-by-copying t
+      version-control t
+      delete-old-versions t
+      kept-new-versions 20
+      kept-old-version 5)
+
 ;;; basics.el ends here
