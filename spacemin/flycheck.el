@@ -12,3 +12,5 @@
     "el" 'flycheck-list-errors
     "en" 'next-error
     "ep" 'previous-error))
+
+;;; flycheck.el ends here
