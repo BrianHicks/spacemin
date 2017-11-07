@@ -41,12 +41,13 @@
     "mmR" 'erm-reset
     "mmF" 'enh-ruby-fontify-buffer)
 
-  (use-package rbenv
-    :config
-    (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
-
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   ;; TODO: yard mode (https://github.com/pd/yard-mode.el)
-    )
+  )
+
+(use-package rbenv
+  :defer
+  :config
+  (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
 
 ;;; ruby.el ends here
