@@ -31,7 +31,6 @@
     :config
     (helm-projectile-on)
 
-    (setq helm-projectile-fuzzy-match t)
-    ))
+    (setq helm-projectile-fuzzy-match t)))
 
 ;;; helm.el ends here
