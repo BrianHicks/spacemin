@@ -1,15 +1,28 @@
+;;; elm --- types and tangrams
+
+;;; Commentary:
+;;; it's Elm!
+
+;;; Code:
+
 (use-package elm-mode
   :mode "\\.elm\\'"
   :config
   (setq elm-tags-on-save t
-	elm-sort-imports-on-save t
 	elm-format-on-save t)
 
   (add-to-list 'company-backends 'company-elm)
 
-  ;; TODO: add keybindings listed at https://github.com/jcollard/elm-mode
-  ;; but TBH it's not a super high priority for me since I mostly use
-  ;; jetpack at work and elm reactor or other watchers for OSS
-  ;; stuff. As long as I (eventually) get flycheck working I think
-  ;; I'll be fine.
+  (evil-leader/set-key-for-mode 'elm-mode
+    "mcc" 'elm-compile-buffer
+    "mea" 'elm-compile-add-annotations
+    "meI" 'elm-compile-clean-imports
+    "mef" 'elm-mode-format-buffer)
+
+  (use-package flycheck-elm
+    :config
+    (with-eval-after-load 'flycheck
+      '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup)))
   )
+
+;;; elm.el ends here
