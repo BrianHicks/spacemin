@@ -25,12 +25,12 @@
 
     ;; *y*anking
     "yp" 'helm-show-kill-ring
-    )
+    ))
 
-  (use-package helm-projectile
-    :config
-    (helm-projectile-on)
+(use-package helm-projectile
+  :config
+  (helm-projectile-on)
 
-    (setq helm-projectile-fuzzy-match t)))
+  (setq helm-projectile-fuzzy-match t))
 
 ;;; helm.el ends here
