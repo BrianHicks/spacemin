@@ -12,18 +12,20 @@
   (evil-leader/set-key-for-mode 'haskell-mode
     "mgi" 'haskell-navigate-imports
     "mei" 'haskell-mode-format-imports
-    )
+    ))
 
-  (use-package intero
-    :config
-    (add-hook 'haskell-mode-hook 'intero-mode))
+(use-package intero
+		:defer
+  :config
+  (add-hook 'haskell-mode-hook 'intero-mode))
 
-  (use-package hindent
-    :config
-    (setq hindent-reformat-buffer-on-save t)
+(use-package hindent
+		:defer
+  :config
+  (setq hindent-reformat-buffer-on-save t)
 
-    (evil-leader/set-key-for-mode 'haskell-mode
-      "mff" 'hindent-reformat-buffer
-      "mfd" 'hindent-reformat-decl)))
+  (evil-leader/set-key-for-mode 'haskell-mode
+    "mff" 'hindent-reformat-buffer
+    "mfd" 'hindent-reformat-decl))
 
 ;;; haskell.el ends here
