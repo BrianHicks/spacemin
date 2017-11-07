@@ -1,7 +1,8 @@
-*.elc
-straight/*
-!straight/versions
-projectile-bookmarks.eld
-projectile.cache
-url/
-elpa
+/*.elc
+/straight/*
+!/straight/versions
+/projectile-bookmarks.eld
+/projectile.cache
+/url/
+/elpa
+/company-statistics-cache.el
