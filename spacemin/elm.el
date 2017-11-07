@@ -7,6 +7,9 @@
 
 (use-package elm-mode
   :mode "\\.elm\\'"
+  :init
+  (use-package flycheck-elm)
+
   :config
   (setq elm-tags-on-save t
 	elm-format-on-save t)
@@ -19,10 +22,7 @@
     "meI" 'elm-compile-clean-imports
     "mef" 'elm-mode-format-buffer)
 
-  (use-package flycheck-elm
-    :config
-    (with-eval-after-load 'flycheck
-      '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup)))
-  )
+  (with-eval-after-load 'flycheck
+    '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup)))
 
 ;;; elm.el ends here
