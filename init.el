@@ -51,6 +51,7 @@
 (load "graphviz")
 (load "haml")
 (load "haskell")
+(load "javascript")
 (load "markdown")
 (load "ruby")
 (load "yaml")
