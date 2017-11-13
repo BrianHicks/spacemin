@@ -52,6 +52,7 @@
 (load "haml")
 (load "haskell")
 (load "javascript")
+(load "lang-json")
 (load "markdown")
 (load "ruby")
 (load "yaml")
