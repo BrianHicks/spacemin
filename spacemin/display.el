@@ -17,6 +17,9 @@
 
   (add-to-list 'custom-safe-themes "9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64")
   (load-theme 'doom-one)
+
+  (set-face-attribute 'font-lock-comment-face nil :foreground "#828B92")
+
   ;; TODO: theme switcher
 
   (use-package solaire-mode
