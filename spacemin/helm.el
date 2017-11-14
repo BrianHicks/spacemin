@@ -33,4 +33,6 @@
 
   (setq helm-projectile-fuzzy-match t))
 
+(use-package helm-ag)
+
 ;;; helm.el ends here
