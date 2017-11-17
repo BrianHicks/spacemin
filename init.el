@@ -42,6 +42,7 @@
 (load "flycheck")
 (load "git")
 (load "icons")
+(load "jumping")
 (load "neotree")
 (load "projects")
 
