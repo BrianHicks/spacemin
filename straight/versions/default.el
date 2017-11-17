@@ -52,6 +52,7 @@
  ("markdown-mode" . "52e467c75e14406aae5d6f5477292b758b88fbec")
  ("markdown-toc" . "7038f4f6d5c2bc7e4aea89699a607ac2b7dd16a8")
  ("melpa" . "1274c0d871c51e358b3de577372dae8e3a04ead0")
+ ("origami.el" . "5630536d04613476e13b413fe05fd0bbff4107ca")
  ("pkg-info.el" . "76ba7415480687d05a4353b27fea2ae02b8d9d61")
  ("popup-el" . "80829dd46381754639fb764da11c67235fe63282")
  ("popwin-el" . "95dea14c60019d6cccf9a3b33e0dec4e1f22c304")
