@@ -1,3 +1,11 @@
+;;; display --- how things look
+
+;;; Commentary:
+;;; This ends up kind of a grab bag of things.  That's probably
+;;; alright.
+
+;;; Code:
+
 ;; turn off scroll bars (it's in modeline)
 (scroll-bar-mode -1)
 
@@ -61,3 +69,5 @@
 (when (window-system)
   (set-frame-font "Fira Code")
   (set-face-attribute 'default nil :height 130))
+
+;;; display.el ends here
