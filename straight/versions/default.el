@@ -39,6 +39,7 @@
  ("helm" . "5eae983b6490fe0ad553a1833be5f8ee7aef7a05")
  ("helm-projectile" . "4466adbcada8be19ec97b9dba52e12b8da3da849")
  ("hindent" . "578d1256e466eb8bf40fd7e441172eb12e878637")
+ ("hl-todo" . "961db3116f1396dc4f903e3a59824a40e0bbb6a2")
  ("idle-highlight-mode" . "c466f2a9e291f9da1167dc879577b2e1a7880482")
  ("intero" . "5697c86fde2b6131629e8d1c69f9b2363dadc7ae")
  ("js2-mode" . "eba9797444b7549c1ed210f8fa59903917df151c")

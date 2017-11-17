@@ -70,4 +70,27 @@
   (set-frame-font "Fira Code")
   (set-face-attribute 'default nil :height 130))
 
+;; highlight todos in code.  This package should support:
+;;
+;; - HOLD
+;; - TODO
+;; - NEXT
+;; - THEM
+;; - PROG
+;; - OKAY
+;; - DONT
+;; - FAIL
+;; - DONE
+;; - NOTE
+;; - KLUDGE
+;; - HACK
+;; - FIXME
+;; - XXX
+;; - XXXX
+;; - ???
+(use-package hl-todo
+  :config
+  (global-hl-todo-mode))
+
+
 ;;; display.el ends here
