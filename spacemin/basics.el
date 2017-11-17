@@ -47,4 +47,7 @@
       kept-new-versions 20
       kept-old-version 5)
 
+;; lock files are really not necessary for how I use emacs
+(setq create-lockfiles nil)
+
 ;;; basics.el ends here
