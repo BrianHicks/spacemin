@@ -18,6 +18,11 @@
   :config
   (global-evil-leader-mode 1)
 
+  ;; evil defines a `\` key for escaping to emacs keys, so the
+  ;; universal argument is now `\C-u`.
+  (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
+  (define-key evil-visual-state-map (kbd "C-u") 'evil-scroll-up)
+
   (evil-leader/set-key
     ;; *b*uffers
     "bn" 'evil-next-buffer
