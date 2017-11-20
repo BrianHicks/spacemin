@@ -45,18 +45,28 @@
     "ws" 'evil-window-split)
   )
 
+;; toggle comments
+;; cmd-/ on a line or block
 (use-package evil-commentary
   :config (evil-commentary-mode 1))
 
+;; add a bunch more matching pairs like `<div></div>'
+;; https://github.com/redguardtoo/evil-matchit
 (use-package evil-matchit
   :config (global-evil-matchit-mode 1))
 
+;; swap pairs of regions. `gx' to start, `gX' to cancel.
+;; https://github.com/Dewdrops/evil-exchange
 (use-package evil-exchange
   :config (evil-exchange-install))
 
+;; start a search from `*' or the visual selection
+;; https://github.com/bling/evil-visualstar
 (use-package evil-visualstar
   :config (global-evil-visualstar-mode 1))
 
+;; use a key sequence instead of `ESC'
+;; https://github.com/syl20bnr/evil-escape
 (use-package evil-escape
   :config
   (evil-escape-mode 1)
