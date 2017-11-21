@@ -44,7 +44,9 @@
       (evil-local-set-key 'normal "v" 'neotree-enter-vertical-split)
       (evil-local-set-key 'normal "s" 'neotree-enter-horizontal-split)
       (evil-local-set-key 'normal (kbd "RET") 'neotree-enter)
-      )))
+      ))
+
+  (add-hook 'after-init-hook #'neotree-toggle))
 
 (use-package find-file-in-project)
 
