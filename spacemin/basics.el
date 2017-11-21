@@ -58,4 +58,7 @@
 
   (define-key evil-normal-state-map (kbd "TAB") 'origami-recursively-toggle-node))
 
+;; highlight the current line
+(hl-line-mode 1)
+
 ;;; basics.el ends here
