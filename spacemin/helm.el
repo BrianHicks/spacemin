@@ -11,10 +11,11 @@
   (helm-mode 1)
 
   (setq helm-M-x-fuzzy-match t
-	helm-buffers-fuzzy-matching t
-	helm-recentf-fuzzy-match t
-	helm-file-cache-fuzzy-match t
-	helm-window-prefer-horizontal-split t)
+        helm-buffers-fuzzy-matching t
+        helm-recentf-fuzzy-match t
+        helm-file-cache-fuzzy-match t
+        helm-window-prefer-horizontal-split t
+        helm-display-function 'pop-to-buffer)
 
   (evil-leader/set-key
     ;; commands

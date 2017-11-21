@@ -18,10 +18,6 @@
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize)))
 
-(use-package popwin
-  :config
-  (popwin-mode 1))
-
 (use-package smartparens
   :config
   (require 'smartparens-config)
@@ -60,5 +56,15 @@
 
 ;; highlight the current line
 (hl-line-mode 1)
+
+;; add shackle, with which we will define a bunch of custom rules for popup buffers.
+(use-package shackle
+  :init
+  (shackle-mode 1)
+
+  :config
+  (setq shackle-rules '(("\\`*helm.*?\\*\\'" :regexp t :align t :size 0.4)
+			(neotree-mode        :align left))
+	))
 
 ;;; basics.el ends here
