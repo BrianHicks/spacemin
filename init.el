@@ -48,6 +48,7 @@
 
 ;; languages
 (load "coffeescript")
+(load "csv")
 (load "elm")
 (load "graphviz")
 (load "haml")

@@ -6,6 +6,7 @@
  ("coffee-mode" . "86ab8aae8662e8eff54d3013010b9c693b16eac5")
  ("company-mode" . "098a90769ed47be1cfcebb83c2cad2e5e072bdff")
  ("company-statistics" . "e62157d43b2c874d2edbd547c3bdfb05d0a7ae5c")
+ ("csv-mode" . "5fb7759827029caed29523a1b0c3f9e28313762e")
  ("dash.el" . "91d8cb01e62bab0d6267d3d4dbcabd6da6fdea78")
  ("diminish.el" . "565a983a39d2e2cffab5df13b34f3b6116723208")
  ("elm-mode" . "6fa343ada4a74850840e21bbe787c14fe5a67155")
