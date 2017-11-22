@@ -67,4 +67,7 @@
 			(neotree-mode        :align left))
 	))
 
+;; hydra lets us make nice little GUIs for common tasks like file navigation
+(use-package hydra)
+
 ;;; basics.el ends here
