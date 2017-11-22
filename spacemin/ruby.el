@@ -23,19 +23,24 @@
 	enh-ruby-hanging-paren-indent-level 2
 	enh-ruby-indent-level 2)
 
+  (defhydra hydra-ruby-navigation (:foreign-keys nil
+                                   :hint "navigate")
+    "navigate ruby code"
+    ("n" enh-ruby-forward-sexp "forward sexp")
+    ("p" enh-ruby-backward-sexp "backward sexp")
+    ("b" enh-ruby-end-of-block "forward block")
+    ("B" enh-ruby-beginning-of-block "backward block")
+    ("d" enh-ruby-end-of-defun "forward defun")
+    ("D" enh-ruby-beginning-of-defun "backward defun")
+    ("q" nil "quit"))
+
   (evil-leader/set-key-for-mode 'enh-ruby-mode
     ;; *e*diting
     "meb" 'enh-ruby-toggle-block
     "mei" 'enh-ruby-indent-exp
 
     ;; *g*o
-    ;; TODO: these feel like they should be in a hydra
-    "mgu" 'enh-ruby-forward-sexp
-    "mgU" 'enh-ruby-backward-sexp
-    "mgb" 'enh-ruby-beginning-of-block
-    "mgB" 'enh-ruby-end-of-defun
-    "mgd" 'enh-ruby-beginning-of-defun
-    "mgD" 'enh-ruby-end-of-defun
+    "mg" 'hydra-ruby-navigation/body
 
     ;; *m*eta
     "mmR" 'erm-reset
@@ -44,6 +49,7 @@
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   ;; TODO: yard mode (https://github.com/pd/yard-mode.el)
   )
+
 
 (use-package rbenv
   :defer
