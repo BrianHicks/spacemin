@@ -27,6 +27,7 @@
 ;; which-key helps me remember random keybindings and rediscover
 ;; things I had lost.
 (use-package which-key
+  :delight
   :config
   (which-key-mode 1))
 
