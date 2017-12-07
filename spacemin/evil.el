@@ -68,6 +68,7 @@
 ;; use a key sequence instead of `ESC'
 ;; https://github.com/syl20bnr/evil-escape
 (use-package evil-escape
+  :delight ;; kinda cool that it puts the sequence in the modeline by default though.
   :config
   (evil-escape-mode 1)
   (setq-default evil-escape-key-sequence "fd"))
