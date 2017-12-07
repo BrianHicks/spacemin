@@ -69,5 +69,6 @@
 
 ;; hide some minor modes
 (delight 'auto-revert-mode nil "autorevert")
+(delight 'undo-tree-mode nil "undo-tree")
 
 ;;; basics.el ends here
