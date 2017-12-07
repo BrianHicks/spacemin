@@ -7,6 +7,7 @@
 ;;; Code:
 
 (use-package helm
+  :delight
   :config
   (helm-mode 1)
 
