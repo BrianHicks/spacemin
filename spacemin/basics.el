@@ -67,4 +67,7 @@
 ;; hydra lets us make nice little GUIs for common tasks like file navigation
 (use-package hydra)
 
+;; hide some minor modes
+(delight 'auto-revert-mode nil "autorevert")
+
 ;;; basics.el ends here
