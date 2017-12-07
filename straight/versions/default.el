@@ -8,6 +8,7 @@
  ("company-statistics" . "e62157d43b2c874d2edbd547c3bdfb05d0a7ae5c")
  ("csv-mode" . "5fb7759827029caed29523a1b0c3f9e28313762e")
  ("dash.el" . "91d8cb01e62bab0d6267d3d4dbcabd6da6fdea78")
+ ("delight" . "d2cc2fc00aa91f6f26d4bfd2dedbd022be449343")
  ("diminish.el" . "565a983a39d2e2cffab5df13b34f3b6116723208")
  ("elm-mode" . "6fa343ada4a74850840e21bbe787c14fe5a67155")
  ("emacs-async" . "424ecd8a28cd59fe7d2de3cb4b37a4224e34c123")

@@ -18,6 +18,7 @@
   (load bootstrap-file nil 'nomessage))
 
 (straight-use-package 'use-package)
+(straight-use-package 'delight)
 (setq use-package-always-ensure t)
 
 ;; set up some basic things (load paths, etc.) that we will use later.
