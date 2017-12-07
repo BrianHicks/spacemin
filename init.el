@@ -38,6 +38,9 @@
 (load "evil") ;; prerequisite for anything that uses leader keys
 (load "helm")
 (load "basics")
+
+;; everything here requires the first three
+(load "compilation")
 (load "completion")
 (load "display")
 (load "flycheck")
