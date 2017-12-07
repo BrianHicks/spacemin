@@ -4,7 +4,7 @@
 
   ;; workaround for https://github.com/bbatsov/projectile/issues/1183
   (setq projectile-mode-line
-	'(:eval (format " %s" (projectile-project-name))))
+	'(:eval (format " %s " (projectile-project-name))))
 
   (evil-leader/set-key
    "p!" 'projectile-run-shell-command-in-root
