@@ -44,7 +44,6 @@
  ("hindent" . "578d1256e466eb8bf40fd7e441172eb12e878637")
  ("hl-todo" . "961db3116f1396dc4f903e3a59824a40e0bbb6a2")
  ("hydra" . "e228432bb64385f67f20aa525bce56ae4e8419eb")
- ("idle-highlight-mode" . "c466f2a9e291f9da1167dc879577b2e1a7880482")
  ("intero" . "5697c86fde2b6131629e8d1c69f9b2363dadc7ae")
  ("js2-mode" . "eba9797444b7549c1ed210f8fa59903917df151c")
  ("json-mode" . "32d5a9b3319e6797c4d52e7d61a65e5638102ef4")

@@ -23,11 +23,6 @@
   (require 'smartparens-config)
   (smartparens-global-mode 1))
 
-;; this is a trial... I'm not sure how I like this.
-(use-package idle-highlight-mode
-  :config
-  (idle-highlight-mode 1))
-
 ;; which-key helps me remember random keybindings and rediscover
 ;; things I had lost.
 (use-package which-key
