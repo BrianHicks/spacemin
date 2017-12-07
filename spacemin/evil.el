@@ -48,6 +48,7 @@
 ;; toggle comments
 ;; cmd-/ on a line or block
 (use-package evil-commentary
+  :delight
   :config (evil-commentary-mode 1))
 
 ;; add a bunch more matching pairs like `<div></div>'
