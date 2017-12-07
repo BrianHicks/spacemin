@@ -19,6 +19,7 @@
     (exec-path-from-shell-initialize)))
 
 (use-package smartparens
+  :delight
   :config
   (require 'smartparens-config)
   (smartparens-global-mode 1))
