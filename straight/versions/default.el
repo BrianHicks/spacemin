@@ -34,6 +34,7 @@
  ("f.el" . "fabdbd4a4a8caf8684f0fa656f457a03c5dfa4de")
  ("find-file-in-project" . "a3ecd28182ba3102fefdc080e807866464153edc")
  ("flycheck" . "0d982b2860927a03e4cdf663750bd3b4c128918a")
+ ("flycheck-color-mode-line" . "cc474804d4e8088a627485faaf4217a5781aec7d")
  ("flycheck-elm" . "b401873ebd2176190a0a6fb4d61c2cca97d3b9fb")
  ("flycheck-status-emoji" . "840e6469c5a83a2438c7e8c5833e3d22b8480f8a")
  ("font-lock-plus" . "238649549c531c84ad627a095a6eef489f52d109")
