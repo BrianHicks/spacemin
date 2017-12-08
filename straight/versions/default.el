@@ -35,6 +35,7 @@
  ("find-file-in-project" . "a3ecd28182ba3102fefdc080e807866464153edc")
  ("flycheck" . "0d982b2860927a03e4cdf663750bd3b4c128918a")
  ("flycheck-elm" . "b401873ebd2176190a0a6fb4d61c2cca97d3b9fb")
+ ("flycheck-status-emoji" . "840e6469c5a83a2438c7e8c5833e3d22b8480f8a")
  ("font-lock-plus" . "238649549c531c84ad627a095a6eef489f52d109")
  ("goto-chg" . "81fca94d2592cf32bab451c39a9cd2d9b03fbd6b")
  ("graphviz-dot-mode" . "c456a2b65c734089e6c44e87209a5a432a741b1a")
