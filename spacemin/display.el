@@ -67,8 +67,8 @@
 
 ;; fonts and ligatures
 (when (window-system)
-  (set-frame-font "Fira Code")
-  (set-face-attribute 'default nil :height 130))
+  (set-face-attribute 'default nil :height 130 :family "Fira Code")
+  (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend))
 
 ;; highlight todos in code.  This package should support:
 ;;
