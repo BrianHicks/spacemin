@@ -61,6 +61,7 @@
 (load "lang-json")
 (load "markdown")
 (load "ruby")
+(load "toml")
 (load "yaml")
 
 ;;; init.el ends here

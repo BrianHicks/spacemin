@@ -69,6 +69,7 @@
  ("swiper" . "61764da37bf499bbfdd6ba6a5fae9f69862f3dcf")
  ("telephone-line" . "c17c71ae18ad54b8c3d1eddbe78ed82816d06186")
  ("tern" . "5c395b5d696aad5a185724f56c74a7f83349f3bd")
+ ("toml-mode.el" . "f6c61817b00f9c4a3cab1bae9c309e0fc45cdd06")
  ("undo-tree" . "e9a9102f515acd7523158f20e83f300600374989")
  ("use-package" . "82d15961a0f2dc7842a98030d6daee0061ef63dc")
  ("with-editor" . "ee39f232f2daf997498a4030d104c35ae397f457")
