@@ -61,6 +61,7 @@
 (load "lang-json")
 (load "markdown")
 (load "ruby")
+(load "rust")
 (load "toml")
 (load "yaml")
 
