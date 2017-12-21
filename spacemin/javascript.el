@@ -16,10 +16,16 @@
   :config
   (add-hook 'js2-mode-hook 'tern-mode)
 
-  (evil-leader/set-key-for-mode 'js-mode
-    "mgg" 'tern-find-definition
-    "mht" 'tern-get-type
-    "mhd" 'tern-get-docs
-    "mer" 'tern-rename-variable))
+  (localleader :keymaps 'term-mode-map
+	       "g" '(:ignore t :which-key "go")
+               "gg" 'tern-find-definition
+
+	       "h" '(:ignore t :which-key "help")
+               "ht" 'tern-get-type
+               "hd" 'tern-get-docs
+
+	       "e" '(:ignore t :which-key "edit")
+               "er" 'tern-rename-variable)
+  )
 
 ;;; javascript.el ends here

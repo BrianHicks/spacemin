@@ -9,7 +9,9 @@
 
 (use-package evil-magit
   :config
-  (evil-leader/set-key "gs" 'magit-status))
+  (globalleader
+   "g" '(:ignore t :which-key "git")
+   "gs" 'magit-status))
 
 (use-package magit-gh-pulls
   :init

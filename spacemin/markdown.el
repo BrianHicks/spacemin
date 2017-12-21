@@ -10,7 +10,8 @@
 
 (use-package markdown-toc
     :config
-    (evil-leader/set-key-for-mode 'markdown-mode
-      "met" 'markdown-toc-generate-or-refresh-toc))
+    (localleader :keymaps 'markdown-mode-map
+		 "e" '(:ignore t :which-key "edit")
+		 "et" 'markdown-toc-generate-or-refresh-toc))
 
 ;;; markdown.el ends here

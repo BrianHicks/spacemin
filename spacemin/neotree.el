@@ -14,10 +14,10 @@
   (setq neo-window-width 30)
 
   ;; keybindings to get into neotree
-  (evil-leader/set-key
-    "ft" 'neotree-toggle
-    "ff" 'neotree-find
-    "fp" 'neotree-project-dir)
+  (globalleader
+   "ft" 'neotree-toggle
+   "ff" 'neotree-find
+   "fp" 'neotree-project-dir)
 
   (evil-global-set-key 'normal "-" 'neotree-find)
 

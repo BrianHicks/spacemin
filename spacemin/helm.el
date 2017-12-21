@@ -18,16 +18,14 @@
         helm-window-prefer-horizontal-split t
         helm-display-function 'pop-to-buffer)
 
-  (evil-leader/set-key
-    ;; commands
-    "<SPC>" 'helm-M-x
+  (globalleader
+   "<SPC>" 'helm-M-x
 
-    ;; *b*uffers
-    "bb" 'helm-mini
+   "bb" 'helm-mini
 
-    ;; *y*anking
-    "yp" 'helm-show-kill-ring
-    ))
+   "y" '(:ignore t :which-key "yanking")
+   "yp" 'helm-show-kill-ring)
+  )
 
 (use-package helm-projectile
   :config

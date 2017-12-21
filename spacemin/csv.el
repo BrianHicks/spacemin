@@ -8,12 +8,14 @@
 (use-package csv-mode
   :mode "\\.\\(c\\|t\\)sv\\'"
   :config
-  (evil-leader/set-key-for-mode 'csv-mode
-    "met" 'csv-transpose
-    "mek" 'csv-kill-fields
-    "mes" 'csv-sort-fields
-    "meS" 'csv-reverse-region
-    "mef" 'csv-align-fields
-    "meF" 'csv-unalign-fields))
+  (localleader :keymaps 'csv-mode-map
+               "e" '(:ignore t :which-key "edit")
+               "et" 'csv-transpose
+               "mek" 'csv-kill-fields
+               "mes" 'csv-sort-fields
+               "meS" 'csv-reverse-region
+               "mef" 'csv-align-fields
+               "meF" 'csv-unalign-fields)
+  )
 
 ;;; csv.el ends here

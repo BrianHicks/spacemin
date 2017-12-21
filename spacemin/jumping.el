@@ -9,12 +9,10 @@
 
 (use-package avy
   :config
-  (evil-leader/set-key
-    "j" 'avy-goto-word-1))
+  (globalleader "j" 'avy-goto-word-1))
 
 (use-package ace-window
   :config
-  (evil-leader/set-key
-    "J" 'ace-window))
+  (globalleader "J" 'ace-window))
 
 ;;; jumping.el ends here

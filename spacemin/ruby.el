@@ -35,16 +35,15 @@
     ("q" nil "quit"))
 
   (evil-leader/set-key-for-mode 'enh-ruby-mode
-    ;; *e*diting
-    "meb" 'enh-ruby-toggle-block
-    "mei" 'enh-ruby-indent-exp
+    "e" '(:ignore t :which-key "edit")
+    "eb" 'enh-ruby-toggle-block
+    "ei" 'enh-ruby-indent-exp
 
-    ;; *g*o
-    "mg" 'hydra-ruby-navigation/body
+    "g" 'hydra-ruby-navigation/body
 
-    ;; *m*eta
-    "mmR" 'erm-reset
-    "mmF" 'enh-ruby-fontify-buffer)
+    "m" '(:ignore t :which-key "meta")
+    "mR" 'erm-reset
+    "mF" 'enh-ruby-fontify-buffer)
 
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   ;; TODO: yard mode (https://github.com/pd/yard-mode.el)

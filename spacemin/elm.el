@@ -16,11 +16,14 @@
 
   (add-to-list 'company-backends 'company-elm)
 
-  (evil-leader/set-key-for-mode 'elm-mode
-    "mcc" 'elm-compile-buffer
-    "mea" 'elm-compile-add-annotations
-    "meI" 'elm-compile-clean-imports
-    "mef" 'elm-mode-format-buffer)
+  (localleader :keymaps 'elm-mode-keymap
+    "c" '(:ignore t :which-key "compile")
+    "cc" 'elm-compile-buffer
+
+    "e" '(:ignore t :which-key "edit")
+    "ea" 'elm-compile-add-annotations
+    "eI" 'elm-compile-clean-imports
+    "ef" 'elm-mode-format-buffer)
 
   (with-eval-after-load 'flycheck
     '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup)))

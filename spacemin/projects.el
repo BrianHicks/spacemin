@@ -6,7 +6,8 @@
   (setq projectile-mode-line
 	'(:eval (format " %s " (projectile-project-name))))
 
-  (evil-leader/set-key
+  (globalleader
+   "p" '(:ignore t :which-key "projectile")
    "p!" 'projectile-run-shell-command-in-root
    "p&" 'projectile-run-async-shell-command-in-root
    "pE" 'projectile-edit-dir-locals
@@ -34,6 +35,7 @@
    "pq" 'projectile-switch-open-project
    "pr" 'projectile-replace
    "pu" 'projectile-run-project
-   "ps" 'projectile-ag))
+   "ps" 'projectile-ag
+   ))
 
 (use-package ag)

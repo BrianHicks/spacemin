@@ -10,40 +10,44 @@
   :config
   (global-evil-surround-mode 1))
 
-;; TODO: this may be in the wrong place and will not get scratch and messages.
-(use-package evil-leader
+(use-package general
   :init
-  (setq evil-leader/leader "<SPC>")
-
+  (general-evil-setup)
   :config
-  (global-evil-leader-mode 1)
+  (general-create-definer globalleader
+			  :keymaps '(evil-normal-state-map evil-visual-state-map)
+			  :prefix "<SPC>")
 
-  ;; evil defines a `\` key for escaping to emacs keys, so the
-  ;; universal argument is now `\C-u`.
-  (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
-  (define-key evil-visual-state-map (kbd "C-u") 'evil-scroll-up)
+  (general-create-definer localleader :prefix ",")
 
-  (evil-leader/set-key
-    ;; *b*uffers
-    "bn" 'evil-next-buffer
-    "bp" 'evil-prev-buffer
+  (general-define-key
+   "j" 'evil-next-visual-line
+   "k" 'evil-previous-visual-line)
 
-    ;; *c*ompilation
-    "cc" 'compile
-    "cr" 'recompile
-    "cd" 'popwin:close-popup-window
+  (general-define-key :prefix "g"
+		      "j" 'evil-next-line
+		      "k" 'evil-previous-line)
 
-    ;; *f*iles
-    "fs" 'save-buffer
+  (globalleader
+   "b" '(:ignore t :which-key "buffers")
+   "bn" 'evil-next-buffer
+   "bp" 'evil-previous-buffer
 
-    ;; *w*indowing
-    "wh" 'evil-window-left
-    "wj" 'evil-window-down
-    "wk" 'evil-window-up
-    "wl" 'evil-window-right
-    "wv" 'evil-window-vsplit
-    "ws" 'evil-window-split)
-  )
+   "c" '(:ignore t :which-key "compilation")
+   "cc" 'compile
+   "cr" 'recompile
+
+   "f" '(:ignore t :which-key "files")
+   "fs" 'save-buffer
+
+   "w" '(:ignore t :which-key "windows")
+   "wh" 'evil-window-left
+   "wj" 'evil-window-down
+   "wk" 'evil-window-up
+   "wl" 'evil-window-right
+   "wv" 'evil-window-vsplit
+   "ws" 'evil-window-split
+  ))
 
 ;; toggle comments
 ;; cmd-/ on a line or block

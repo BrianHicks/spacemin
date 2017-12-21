@@ -9,23 +9,28 @@
 (use-package haskell-mode
   :mode "\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'"
   :config
-  (evil-leader/set-key-for-mode 'haskell-mode
-    "mgi" 'haskell-navigate-imports
-    "mei" 'haskell-mode-format-imports
-    ))
+  (localleader :keymaps 'haskell-mode-map
+               "g" '(:ignore t :which-key "go")
+               "gi" 'haskell-navigate-imports
+
+               "e" '(:ignore t :which-key "edit")
+               "ei" 'haskell-mode-format-imports)
+  )
 
 (use-package intero
-		:defer
+  :defer
   :config
   (add-hook 'haskell-mode-hook 'intero-mode))
 
 (use-package hindent
-		:defer
+  :defer
   :config
   (setq hindent-reformat-buffer-on-save t)
 
-  (evil-leader/set-key-for-mode 'haskell-mode
-    "mff" 'hindent-reformat-buffer
-    "mfd" 'hindent-reformat-decl))
+  (localleader :keymaps 'haskell-mode-map
+               "f" (:ignore t :which-key "format")
+               "ff" 'hindent-reformat-buffer
+               "fd" 'hindent-reformat-decl)
+  )
 
 ;;; haskell.el ends here

@@ -8,16 +8,17 @@
 (use-package json-mode
   :mode "\\.json\\'"
   :config
-  (evil-leader/set-key-for-mode 'json-mode
-    ;; *e*diting
-    "mef" 'json-mode-beautify
-    "met" 'json-toggle-boolean
-    "meD" 'json-nullify-sexp
+  (localleader :keymaps 'json-mode-map
+    "e" '(:ignore t :which-key "edit")
+    "ef" 'json-mode-beautify
+    "et" 'json-toggle-boolean
+    "eD" 'json-nullify-sexp
     ; TODO: these two should probably be a hydra
-    "men" 'json-increment-number-at-point
-    "mep" 'json-decrement-number-at-point
+    "en" 'json-increment-number-at-point
+    "ep" 'json-decrement-number-at-point
 
-    ;; *y*anking
-    "myp" 'json-mode-kill-path))
+    "y" '(:ignore t :which-key "yanking")
+    "yp" 'json-mode-kill-path)
+  )
 
 ;;; json.el ends here
