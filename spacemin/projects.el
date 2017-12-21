@@ -38,4 +38,9 @@
    "ps" 'projectile-ag
    ))
 
-(use-package ag)
+(use-package ag
+  :config
+  (globalleader
+   "s" '(:ignore t :which-key "search")
+   "sp" 'ag-project
+   "sf" 'ag-files))
