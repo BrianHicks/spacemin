@@ -69,4 +69,7 @@
 (delight 'auto-revert-mode nil "autorevert")
 (delight 'undo-tree-mode nil "undo-tree")
 
+;; _ should be a word character
+(modify-syntax-entry ?_ "w")
+
 ;;; basics.el ends here
