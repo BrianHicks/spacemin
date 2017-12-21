@@ -20,14 +20,6 @@
 
   (general-create-definer localleader :prefix ",")
 
-  (general-define-key :keymaps '(evil-normal-state-map evil-visual-state-map)
-   "j" 'evil-next-visual-line
-   "k" 'evil-previous-visual-line)
-
-  (general-define-key :prefix "g"
-		      "j" 'evil-next-line
-		      "k" 'evil-previous-line)
-
   (globalleader
    "b" '(:ignore t :which-key "buffers")
    "bn" 'evil-next-buffer
@@ -47,7 +39,7 @@
    "wl" 'evil-window-right
    "wv" 'evil-window-vsplit
    "ws" 'evil-window-split
-  ))
+   ))
 
 ;; toggle comments
 ;; cmd-/ on a line or block
