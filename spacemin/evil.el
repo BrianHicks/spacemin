@@ -20,7 +20,7 @@
 
   (general-create-definer localleader :prefix ",")
 
-  (general-define-key
+  (general-define-key :keymaps '(evil-normal-state-map evil-visual-state-map)
    "j" 'evil-next-visual-line
    "k" 'evil-previous-visual-line)
 
