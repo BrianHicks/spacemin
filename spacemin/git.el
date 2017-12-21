@@ -11,10 +11,13 @@
   :config
   (evil-leader/set-key "gs" 'magit-status))
 
+(use-package magit-gh-pulls
+  :init
+  (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
+
 ;; TODO:
 ;;
 ;; - github integration
-;; - shortcut to jump to a PR for a branch
 ;; - shortcut to jump to a Jenkins build for a branch
 
 ;;; git.el ends here
