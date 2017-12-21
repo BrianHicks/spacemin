@@ -50,6 +50,9 @@
   ;; TODO: yard mode (https://github.com/pd/yard-mode.el)
   )
 
+(use-package rspec-mode
+  ;; TODO: keybindings
+  )
 
 (use-package rbenv
   :defer

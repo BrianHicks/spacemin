@@ -68,6 +68,7 @@
  ("prettier-emacs" . "6cc79cc933968f9ecae988ed79398d9dc97790e2")
  ("projectile" . "48457fb32b7ff31e5dd30d38e576b8e6c8d3ceba")
  ("rbenv.el" . "2ea1a5bdc1266caef1dd77700f2c8f42429b03f1")
+ ("rspec-mode" . "94a04f148922852b591957b0b3b22de5c4237448")
  ("rust-mode" . "27911c88b0d32b66429d61bb056ecf1b10e66598")
  ("s.el" . "5e9a6857d42015c67681616aa3519f599f97b8d8")
  ("shackle" . "0cee957bc0bfbdee5ea3f3e430e94cdcd87ed0c3")
