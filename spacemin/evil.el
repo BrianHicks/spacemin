@@ -15,10 +15,12 @@
   (general-evil-setup)
   :config
   (general-create-definer globalleader
-			  :keymaps '(evil-normal-state-map evil-visual-state-map)
+			  :states '(normal visual)
 			  :prefix "<SPC>")
 
-  (general-create-definer localleader :prefix ",")
+  (general-create-definer localleader
+			  :states '(normal visual)
+			  :prefix ",")
 
   (globalleader
    "b" '(:ignore t :which-key "buffers")
