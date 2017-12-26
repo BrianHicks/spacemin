@@ -34,7 +34,7 @@
     ("D" enh-ruby-beginning-of-defun "backward defun")
     ("q" nil "quit"))
 
-  (evil-leader/set-key-for-mode 'enh-ruby-mode
+  (localleader :keymaps 'ruby-mode-map
     "e" '(:ignore t :which-key "edit")
     "eb" 'enh-ruby-toggle-block
     "ei" 'enh-ruby-indent-exp
