@@ -62,6 +62,14 @@
 			(neotree-mode        :align left))
 	))
 
+;; emojify things like :smile: and :wave:
+(use-package emojify
+  :init
+  (add-hook 'after-init-hook #'global-emojify-mode)
+  (globalleader
+   "i" '(:ignore t :which-key "inserting")
+   "ie" 'emojify-insert-emoji))
+
 ;; hydra lets us make nice little GUIs for common tasks like file navigation
 (use-package hydra)
 

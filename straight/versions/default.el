@@ -13,6 +13,7 @@
  ("elm-mode" . "6fa343ada4a74850840e21bbe787c14fe5a67155")
  ("emacs-async" . "424ecd8a28cd59fe7d2de3cb4b37a4224e34c123")
  ("emacs-doom-themes" . "d91f72b83ec22f1620372574582e163f921e6796")
+ ("emacs-emojify" . "001c3adcc521223f6b53a2243635528b2cb7f7e8")
  ("emacs-helm-ag" . "2fc02c4ead29bf0db06fd70740cc7c364cb650ac")
  ("emacs-memoize" . "636defefa9168f90bce6fc27431352ac7d01a890")
  ("emacs-neotree" . "5e1271655170f4cdc6849258e383c548a4e6e3d0")
