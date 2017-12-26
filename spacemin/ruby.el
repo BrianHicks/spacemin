@@ -46,7 +46,6 @@
     "mF" 'enh-ruby-fontify-buffer)
 
   ;; TODO: robe mode (https://github.com/dgutov/robe)
-  ;; TODO: yard mode (https://github.com/pd/yard-mode.el)
   )
 
 (use-package rspec-mode
@@ -57,5 +56,9 @@
   :defer
   :config
   (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
+
+(use-package yard-mode
+  :config
+  (add-hook 'ruby-mode-hook 'yard-mode))
 
 ;;; ruby.el ends here

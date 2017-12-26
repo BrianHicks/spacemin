@@ -81,5 +81,6 @@
  ("undo-tree" . "e9a9102f515acd7523158f20e83f300600374989")
  ("use-package" . "82d15961a0f2dc7842a98030d6daee0061ef63dc")
  ("with-editor" . "ee39f232f2daf997498a4030d104c35ae397f457")
- ("yaml-mode" . "28c34033194130d452d5c958b5241c88d42ca02b"))
+ ("yaml-mode" . "28c34033194130d452d5c958b5241c88d42ca02b")
+ ("yard-mode.el" . "ba74a47463b0320ae152bd42a7dd7aeecd7b5748"))
 :venus
