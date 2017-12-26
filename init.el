@@ -57,6 +57,7 @@
 (load "graphviz")
 (load "haml")
 (load "haskell")
+(load "idris")
 (load "javascript")
 (load "lang-json")
 (load "markdown")
