@@ -65,6 +65,7 @@
 ;; emojify things like :smile: and :wave:
 (use-package emojify
   :init
+  ;; TODO: these mess up the line height. I'd like them a little smaller, please!
   (add-hook 'after-init-hook #'global-emojify-mode)
   (globalleader
    "i" '(:ignore t :which-key "inserting")
