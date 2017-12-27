@@ -25,7 +25,7 @@
   (globalleader
    "b" '(:ignore t :which-key "buffers")
    "bn" 'evil-next-buffer
-   "bp" 'evil-previous-buffer
+   "bp" 'evil-prev-buffer
 
    "c" '(:ignore t :which-key "compilation")
    "cc" 'compile
