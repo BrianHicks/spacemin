@@ -43,6 +43,7 @@
      ,@body))
 
 ;; base packages. These set up the basic editor functionality I expect.
+(local "setup" keys)
 (local "setup" vim)
 
 ;; language packages

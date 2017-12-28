@@ -7,6 +7,7 @@
  ("evil-matchit" . "ceb13ad1b34eb0debe2472c024841bdddce9e593")
  ("evil-surround" . "6e1da767ec7f8e6dca41b2a97edd7c1be9752ffa")
  ("evil-visualstar" . "06c053d8f7381f91c53311b1234872ca96ced752")
+ ("general.el" . "846ca8c4727e919bc5440a9e787e1d14b8b5aaa0")
  ("goto-chg" . "81fca94d2592cf32bab451c39a9cd2d9b03fbd6b")
  ("melpa" . "3945f7eba7d5f248cace11a7946262ac2500b01a")
  ("straight.el" . "0e9d8af882972dd8ae7755595e5b064beefbbe41")
