@@ -6,7 +6,6 @@
 
 ;;; Code:
 (use-package enh-ruby-mode
-  :mode ("\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'" . enh-ruby-mode)
   :interpreter ("ruby" . enh-ruby-mode)
   :config
   (setq enh-ruby-add-encoding-comment-on-save nil
@@ -34,16 +33,19 @@
     ("D" enh-ruby-beginning-of-defun "backward defun")
     ("q" nil "quit"))
 
-  (localleader :keymaps 'ruby-mode-map
-    "e" '(:ignore t :which-key "edit")
-    "eb" 'enh-ruby-toggle-block
-    "ei" 'enh-ruby-indent-exp
+  ;; TODO: another! :(
+  (general-define-key :states '(normal visual)
+		      :keymaps 'ruby-mode-map
+		      :prefix ","
+		      "e" '(:ignore t :which-key "edit")
+		      "eb" 'enh-ruby-toggle-block
+		      "ei" 'enh-ruby-indent-exp
 
-    "g" 'hydra-ruby-navigation/body
+		      "g" 'hydra-ruby-navigation/body
 
-    "m" '(:ignore t :which-key "meta")
-    "mR" 'erm-reset
-    "mF" 'enh-ruby-fontify-buffer)
+		      "m" '(:ignore t :which-key "meta")
+		      "mR" 'erm-reset
+		      "mF" 'enh-ruby-fontify-buffer)
 
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   )
@@ -60,5 +62,7 @@
 (use-package yard-mode
   :config
   (add-hook 'ruby-mode-hook 'yard-mode))
+
+(provide 'ruby)
 
 ;;; ruby.el ends here
