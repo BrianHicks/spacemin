@@ -65,7 +65,7 @@
 (local "lang" csv)
 (local "lang" elm)
 (local "lang" graphviz)
-(local "lang" haml         :mode "\\.haml\\'")
+(local "lang" haml)
 (local "lang" haskell      :mode "\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'")
 (local "lang" idris        :mode "\\.idr\\'")
 (local "lang" javascript   :mode "\\.js\\'")
