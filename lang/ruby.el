@@ -9,7 +9,7 @@
   :mode "\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'"
   :interpreter ("ruby" . enh-ruby-mode)
   :general
-  (general-nvmap :keymaps 'ruby-mode-map
+  (general-nvmap :keymaps 'enh-ruby-mode-map
 		 :prefix ","
 		 "e" '(:ignore t :which-key "edit")
 		 "eb" 'enh-ruby-toggle-block
