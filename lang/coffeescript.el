@@ -5,7 +5,8 @@
 
 ;;; Code:
 
-(use-package coffee-mode
-  :mode "\\.coffee\'")
+(use-package coffee-mode)
+
+(provide 'coffeescript)
 
 ;;; coffeescript.el ends here

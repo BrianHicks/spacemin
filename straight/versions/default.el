@@ -3,6 +3,7 @@
  ("all-the-icons-dired" . "980b7747d6c4a7992a1ec56afad908956db0a519")
  ("all-the-icons.el" . "b93707e3a3a7a4968b3e212b890edfe265dcd57d")
  ("avy" . "6459f7f12aef1e71ff5e265b1edb414fd81123e6")
+ ("coffee-mode" . "86ab8aae8662e8eff54d3013010b9c693b16eac5")
  ("company-mode" . "a57441832674f88ba1c166678ad024c1e6665b5a")
  ("company-statistics" . "e62157d43b2c874d2edbd547c3bdfb05d0a7ae5c")
  ("dash.el" . "91d8cb01e62bab0d6267d3d4dbcabd6da6fdea78")
