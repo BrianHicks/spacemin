@@ -5,7 +5,8 @@
 
 ;;; Code:
 
-(use-package toml-mode
-  :mode "/\\(.+\\.toml\\|Cargo.lock\\|.cargo/config\\)\\'")
+(use-package toml-mode)
+
+(provide 'toml)
 
 ;;; toml.el ends here
