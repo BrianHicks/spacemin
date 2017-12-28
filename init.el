@@ -43,8 +43,10 @@
      ,@body))
 
 ;; base packages. These set up the basic editor functionality I expect.
-(local "setup" keys)
-(local "setup" vim)
+(local "setup" keys) ;; needs to be first to register :bind-prefix and :bind-prefix-local
+
+(local "setup" git)
 (local "setup" projects)
+(local "setup" vim)
 
 ;; language packages

@@ -1,25 +1,25 @@
-;;; magit --- the best frontend for git in emacs
+;;; git --- vcs!
 
 ;;; Commentary:
-;;; omg it's so good I love it
 
 ;;; Code:
 
-(use-package magit)
-
-(use-package evil-magit
-  :config
-  (globalleader
-   "g" '(:ignore t :which-key "git")
+(use-package magit
+  :bind-prefix
+  ("g" '(:ignore t :which-key "git")
    "gs" 'magit-status))
 
+(use-package evil-magit)
+
 (use-package magit-gh-pulls
-  :init
+  :config
   (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
 ;; TODO:
 ;;
 ;; - github integration
 ;; - shortcut to jump to a Jenkins build for a branch
+
+(provide 'git)
 
 ;;; git.el ends here
