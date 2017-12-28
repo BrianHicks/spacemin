@@ -11,25 +11,26 @@
   :init
   (evil-mode 1)
 
-  :bind-leader
-  ("b" '(:ignore t :wk "buffers")
-   "bn" 'evil-next-buffer
-   "bp" 'evil-prev-buffer
+  :general
+  (general-nmap :prefix "SPC"
+		"b" '(:ignore t :wk "buffers")
+		"bn" 'evil-next-buffer
+		"bp" 'evil-prev-buffer
 
-   "c" '(:ignore t :which-key "compilation")
-   "cc" 'compile
-   "cr" 'recompile
+		"c" '(:ignore t :which-key "compilation")
+		"cc" 'compile
+		"cr" 'recompile
 
-   "f" '(:ignore t :which-key "files")
-   "fs" 'save-buffer
+		"f" '(:ignore t :which-key "files")
+		"fs" 'save-buffer
 
-   "w" '(:ignore t :which-key "windows")
-   "wh" 'evil-window-left
-   "wj" 'evil-window-down
-   "wk" 'evil-window-up
-   "wl" 'evil-window-right
-   "wv" 'evil-window-vsplit
-   "ws" 'evil-window-split)
+		"w" '(:ignore t :which-key "windows")
+		"wh" 'evil-window-left
+		"wj" 'evil-window-down
+		"wk" 'evil-window-up
+		"wl" 'evil-window-right
+		"wv" 'evil-window-vsplit
+		"ws" 'evil-window-split)
 
   :config
   (with-eval-after-load 'evil-maps
