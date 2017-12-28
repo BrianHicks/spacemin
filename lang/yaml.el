@@ -6,7 +6,8 @@
 
 ;;; Code:
 
-(use-package yaml-mode
-  :mode "\\.ya?ml\\'")
+(use-package yaml-mode)
+
+(provide 'yaml)
 
 ;;; yaml.el ends here

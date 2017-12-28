@@ -85,5 +85,6 @@
  ("undo-tree" . "e9a9102f515acd7523158f20e83f300600374989")
  ("use-package" . "5a50f6703140992723a434b9a733644bfab15306")
  ("with-editor" . "05338d893f3879391d7283324364b472e3f4f4d1")
+ ("yaml-mode" . "28c34033194130d452d5c958b5241c88d42ca02b")
  ("yard-mode.el" . "ba74a47463b0320ae152bd42a7dd7aeecd7b5748"))
 :jupiter
