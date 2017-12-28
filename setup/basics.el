@@ -26,7 +26,7 @@
 ;; things I had lost.
 (use-package which-key
   :delight
-  :config
+  :init
   (which-key-mode 1))
 
 ;; backup files somewhere outside of where project file watchers will
