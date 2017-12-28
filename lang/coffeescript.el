@@ -5,7 +5,8 @@
 
 ;;; Code:
 
-(use-package coffee-mode)
+(use-package coffee-mode
+  :mode "\\.coffee\\'")
 
 (provide 'coffeescript)
 

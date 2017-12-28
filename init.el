@@ -61,7 +61,7 @@
 (local "setup" projects)
 
 ;; language packages
-(local "lang" coffeescript :mode "\\.coffee\\'")
+(local "lang" coffeescript)
 (local "lang" csv          :mode "\\.\\(c\\|t\\)sv\\'")
 (local "lang" elm          :mode "\\.elm\\'")
 (local "lang" graphviz     :mode "\\.dot\\'")
