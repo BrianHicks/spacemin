@@ -69,7 +69,7 @@
 (local "lang" idris        :mode "\\.idr\\'")
 (local "lang" javascript   :mode "\\.js\\'")
 (local "lang" lang-json    :mode "\\.json\\'")
-(local "lang" markdown     :mode "\\.md\\'")
+(local "lang" markdown)
 (local "lang" ruby         :mode "\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'")
 (local "lang" rust         :mode "\\.rs\\'")
 (local "lang" toml         :mode "/\\(.+\\.toml\\|Cargo.lock\\|.cargo/config\\)\\'")

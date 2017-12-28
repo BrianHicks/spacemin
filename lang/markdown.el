@@ -5,16 +5,15 @@
 
 ;;; Code:
 
-(use-package markdown-mode)
+(use-package markdown-mode
+  :mode "\\.md\\'")
 
 (use-package markdown-toc
-    :config
-    ;; TODO: another! :(
-    (general-define-key :states '(normal visual)
-			:keymaps 'markdown-mode-map
-			:prefix ","
-			"e" '(:ignore t :which-key "edit")
-			"et" 'markdown-toc-generate-or-refresh-toc))
+  :general
+  (general-nvmap :maps 'markdown-mode-map
+		 :prefix ","
+		 "e" '(:ignore t :wk "edit")
+		 "et" 'markdown-toc-generate-or-refresh-toc))
 
 (provide 'markdown)
 
