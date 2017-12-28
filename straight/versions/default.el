@@ -23,6 +23,7 @@
  ("epkgs" . "521c58ce707572233abb238c6a8784dd37b23af7")
  ("epl" . "83797835f729f39b80acba4c7e83d73a2e410e26")
  ("evil" . "a6d7b32f6d606dedc2c550615d8cf1c43ad8f6a8")
+ ("evil-collection" . "78e0797d152c7a46783ce8a12f17b0ed4f549635")
  ("evil-commentary" . "395f91014b69844b81660c155f42eb9b1b3d199d")
  ("evil-escape" . "25920fb2f4ef48998eecea433c04096f8d124cfe")
  ("evil-exchange" . "47691537815150715e64e6f6ec79be7746c96120")
