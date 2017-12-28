@@ -7,9 +7,10 @@
 ;;; Code:
 
 (use-package haml-mode
-  :mode "\\.haml\\'"
   :config
   (add-hook 'haml-mode-hook
 	    (setq indent-tabs-mode nil)))
+
+(provide 'haml)
 
 ;;; haml.el ends here
