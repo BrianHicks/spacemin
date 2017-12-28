@@ -6,9 +6,10 @@
 
 ;; all the icons!
 (use-package all-the-icons
-  :bind-leader
-  ("i" '(:ignore t :wk "inserting")
-   "ii" 'all-the-icons-insert))
+  :general
+  (general-nmap :prefix "SPC"
+		"i" '(:ignore t :wk "inserting")
+		"ii" 'all-the-icons-insert))
 
 (use-package all-the-icons-dired
   :config
