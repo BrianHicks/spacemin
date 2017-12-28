@@ -59,17 +59,17 @@
 
   :config
   (setq shackle-rules '(("\\`*helm.*?\\*\\'" :regexp t :align t :size 0.4)
-			(neotree-mode        :align left))
-	))
+			(neotree-mode        :align left))))
 
 ;; emojify things like :smile: and :wave:
 (use-package emojify
+  :bind-prefix
+  ("i" '(:ignore t :which-key "inserting")
+   "ie" 'emojify-insert-emoji)
+
   :init
   ;; TODO: these mess up the line height. I'd like them a little smaller, please!
-  (add-hook 'after-init-hook #'global-emojify-mode)
-  (globalleader
-   "i" '(:ignore t :which-key "inserting")
-   "ie" 'emojify-insert-emoji))
+  (add-hook 'after-init-hook #'global-emojify-mode))
 
 ;; hydra lets us make nice little GUIs for common tasks like file navigation
 (use-package hydra)
@@ -80,5 +80,7 @@
 
 ;; _ should be a word character
 (modify-syntax-entry ?_ "w")
+
+(provide 'basics)
 
 ;;; basics.el ends here
