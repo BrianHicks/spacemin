@@ -51,6 +51,7 @@
 (local "setup" compilation)
 (local "setup" completion)
 (local "setup" display)
+(local "setup" fuzzy-everything)
 (local "setup" git)
 (local "setup" icons)
 (local "setup" jumping)
