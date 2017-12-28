@@ -7,6 +7,9 @@
 ;;; Code:
 
 (use-package neotree
+  :init
+  (add-hook 'after-init-hook #'neotree-toggle)
+
   :general
   (general-nmap :prefix "SPC"
 		"ft" 'neotree-toggle
@@ -45,9 +48,7 @@
       (evil-local-set-key 'normal "v" 'neotree-enter-vertical-split)
       (evil-local-set-key 'normal "s" 'neotree-enter-horizontal-split)
       (evil-local-set-key 'normal (kbd "RET") 'neotree-enter)
-      ))
-
-  (add-hook 'after-init-hook #'neotree-toggle))
+      )))
 
 (use-package find-file-in-project
   :after neotree)
@@ -56,11 +57,11 @@
   "Open NeoTree using the git root."
   (interactive)
   (let ((project-dir (ffip-project-root))
-        (file-name (buffer-file-name)))
+	(file-name (buffer-file-name)))
     (if project-dir
-        (progn
-        (neotree-dir project-dir)
-        (neotree-find file-name))
+	(progn
+	(neotree-dir project-dir)
+	(neotree-find file-name))
     (message "Could not find git project root."))))
 
 (provide 'project-tree)
