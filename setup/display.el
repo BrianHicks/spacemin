@@ -24,27 +24,29 @@
   (doom-themes-org-config)
 
   (add-to-list 'custom-safe-themes "9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64")
+  (add-to-list 'custom-safe-themes "a7e7804313dbf827a441c86a8109ef5b64b03011383322cbdbf646eb02692f76")
   (load-theme 'doom-one)
 
   (set-face-attribute 'font-lock-comment-face nil :foreground "#828B92")
 
   ;; TODO: theme switcher
+  )
 
-  (use-package solaire-mode
-    :config
-    (add-hook 'after-change-major-mode-hook #'turn-on-solaire-mode)
-    (add-hook 'after-revert-hook #'turn-on-solaire-mode)
-    (add-hook 'minibuffer-setup-hook #'solaire-mode-in-minibuffer)
+(use-package solaire-mode
+  :config
+  (add-hook 'after-change-major-mode-hook #'turn-on-solaire-mode)
+  (add-hook 'after-revert-hook #'turn-on-solaire-mode)
+  (add-hook 'minibuffer-setup-hook #'solaire-mode-in-minibuffer)
 
-    (solaire-mode-swap-bg)))
+  (solaire-mode-swap-bg))
 
 ;; pretty modeline
 (use-package telephone-line
   :config
   (setq telephone-line-primary-left-separator 'telephone-line-flat
-        telephone-line-secondary-left-separator 'telephone-line-flat
-        telephone-line-primary-right-separator 'telephone-line-flat
-        telephone-line-seconary-right-separator 'telephone-line-flat
+	telephone-line-secondary-left-separator 'telephone-line-flat
+	telephone-line-primary-right-separator 'telephone-line-flat
+	telephone-line-seconary-right-separator 'telephone-line-flat
 
 	telephone-line-height 30
 
@@ -92,5 +94,6 @@
   :config
   (global-hl-todo-mode))
 
+(provide 'display)
 
 ;;; display.el ends here
