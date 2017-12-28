@@ -8,18 +8,18 @@
 
 (use-package helm
   :delight
-  :init
-  (helm-mode 1)
+  :general
+  (general-nvmap :prefix "SPC"
+		 "<SPC>" 'helm-M-x
 
-  :bind-leader
-  ("<SPC>" 'helm-M-x
+		 "bb" 'helm-mini
 
-   "bb" 'helm-mini
-
-   "y" '(:ignore t :which-key "yanking")
-   "yp" 'helm-show-kill-ring)
+		 "y" '(:ignore t :wk "yanking")
+		 "yp" 'helm-show-kill-ring)
 
   :config
+  (helm-mode 1)
+
   (setq helm-M-x-fuzzy-match t
         helm-buffers-fuzzy-matching t
         helm-recentf-fuzzy-match t
@@ -27,14 +27,9 @@
         helm-window-prefer-horizontal-split t
         helm-display-function 'pop-to-buffer))
 
-(use-package helm-projectile
-  :init
-  (helm-projectile-on)
 
-  :config
-  (setq helm-projectile-fuzzy-match t))
-
-(use-package helm-ag)
+(use-package helm-ag
+  :after helm)
 
 (provide 'fuzzy-everything)
 
