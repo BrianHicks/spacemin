@@ -7,10 +7,11 @@
 ;;; Code:
 
 (use-package neotree
-  :bind-leader
-  ("ft" 'neotree-toggle
-   "ff" 'neotree-find
-   "fp" 'neotree-project-dir)
+  :general
+  (general-nmap :prefix "SPC"
+		"ft" 'neotree-toggle
+		"ff" 'neotree-find
+		"fp" 'neotree-project-dir)
 
   :config
   (doom-themes-neotree-config)
@@ -48,7 +49,8 @@
 
   (add-hook 'after-init-hook #'neotree-toggle))
 
-(use-package find-file-in-project)
+(use-package find-file-in-project
+  :after neotree)
 
 (defun neotree-project-dir ()
   "Open NeoTree using the git root."
