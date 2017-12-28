@@ -20,7 +20,10 @@
   (doom-themes-neotree-config)
 
   ;; configure neotree
-  (setq neo-window-width 30)
+  (setq neo-window-width 30
+	neo-smart-open t
+	neo-autorefresh t
+	neo-vc-integration '(face))
 
   (evil-global-set-key 'normal "-" 'neotree-find)
 
