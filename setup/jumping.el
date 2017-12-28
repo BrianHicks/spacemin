@@ -8,11 +8,13 @@
 ;;; Code:
 
 (use-package avy
-  :config
-  (globalleader "j" 'avy-goto-word-1))
+  :bind-prefix
+  ("j" 'avy-goto-word-1))
 
 (use-package ace-window
-  :config
-  (globalleader "J" 'ace-window))
+  :bind-prefix
+  ("J" 'ace-window))
+
+(provide 'jumping)
 
 ;;; jumping.el ends here
