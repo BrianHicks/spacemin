@@ -8,12 +8,14 @@
 ;;; Code:
 
 (use-package avy
-  :bind-leader
-  ("j" 'avy-goto-word-1))
+  :general
+  (general-nvmap :prefix "SPC"
+		 "j" 'avy-goto-word-1))
 
 (use-package ace-window
-  :bind-leader
-  ("J" 'ace-window))
+  :general
+  (general-nmap :prefix "SPC"
+		 "J" 'ace-window))
 
 (provide 'jumping)
 
