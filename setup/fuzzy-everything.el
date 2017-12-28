@@ -11,7 +11,7 @@
   :init
   (helm-mode 1)
 
-  :bind-prefix
+  :bind-leader
   ("<SPC>" 'helm-M-x
 
    "bb" 'helm-mini

@@ -6,7 +6,7 @@
 
 ;; all the icons!
 (use-package all-the-icons
-  :bind-prefix
+  :bind-leader
   ("i" '(:ignore t :wk "inserting")
    "ii" 'all-the-icons-insert))
 

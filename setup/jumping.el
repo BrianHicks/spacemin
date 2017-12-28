@@ -8,11 +8,11 @@
 ;;; Code:
 
 (use-package avy
-  :bind-prefix
+  :bind-leader
   ("j" 'avy-goto-word-1))
 
 (use-package ace-window
-  :bind-prefix
+  :bind-leader
   ("J" 'ace-window))
 
 (provide 'jumping)

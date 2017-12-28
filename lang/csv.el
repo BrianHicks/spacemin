@@ -6,7 +6,7 @@
 ;;; Code:
 
 (use-package csv-mode
-  :bind-prefix-local
+  :bind-leader-local
   ("e" '(:ignore t :which-key "edit")
    "et" 'csv-transpose
    "ek" 'csv-kill-fields

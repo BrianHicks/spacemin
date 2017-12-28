@@ -8,7 +8,7 @@
   :init
   (projectile-mode 1)
 
-  :bind-prefix
+  :bind-leader
   ("p" '(:ignore t :which-key "projectile")
    "p!" 'projectile-run-shell-command-in-root
    "p&" 'projectile-run-async-shell-command-in-root
@@ -45,7 +45,7 @@
 	'(:eval (format " %s " (projectile-project-name)))))
 
 (use-package ag
-  :bind-prefix
+  :bind-leader
   ("s" '(:ignore t :which-key "search")
    "sp" 'ag-project
    "sf" 'ag-files))

@@ -5,7 +5,7 @@
 ;;; Code:
 
 (use-package magit
-  :bind-prefix
+  :bind-leader
   ("g" '(:ignore t :which-key "git")
    "gs" 'magit-status))
 

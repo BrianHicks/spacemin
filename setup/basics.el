@@ -63,7 +63,7 @@
 
 ;; emojify things like :smile: and :wave:
 (use-package emojify
-  :bind-prefix
+  :bind-leader
   ("i" '(:ignore t :which-key "inserting")
    "ie" 'emojify-insert-emoji)
 

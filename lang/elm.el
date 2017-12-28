@@ -6,7 +6,7 @@
 ;;; Code:
 
 (use-package elm-mode
-  :bind-prefix-local
+  :bind-leader-local
   ("c" '(:ignore t :which-key "compile")
    "cc" 'elm-compile-buffer
 

@@ -6,7 +6,7 @@
 ;;; Code:
 
 (use-package idris-mode
-  :bind-prefix-local
+  :bind-leader-local
   ;; TODO: a bunch of keybindings. I'm replicating those from the
   ;; built-in evil mode here (it requires evil-leader and I don't want
   ;; to install it again just for this.)

@@ -11,7 +11,7 @@
   :init
   (evil-mode 1)
 
-  :bind-prefix
+  :bind-leader
   ("b" '(:ignore t :wk "buffers")
    "bn" 'evil-next-buffer
    "bp" 'evil-prev-buffer

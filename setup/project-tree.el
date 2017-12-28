@@ -7,7 +7,7 @@
 ;;; Code:
 
 (use-package neotree
-  :bind-prefix
+  :bind-leader
   ("ft" 'neotree-toggle
    "ff" 'neotree-find
    "fp" 'neotree-project-dir)

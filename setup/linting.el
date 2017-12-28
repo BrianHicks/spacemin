@@ -9,7 +9,7 @@
   :init
   (global-flycheck-mode)
 
-  :bind-prefix
+  :bind-leader
   ("e" '(:ignore t :which-key "errors")
    "el" 'flycheck-list-errors
    "en" 'next-error

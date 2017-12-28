@@ -44,7 +44,7 @@
      ,@body))
 
 ;; base packages. These set up the basic editor functionality I expect.
-(local "setup" keys) ;; needs to be first to register :bind-prefix and :bind-prefix-local
+(local "setup" keys) ;; needs to be first to register :bind-leader and :bind-leader-local
 (local "setup" vim) ;; needs to be second to register evil state maps
 
 (local "setup" basics)

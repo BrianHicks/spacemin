@@ -7,7 +7,7 @@
 ;;; Code:
 
 (use-package haskell-mode
-  :bind-prefix-local
+  :bind-leader-local
   ("g" '(:ignore t :which-key "go")
    "gi" 'haskell-navigate-imports
 
@@ -22,7 +22,7 @@
   :config
   (setq hindent-reformat-buffer-on-save t)
 
-  ;; TODO: here's a place it would be handy to specify map via :bind-prefix-local
+  ;; TODO: here's a place it would be handy to specify map via :bind-leader-local
   (general-define-key :states '(normal visual)
 		      :keymaps 'haskell-mode-map
 		      :prefix ","
