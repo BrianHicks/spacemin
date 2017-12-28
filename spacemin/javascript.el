@@ -6,7 +6,9 @@
 ;;; Code:
 
 (use-package js2-mode
-  :mode "\\.js\\'")
+  :mode "\\.js\\'"
+  :config
+  (setq js2-basic-offset 2))
 
 (use-package prettier-js
   :config
