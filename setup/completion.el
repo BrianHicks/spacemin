@@ -8,6 +8,7 @@
 ;;; Code:
 
 (use-package company
+  :defer t
   :delight
   :config
   (global-company-mode 1)
@@ -20,8 +21,9 @@
   (define-key company-active-map (kbd "C-p") 'company-select-previous))
 
 (use-package company-statistics
-    :config
-    (company-statistics-mode))
+  :after company
+  :init
+  (company-statistics-mode))
 
 (provide 'completion)
 
