@@ -1,13 +1,15 @@
+;;; projects --- project management
+
+;;; Commentary:
+
+;;; Code:
+
 (use-package projectile
-  :config
+  :init
   (projectile-mode 1)
 
-  ;; workaround for https://github.com/bbatsov/projectile/issues/1183
-  (setq projectile-mode-line
-	'(:eval (format " %s " (projectile-project-name))))
-
-  (globalleader
-   "p" '(:ignore t :which-key "projectile")
+  :bind-prefix
+  ("p" '(:ignore t :which-key "projectile")
    "p!" 'projectile-run-shell-command-in-root
    "p&" 'projectile-run-async-shell-command-in-root
    "pE" 'projectile-edit-dir-locals
@@ -35,12 +37,19 @@
    "pq" 'projectile-switch-open-project
    "pr" 'projectile-replace
    "pu" 'projectile-run-project
-   "ps" 'projectile-ag
-   ))
+   "ps" 'projectile-ag)
+
+  :config
+  ;; workaround for https://github.com/bbatsov/projectile/issues/1183
+  (setq projectile-mode-line
+	'(:eval (format " %s " (projectile-project-name)))))
 
 (use-package ag
-  :config
-  (globalleader
-   "s" '(:ignore t :which-key "search")
+  :bind-prefix
+  ("s" '(:ignore t :which-key "search")
    "sp" 'ag-project
    "sf" 'ag-files))
+
+(provide 'projects)
+
+;;; projects.el ends here

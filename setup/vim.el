@@ -8,8 +8,30 @@
 (require 'use-package)
 
 (use-package evil
-  :config
+  :init
   (evil-mode 1)
+
+  :bind-prefix
+  ("b" '(:ignore t :wk "buffers")
+   "bn" 'evil-next-buffer
+   "bp" 'evil-prev-buffer
+
+   "c" '(:ignore t :which-key "compilation")
+   "cc" 'compile
+   "cr" 'recompile
+
+   "f" '(:ignore t :which-key "files")
+   "fs" 'save-buffer
+
+   "w" '(:ignore t :which-key "windows")
+   "wh" 'evil-window-left
+   "wj" 'evil-window-down
+   "wk" 'evil-window-up
+   "wl" 'evil-window-right
+   "wv" 'evil-window-vsplit
+   "ws" 'evil-window-split)
+
+  :config
   (with-eval-after-load 'evil-maps
     (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
     (define-key evil-motion-state-map (kbd ";") 'evil-ex)))
@@ -20,39 +42,6 @@
 (use-package evil-surround
   :config
   (global-evil-surround-mode 1))
-
-;;(use-package general
-;;  :init
-;;  (general-evil-setup)
-;;  :config
-;;  (general-create-definer globalleader
-;;			  :states '(normal visual)
-;;			  :prefix "<SPC>")
-;;
-;;  (general-create-definer localleader
-;;			  :states '(normal visual)
-;;			  :prefix ",")
-;;
-;;  (globalleader
-;;   "b" '(:ignore t :which-key "buffers")
-;;   "bn" 'evil-next-buffer
-;;   "bp" 'evil-prev-buffer
-;;
-;;   "c" '(:ignore t :which-key "compilation")
-;;   "cc" 'compile
-;;   "cr" 'recompile
-;;
-;;   "f" '(:ignore t :which-key "files")
-;;   "fs" 'save-buffer
-;;
-;;   "w" '(:ignore t :which-key "windows")
-;;   "wh" 'evil-window-left
-;;   "wj" 'evil-window-down
-;;   "wk" 'evil-window-up
-;;   "wl" 'evil-window-right
-;;   "wv" 'evil-window-vsplit
-;;   "ws" 'evil-window-split
-;;   ))
 
 ;; enable evil keybindings in a bunch of modes
 ;(use-package evil-collection
