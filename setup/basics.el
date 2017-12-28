@@ -41,14 +41,6 @@
 ;; lock files are really not necessary for how I use emacs
 (setq create-lockfiles nil)
 
-;; code folding is handy!
-;; TODO: should this go in a separate file?
-(use-package origami
-  :config
-  (global-origami-mode t)
-
-  (define-key evil-normal-state-map (kbd "TAB") 'origami-recursively-toggle-node))
-
 ;; highlight the current line
 (hl-line-mode 1)
 
