@@ -7,14 +7,15 @@
 (use-package magit
   :general
   (general-nmap "SPC g" '(:ignore t :which-key "git")
-		"SPC gs" 'magit-status)
+		"SPC gs" 'magit-status))
 
+(use-package evil-magit
+  :after magit)
+
+(use-package magit-gh-pulls
+  :after magit
   :config
-  (use-package evil-magit)
-
-  (use-package magit-gh-pulls
-    :config
-    (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)))
+  (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
 ;; TODO:
 ;;
