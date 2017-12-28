@@ -59,6 +59,8 @@
  ("magit" . "0ee62ee80eca660a5d05dab34bcf4b80a3ee749d")
  ("magit-gh-pulls" . "d526f4c9ee1709c79f8a4630699ce1f25ae054e7")
  ("magit-popup" . "3f23e81eb0267d6578d8f1733c5e42699b0229a1")
+ ("markdown-mode" . "faf60003180bc9db5e69fcef08040f544217d08f")
+ ("markdown-toc" . "7038f4f6d5c2bc7e4aea89699a607ac2b7dd16a8")
  ("marshal.el" . "6a31133b25addabc5ec9c87ba959d69c5122171b")
  ("melpa" . "3945f7eba7d5f248cace11a7946262ac2500b01a")
  ("origami.el" . "5630536d04613476e13b413fe05fd0bbff4107ca")
