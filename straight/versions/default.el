@@ -21,6 +21,7 @@
  ("enhanced-ruby-mode" . "4f43eab67a9afb91b0408221d478dcb98131478f")
  ("epkgs" . "f827e97d00bdb54748975ca9ab38f3d4abe62b7e")
  ("epl" . "83797835f729f39b80acba4c7e83d73a2e410e26")
+ ("esup" . "a589005a9a888537deef94d6fe38a9b8790c97c7")
  ("evil" . "8d2477231e0326df42a3a3a17492e34df91ea86b")
  ("evil-commentary" . "395f91014b69844b81660c155f42eb9b1b3d199d")
  ("evil-escape" . "25920fb2f4ef48998eecea433c04096f8d124cfe")
