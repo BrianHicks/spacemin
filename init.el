@@ -48,6 +48,7 @@
 
 (local "setup" basics)
 (local "setup" git)
+(local "setup" linting)
 (local "setup" projects)
 
 ;; language packages
