@@ -37,6 +37,7 @@
 
 ;; wrap use-package to load local packages
 (defmacro local (from name &rest body)
+  "Look in FROM for NAME, and send BODY to use-package."
   `(use-package ,name
      :straight nil
      :load-path ,from
