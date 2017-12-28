@@ -40,6 +40,7 @@
  ("gh.el" . "458aa6e6b107a4b30b64939233c107d1378d0402")
  ("ghub" . "b5f81522b0b5b896a62347eb5f238f67b47790b0")
  ("goto-chg" . "81fca94d2592cf32bab451c39a9cd2d9b03fbd6b")
+ ("graphviz-dot-mode" . "c456a2b65c734089e6c44e87209a5a432a741b1a")
  ("helm" . "b25ac4818cec94b07d6d1ce82880a4f842115aec")
  ("helm-projectile" . "4466adbcada8be19ec97b9dba52e12b8da3da849")
  ("hl-todo" . "961db3116f1396dc4f903e3a59824a40e0bbb6a2")
