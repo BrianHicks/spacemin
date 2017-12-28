@@ -6,13 +6,15 @@
 ;;; Code:
 
 (use-package csv-mode
-  :bind-leader-local
-  ("e" '(:ignore t :which-key "edit")
-   "et" 'csv-transpose
-   "ek" 'csv-kill-fields
-   "es" 'csv-sort-fields
-   "eS" 'csv-reverse-region
-   "ef" 'csv-align-fields
-   "eF" 'csv-unalign-fields))
+  :mode "\\.\\(c\\|t\\)sv\\'"
+  :general
+  (general-nvmap :prefix ","
+		 :keymaps 'csv-mode-map
+		 "t" 'csv-transpose
+		 "k" 'csv-kill-fields
+		 "s" 'csv-sort-fields
+		 "S" 'csv-reverse-region
+		 "f" 'csv-align-fields
+		 "F" 'csv-unalign-fields))
 
 ;;; csv.el ends here
