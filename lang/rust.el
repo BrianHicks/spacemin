@@ -6,12 +6,13 @@
 ;;; Code:
 
 (use-package rust-mode
-  :mode "\\.rs\\'"
   ; TODO: keybindings for compilation and such
   )
 
 ; TODO: cargo
 ; TODO: rustfmt
 ; TODO: racer
+
+(provide 'rust)
 
 ;;; rust.el ends here

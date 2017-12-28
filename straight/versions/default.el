@@ -73,6 +73,7 @@
  ("prop-menu-el" . "50b102c1c0935fd3e0c465feed7f27d66b21cdf3")
  ("rbenv.el" . "2ea1a5bdc1266caef1dd77700f2c8f42429b03f1")
  ("rspec-mode" . "94a04f148922852b591957b0b3b22de5c4237448")
+ ("rust-mode" . "27911c88b0d32b66429d61bb056ecf1b10e66598")
  ("s.el" . "5e9a6857d42015c67681616aa3519f599f97b8d8")
  ("shackle" . "4189c1c773aab533969b587f7801ffbcd1d7d613")
  ("smartparens" . "65fbcfc849afb89e2642f9b87f66e6a96382f88c")
