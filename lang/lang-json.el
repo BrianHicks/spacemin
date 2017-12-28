@@ -6,17 +6,20 @@
 ;;; Code:
 
 (use-package json-mode
-  :bind-leader-local
-  ("e" '(:ignore t :which-key "edit")
-   "ef" 'json-mode-beautify
-   "et" 'json-toggle-boolean
-   "eD" 'json-nullify-sexp
-					; TODO: these two should probably be a hydra
-   "en" 'json-increment-number-at-point
-   "ep" 'json-decrement-number-at-point
+  :mode "\\.json\\'"
+  :general
+  (general-nvmap :keymaps 'json-mode-map
+                 :prefix ","
+                 "e" '(:ignore t :which-key "edit")
+                 "ef" 'json-mode-beautify
+                 "et" 'json-toggle-boolean
+                 "eD" 'json-nullify-sexp
+                 ; TODO: these two should probably be a hydra
+                 "en" 'json-increment-number-at-point
+                 "ep" 'json-decrement-number-at-point
 
-   "y" '(:ignore t :which-key "yanking")
-   "yp" 'json-mode-kill-path))
+                 "y" '(:ignore t :which-key "yanking")
+                 "yp" 'json-mode-kill-path))
 
 (provide 'lang-json)
 
