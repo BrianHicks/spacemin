@@ -48,6 +48,7 @@
 (local "setup" vim) ;; needs to be second to register evil state maps
 
 (local "setup" basics)
+(local "setup" compilation)
 (local "setup" display)
 (local "setup" git)
 (local "setup" linting)

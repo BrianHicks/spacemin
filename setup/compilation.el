@@ -15,4 +15,6 @@
 
 (setq compilation-environment '("TERM=xterm-256color"))
 
+(provide 'compilation)
+
 ;;; compilation.el ends here
