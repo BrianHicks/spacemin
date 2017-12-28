@@ -6,19 +6,23 @@
 ;;; Code:
 
 (use-package flycheck
+  :defer 1
   :init
   (global-flycheck-mode)
 
-  :bind-leader
-  ("e" '(:ignore t :which-key "errors")
-   "el" 'flycheck-list-errors
-   "en" 'next-error
-   "ep" 'previous-error))
+  :general
+  (general-nmap :prefix "SPC"
+		"e" '(:ignore t :which-key "errors")
+		"el" 'flycheck-list-errors
+		"en" 'next-error
+		"ep" 'previous-error))
 
 (use-package flycheck-status-emoji
+  :after flycheck
   :init (flycheck-status-emoji-mode 1))
 
 (use-package flycheck-color-mode-line
+  :after flycheck
   :init (flycheck-color-mode-line-mode 1))
 
 (provide 'linting)
