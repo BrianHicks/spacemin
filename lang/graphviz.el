@@ -5,7 +5,8 @@
 
 ;;; Code:
 
-(use-package graphviz-dot-mode)
+(use-package graphviz-dot-mode
+  :mode "\\.dot\\'")
 
 (provide 'graphviz)
 
