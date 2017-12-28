@@ -10,7 +10,7 @@
 
 (use-package markdown-toc
   :general
-  (general-nvmap :maps 'markdown-mode-map
+  (general-nvmap :keymaps 'markdown-mode-map
 		 :prefix ","
 		 "e" '(:ignore t :wk "edit")
 		 "et" 'markdown-toc-generate-or-refresh-toc))
