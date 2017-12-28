@@ -67,7 +67,7 @@
 (local "lang" graphviz)
 (local "lang" haml)
 (local "lang" haskell)
-(local "lang" idris        :mode "\\.idr\\'")
+(local "lang" idris)
 (local "lang" javascript   :mode "\\.js\\'")
 (local "lang" lang-json    :mode "\\.json\\'")
 (local "lang" markdown)
