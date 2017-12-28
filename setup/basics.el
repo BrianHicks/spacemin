@@ -55,11 +55,12 @@
 
 ;; emojify things like :smile: and :wave:
 (use-package emojify
-  :bind-leader
-  ("i" '(:ignore t :which-key "inserting")
-   "ie" 'emojify-insert-emoji)
-
   :init
+  ;; not in :general because it makes this package too lazy
+  (general-nvmap :prefix "SPC"
+		 "i" '(:ignore t :wk "inserting")
+		 "ie" 'emojify-insert-emoji)
+
   ;; TODO: these mess up the line height. I'd like them a little smaller, please!
   (add-hook 'after-init-hook #'global-emojify-mode))
 
