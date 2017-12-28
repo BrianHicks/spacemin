@@ -24,6 +24,7 @@
  ("esup" . "a589005a9a888537deef94d6fe38a9b8790c97c7")
  ("evil" . "8d2477231e0326df42a3a3a17492e34df91ea86b")
  ("evil-commentary" . "395f91014b69844b81660c155f42eb9b1b3d199d")
+ ("evil-ediff" . "67b0e69f65c196eff5b39dacb7a9ec05bb919c74")
  ("evil-escape" . "25920fb2f4ef48998eecea433c04096f8d124cfe")
  ("evil-exchange" . "47691537815150715e64e6f6ec79be7746c96120")
  ("evil-magit" . "4cdfbcd13075869c238b2253a64668736a16880e")

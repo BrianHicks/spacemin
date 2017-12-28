@@ -78,6 +78,10 @@
   (evil-escape-mode 1)
   (setq-default evil-escape-key-sequence "fd"))
 
+;; bindings for ediff
+(use-package evil-ediff
+  :after evil)
+
 (provide 'vim)
 
 ;;; setup-evil.el ends here
