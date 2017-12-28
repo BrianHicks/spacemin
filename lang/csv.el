@@ -17,4 +17,6 @@
 		 "f" 'csv-align-fields
 		 "F" 'csv-unalign-fields))
 
+(provide 'csv)
+
 ;;; csv.el ends here
