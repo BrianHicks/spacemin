@@ -71,7 +71,7 @@
 (local "lang" javascript)
 (local "lang" lang-json)
 (local "lang" markdown)
-(local "lang" ruby         :mode "\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'")
+(local "lang" ruby)
 (local "lang" rust         :mode "\\.rs\\'")
 (local "lang" toml         :mode "/\\(.+\\.toml\\|Cargo.lock\\|.cargo/config\\)\\'")
 (local "lang" yaml         :mode "\\.ya?ml\\'")

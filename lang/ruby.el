@@ -6,7 +6,21 @@
 
 ;;; Code:
 (use-package enh-ruby-mode
+  :mode "\\(?:\\.rb\\|ru\\|rake\\|thor\\|jbuilder\\|gemspec\\|podspec\\|/\\(?:Gem\\|Rake\\|Cap\\|Thor\\|Vagrant\\|Guard\\|Pod\\)file\\)\\'"
   :interpreter ("ruby" . enh-ruby-mode)
+  :general
+  (general-nvmap :keymaps 'ruby-mode-map
+		 :prefix ","
+		 "e" '(:ignore t :which-key "edit")
+		 "eb" 'enh-ruby-toggle-block
+		 "ei" 'enh-ruby-indent-exp
+
+		 "g" 'hydra-ruby-navigation/body
+
+		 "m" '(:ignore t :which-key "meta")
+		 "mR" 'erm-reset
+		 "mF" 'enh-ruby-fontify-buffer)
+
   :config
   (setq enh-ruby-add-encoding-comment-on-save nil
 
@@ -22,8 +36,7 @@
 	enh-ruby-hanging-paren-indent-level 2
 	enh-ruby-indent-level 2)
 
-  (defhydra hydra-ruby-navigation (:foreign-keys nil
-                                   :hint "navigate")
+  (defhydra hydra-ruby-navigation (:foreign-keys nil :hint "navigate")
     "navigate ruby code"
     ("n" enh-ruby-forward-sexp "forward sexp")
     ("p" enh-ruby-backward-sexp "backward sexp")
@@ -33,33 +46,21 @@
     ("D" enh-ruby-beginning-of-defun "backward defun")
     ("q" nil "quit"))
 
-  ;; TODO: another! :(
-  (general-define-key :states '(normal visual)
-		      :keymaps 'ruby-mode-map
-		      :prefix ","
-		      "e" '(:ignore t :which-key "edit")
-		      "eb" 'enh-ruby-toggle-block
-		      "ei" 'enh-ruby-indent-exp
-
-		      "g" 'hydra-ruby-navigation/body
-
-		      "m" '(:ignore t :which-key "meta")
-		      "mR" 'erm-reset
-		      "mF" 'enh-ruby-fontify-buffer)
-
   ;; TODO: robe mode (https://github.com/dgutov/robe)
   )
 
 (use-package rspec-mode
+  :after enh-ruby-mode
   ;; TODO: keybindings
   )
 
 (use-package rbenv
-  :defer
+  :after enh-ruby-mode
   :config
   (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
 
 (use-package yard-mode
+  :after enh-ruby-mode
   :config
   (add-hook 'ruby-mode-hook 'yard-mode))
 
