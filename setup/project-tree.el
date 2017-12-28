@@ -1,4 +1,4 @@
-;;; neotree --- project drawer
+;;; project-tree --- project drawer
 
 ;;; Commentary:
 ;;; trying this out rather than customizing dired a whole lot more.
@@ -7,21 +7,21 @@
 ;;; Code:
 
 (use-package neotree
+  :bind-prefix
+  ("ft" 'neotree-toggle
+   "ff" 'neotree-find
+   "fp" 'neotree-project-dir)
+
   :config
   (doom-themes-neotree-config)
 
   ;; configure neotree
   (setq neo-window-width 30)
 
-  ;; keybindings to get into neotree
-  (globalleader
-   "ft" 'neotree-toggle
-   "ff" 'neotree-find
-   "fp" 'neotree-project-dir)
-
   (evil-global-set-key 'normal "-" 'neotree-find)
 
   ;; keybindings for inside neotree
+  ;; TODO: redo these with general
   (add-hook 'neotree-mode-hook
     (lambda ()
       ;; basics
@@ -61,4 +61,6 @@
         (neotree-find file-name))
     (message "Could not find git project root."))))
 
-;;; neotree.el ends here
+(provide 'project-tree)
+
+;;; project-tree.el ends here

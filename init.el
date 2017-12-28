@@ -56,6 +56,7 @@
 (local "setup" icons)
 (local "setup" jumping)
 (local "setup" linting)
+(local "setup" project-tree)
 (local "setup" projects)
 
 ;; language packages
