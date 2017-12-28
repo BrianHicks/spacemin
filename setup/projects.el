@@ -45,7 +45,6 @@
 	'(:eval (format " %s " (projectile-project-name)))))
 
 (use-package helm-projectile
-  :after projectile
   :init
   (helm-projectile-on)
 
