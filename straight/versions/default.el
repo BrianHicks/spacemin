@@ -6,6 +6,7 @@
  ("coffee-mode" . "86ab8aae8662e8eff54d3013010b9c693b16eac5")
  ("company-mode" . "a57441832674f88ba1c166678ad024c1e6665b5a")
  ("company-statistics" . "e62157d43b2c874d2edbd547c3bdfb05d0a7ae5c")
+ ("csv-mode" . "5fb7759827029caed29523a1b0c3f9e28313762e")
  ("dash.el" . "91d8cb01e62bab0d6267d3d4dbcabd6da6fdea78")
  ("delight" . "d2cc2fc00aa91f6f26d4bfd2dedbd022be449343")
  ("emacs-async" . "66e685659654d01d9531a2fee071d2fc853b8374")
