@@ -73,7 +73,7 @@
 (local "lang" markdown)
 (local "lang" ruby)
 (local "lang" rust)
-(local "lang" toml         :mode "/\\(.+\\.toml\\|Cargo.lock\\|.cargo/config\\)\\'")
+(local "lang" toml)
 (local "lang" yaml         :mode "\\.ya?ml\\'")
 
 
