@@ -6,6 +6,7 @@
 ;;; Code:
 
 (use-package rust-mode
+  :mode "\\.rs\\'"
   ; TODO: keybindings for compilation and such
   )
 

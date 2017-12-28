@@ -72,7 +72,7 @@
 (local "lang" lang-json)
 (local "lang" markdown)
 (local "lang" ruby)
-(local "lang" rust         :mode "\\.rs\\'")
+(local "lang" rust)
 (local "lang" toml         :mode "/\\(.+\\.toml\\|Cargo.lock\\|.cargo/config\\)\\'")
 (local "lang" yaml         :mode "\\.ya?ml\\'")
 
