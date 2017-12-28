@@ -56,6 +56,7 @@
 (local "setup" icons)
 (local "setup" jumping)
 (local "setup" linting)
+(local "setup" profiling)
 (local "setup" project-tree)
 (local "setup" projects)
 
