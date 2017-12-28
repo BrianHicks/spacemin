@@ -1,4 +1,12 @@
-;; vim has nice keybindings, emacs has nice other things, so let's use both.
+;;; vim --- emacs is a nice OS, just needs a good text editor.
+
+;;; Commentary:
+;;; evil!
+
+;;; Code:
+
+(require 'use-package)
+
 (use-package evil
   :config
   (evil-mode 1)
@@ -6,47 +14,50 @@
     (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
     (define-key evil-motion-state-map (kbd ";") 'evil-ex)))
 
+;; surround text with other text. The keybinding is
+;; "ys{motion}{surround}" to surround, "cs{old}{new}" to change, or
+;; "ds{old}" to delete. In visual mode, it's "S".
 (use-package evil-surround
   :config
   (global-evil-surround-mode 1))
 
-(use-package general
-  :init
-  (general-evil-setup)
-  :config
-  (general-create-definer globalleader
-			  :states '(normal visual)
-			  :prefix "<SPC>")
-
-  (general-create-definer localleader
-			  :states '(normal visual)
-			  :prefix ",")
-
-  (globalleader
-   "b" '(:ignore t :which-key "buffers")
-   "bn" 'evil-next-buffer
-   "bp" 'evil-prev-buffer
-
-   "c" '(:ignore t :which-key "compilation")
-   "cc" 'compile
-   "cr" 'recompile
-
-   "f" '(:ignore t :which-key "files")
-   "fs" 'save-buffer
-
-   "w" '(:ignore t :which-key "windows")
-   "wh" 'evil-window-left
-   "wj" 'evil-window-down
-   "wk" 'evil-window-up
-   "wl" 'evil-window-right
-   "wv" 'evil-window-vsplit
-   "ws" 'evil-window-split
-   ))
+;;(use-package general
+;;  :init
+;;  (general-evil-setup)
+;;  :config
+;;  (general-create-definer globalleader
+;;			  :states '(normal visual)
+;;			  :prefix "<SPC>")
+;;
+;;  (general-create-definer localleader
+;;			  :states '(normal visual)
+;;			  :prefix ",")
+;;
+;;  (globalleader
+;;   "b" '(:ignore t :which-key "buffers")
+;;   "bn" 'evil-next-buffer
+;;   "bp" 'evil-prev-buffer
+;;
+;;   "c" '(:ignore t :which-key "compilation")
+;;   "cc" 'compile
+;;   "cr" 'recompile
+;;
+;;   "f" '(:ignore t :which-key "files")
+;;   "fs" 'save-buffer
+;;
+;;   "w" '(:ignore t :which-key "windows")
+;;   "wh" 'evil-window-left
+;;   "wj" 'evil-window-down
+;;   "wk" 'evil-window-up
+;;   "wl" 'evil-window-right
+;;   "wv" 'evil-window-vsplit
+;;   "ws" 'evil-window-split
+;;   ))
 
 ;; enable evil keybindings in a bunch of modes
-(use-package evil-collection
-  :init
-  (evil-collection-init))
+;(use-package evil-collection
+;  :init
+;  (evil-collection-init))
 
 ;; toggle comments
 ;; cmd-/ on a line or block
@@ -77,4 +88,6 @@
   (evil-escape-mode 1)
   (setq-default evil-escape-key-sequence "fd"))
 
-;;; evil.el ends here
+(provide 'vim)
+
+;;; setup-evil.el ends here

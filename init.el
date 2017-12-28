@@ -5,6 +5,11 @@
 
 ;;; Code:
 
+;; enable package.  This wasn't required before, I'm not sure what changed! :(
+(require 'package)
+(setq package-enable-at-startup nil)
+(package-initialize)
+
 ;; bootstrap straight.el
 (let ((bootstrap-file (concat user-emacs-directory "straight/bootstrap.el"))
       (bootstrap-version 2))
@@ -17,68 +22,27 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+;; integrate with use-package
 (straight-use-package 'use-package)
-(straight-use-package 'delight)
-(setq use-package-always-ensure t)
+(setq straight-use-package-by-default t)
 
-;; set up some basic things (load paths, etc.) that we will use later.
+;; use-package dependencies
+(straight-use-package 'delight)
+
+;;;; bootstrapping done! ;;;;
+
 (defvar emacs-d
   (file-name-directory (file-chase-links load-file-name))
   "Our .emacs.d location.")
 
-(add-to-list 'load-path (expand-file-name "spacemin" emacs-d))
+;; wrap use-package to load local packages
+(defmacro local (from name &rest body)
+  `(use-package ,name
+     :straight nil
+     :load-path ,from
+     ,@body))
 
-;; load each of the configuration modules independently. "Wait", you
-;; may ask, "why is this specified manually instead of by looking at
-;; the files locally?" Well, there are some dependencies (like
-;; multiple things depending on `evil-leader/set-key`) that an
-;; automatic solution couldn't handle unless it was reasonably
-;; smart. I'm too lazy to write a proper graph walk right now, and
-;; there are not many, so manual it is.
-(load "evil") ;; prerequisite for anything that uses leader keys
-(load "helm")
-(load "basics")
+;; base packages. These set up the basic editor functionality I expect.
+(local "setup" vim)
 
-;; everything here requires the first three
-(load "compilation")
-(load "completion")
-(load "display")
-(load "flycheck")
-(load "git")
-(load "icons")
-(load "jumping")
-(load "neotree")
-(load "projects")
-
-;; languages
-(load "coffeescript")
-(load "csv")
-(load "elm")
-(load "graphviz")
-(load "haml")
-(load "haskell")
-(load "idris")
-(load "javascript")
-(load "lang-json")
-(load "markdown")
-(load "ruby")
-(load "rust")
-(load "toml")
-(load "yaml")
-
-;;; init.el ends here
-
-;; emacs auto-generated nonsense follows
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; language packages
