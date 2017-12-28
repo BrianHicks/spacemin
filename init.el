@@ -61,7 +61,7 @@
 
 ;; language packages
 (local "lang" coffeescript
-       :mode "\\.coffee\'")
+       :mode "\\.coffee\\'")
 
 (local "lang" csv
        :mode "\\.\\(c\\|t\\)sv\\'")
