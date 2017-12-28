@@ -49,6 +49,7 @@
 
 (local "setup" basics)
 (local "setup" compilation)
+(local "setup" completion)
 (local "setup" display)
 (local "setup" git)
 (local "setup" linting)
