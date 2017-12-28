@@ -63,7 +63,7 @@
 ;; language packages
 (local "lang" coffeescript)
 (local "lang" csv)
-(local "lang" elm          :mode "\\.elm\\'")
+(local "lang" elm)
 (local "lang" graphviz     :mode "\\.dot\\'")
 (local "lang" haml         :mode "\\.haml\\'")
 (local "lang" haskell      :mode "\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'")
