@@ -66,7 +66,7 @@
 (local "lang" elm)
 (local "lang" graphviz)
 (local "lang" haml)
-(local "lang" haskell      :mode "\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'")
+(local "lang" haskell)
 (local "lang" idris        :mode "\\.idr\\'")
 (local "lang" javascript   :mode "\\.js\\'")
 (local "lang" lang-json    :mode "\\.json\\'")

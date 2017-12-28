@@ -7,28 +7,32 @@
 ;;; Code:
 
 (use-package haskell-mode
-  :bind-leader-local
-  ("g" '(:ignore t :which-key "go")
-   "gi" 'haskell-navigate-imports
+  :mode "\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'"
+  :general
+  (general-nvmap :keymaps 'haskell-mode-map
+		 "gI" 'haskell-navigate-imports)
 
-   "e" '(:ignore t :which-key "edit")
-   "ei" 'haskell-mode-format-imports))
+  (general-nmap :keymaps 'haskell-mode-map
+		:prefix ","
+		"e" '(:ignore t :which-key "edit")
+		"ei" 'haskell-mode-format-imports))
 
 (use-package intero
+  :after haskell-mode
   :config
   (add-hook 'haskell-mode-hook 'intero-mode))
 
 (use-package hindent
-  :config
-  (setq hindent-reformat-buffer-on-save t)
+  :after haskell-mode
+  :general
+  (general-nvmap :keymaps 'haskell-mode-map
+		 :prefix ","
+		 "f" '(:ignore t :which-key "format")
+		 "ff" 'hindent-reformat-buffer
+		 "fd" 'hindent-reformat-decl)
 
-  ;; TODO: here's a place it would be handy to specify map via :bind-leader-local
-  (general-define-key :states '(normal visual)
-		      :keymaps 'haskell-mode-map
-		      :prefix ","
-		      "f" '(:ignore t :which-key "format")
-		      "ff" 'hindent-reformat-buffer
-		      "fd" 'hindent-reformat-decl))
+  :config
+  (setq hindent-reformat-buffer-on-save t))
 
 (provide 'haskell)
 
