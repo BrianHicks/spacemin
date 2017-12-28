@@ -18,7 +18,7 @@
 
 (use-package smartparens
   :delight
-  :config
+  :init
   (require 'smartparens-config)
   (smartparens-global-mode 1))
 
