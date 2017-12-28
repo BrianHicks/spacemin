@@ -62,7 +62,7 @@
  ("markdown-mode" . "52e467c75e14406aae5d6f5477292b758b88fbec")
  ("markdown-toc" . "7038f4f6d5c2bc7e4aea89699a607ac2b7dd16a8")
  ("marshal.el" . "6a31133b25addabc5ec9c87ba959d69c5122171b")
- ("melpa" . "1274c0d871c51e358b3de577372dae8e3a04ead0")
+ ("melpa" . "3945f7eba7d5f248cace11a7946262ac2500b01a")
  ("origami.el" . "5630536d04613476e13b413fe05fd0bbff4107ca")
  ("pcache" . "1f8086077d770e524492e6fa59b07856e85a6fea")
  ("pkg-info.el" . "76ba7415480687d05a4353b27fea2ae02b8d9d61")
