@@ -52,6 +52,7 @@
 (local "setup" completion)
 (local "setup" display)
 (local "setup" git)
+(local "setup" icons)
 (local "setup" linting)
 (local "setup" projects)
 

@@ -1,4 +1,5 @@
 (("ag.el" . "8e547fcda57184963bcfdbfb48ca6d0d478ea213")
+ ("all-the-icons-dired" . "980b7747d6c4a7992a1ec56afad908956db0a519")
  ("all-the-icons.el" . "b93707e3a3a7a4968b3e212b890edfe265dcd57d")
  ("company-mode" . "a57441832674f88ba1c166678ad024c1e6665b5a")
  ("company-statistics" . "e62157d43b2c874d2edbd547c3bdfb05d0a7ae5c")
