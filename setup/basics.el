@@ -74,6 +74,9 @@
 ;; _ should be a word character
 (modify-syntax-entry ?_ "w")
 
+;; "y" or "n" instead of "yes" or "no"
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (provide 'basics)
 
 ;;; basics.el ends here
