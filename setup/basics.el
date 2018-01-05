@@ -77,6 +77,9 @@
 ;; "y" or "n" instead of "yes" or "no"
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; automatically reload tags
+(setq tags-revert-without-query t)
+
 (provide 'basics)
 
 ;;; basics.el ends here
