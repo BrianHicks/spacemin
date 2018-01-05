@@ -51,7 +51,13 @@
 
 (use-package rspec-mode
   :after enh-ruby-mode
-  ;; TODO: keybindings
+  :general
+  (general-nvmap :keymaps 'enh-ruby-mode-map
+		 :prefix ","
+		 "t" '(:ignore t :wk "test")
+		 "tt" 'rspec-verify
+		 "tA" 'rspec-verify-all)
+  ;; TODO: more keybindings!
   )
 
 (use-package rbenv
