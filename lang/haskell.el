@@ -32,6 +32,7 @@
 		 "fd" 'hindent-reformat-decl)
 
   :config
+  (add-hook 'haskell-mode-hook 'hindent-mode)
   (setq hindent-reformat-buffer-on-save t))
 
 (provide 'haskell)
