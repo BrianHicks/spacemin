@@ -35,6 +35,14 @@
   (add-hook 'haskell-mode-hook 'hindent-mode)
   (setq hindent-reformat-buffer-on-save t))
 
+(use-package hlint-refactor
+  :after haskell-mode
+  :general
+  (general-nvmap :keymap 'haskell-mode-map
+		 :prefix ","
+		 "er" 'hlint-refactor-refactor-at-point
+		 "eR" 'hlint-refactor-refactor-buffer))
+
 (provide 'haskell)
 
 ;;; haskell.el ends here
