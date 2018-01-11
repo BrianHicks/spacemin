@@ -56,6 +56,7 @@
 		 :prefix ","
 		 "t" '(:ignore t :wk "test")
 		 "tt" 'rspec-verify
+		 "ts" 'rspec-verify-single
 		 "tA" 'rspec-verify-all)
   ;; TODO: more keybindings!
   )
