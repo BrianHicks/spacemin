@@ -6,8 +6,10 @@
 
 (use-package magit
   :general
-  (general-nmap "SPC g" '(:ignore t :which-key "git")
-		"SPC gs" 'magit-status))
+  (general-nmap :prefix "SPC"
+		"g" '(:ignore t :which-key "git")
+		"gs" 'magit-status
+		"gb" 'magit-blame))
 
 (use-package evil-magit
   :after magit)
