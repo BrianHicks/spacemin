@@ -45,6 +45,10 @@
 ;; TODO: why isn't it working on startup?
 (hl-line-mode 1)
 
+;; I like to wrap my lines after they reach 80 characters... so 81 should be the
+;; fill column.
+(setq fill-column 81)
+
 ;; add shackle, with which we will define a bunch of custom rules for popup buffers.
 (use-package shackle
   :init
