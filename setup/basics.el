@@ -42,6 +42,7 @@
 (setq create-lockfiles nil)
 
 ;; highlight the current line
+;; TODO: why isn't it working on startup?
 (hl-line-mode 1)
 
 ;; add shackle, with which we will define a bunch of custom rules for popup buffers.
