@@ -10,31 +10,31 @@
   :interpreter ("ruby" . enh-ruby-mode)
   :general
   (general-nvmap :keymaps 'enh-ruby-mode-map
-         :prefix ","
-         "e" '(:ignore t :which-key "edit")
-         "eb" 'enh-ruby-toggle-block
-         "ei" 'enh-ruby-indent-exp
+                 :prefix ","
+                 "e" '(:ignore t :which-key "edit")
+                 "eb" 'enh-ruby-toggle-block
+                 "ei" 'enh-ruby-indent-exp
 
-         "g" 'hydra-ruby-navigation/body
+                 "g" 'hydra-ruby-navigation/body
 
-         "m" '(:ignore t :which-key "meta")
-         "mR" 'erm-reset
-         "mF" 'enh-ruby-fontify-buffer)
+                 "m" '(:ignore t :which-key "meta")
+                 "mR" 'erm-reset
+                 "mF" 'enh-ruby-fontify-buffer)
 
   :config
   (setq enh-ruby-add-encoding-comment-on-save nil
 
-    ;; https://github.com/zenspider/enhanced-ruby-mode/issues/36
-    enh-ruby-comment-column 32
-    enh-ruby-bounce-deep-indent t
-    enh-ruby-deep-indent-paren t
-    enh-ruby-deep-indent-construct t
-    enh-ruby-hanging-paren-deep-indent-level 1
-    enh-ruby-hanging-brace-deep-indent-level 1
-    enh-ruby-hanging-brace-indent-level 2
-    enh-ruby-hanging-indent-level 2
-    enh-ruby-hanging-paren-indent-level 2
-    enh-ruby-indent-level 2)
+        ;; https://github.com/zenspider/enhanced-ruby-mode/issues/36
+        enh-ruby-comment-column 32
+        enh-ruby-bounce-deep-indent t
+        enh-ruby-deep-indent-paren t
+        enh-ruby-deep-indent-construct t
+        enh-ruby-hanging-paren-deep-indent-level 1
+        enh-ruby-hanging-brace-deep-indent-level 1
+        enh-ruby-hanging-brace-indent-level 2
+        enh-ruby-hanging-indent-level 2
+        enh-ruby-hanging-paren-indent-level 2
+        enh-ruby-indent-level 2)
 
   (defhydra hydra-ruby-navigation (:foreign-keys nil :hint "navigate")
     "navigate ruby code"
@@ -53,11 +53,11 @@
   :after enh-ruby-mode
   :general
   (general-nvmap :keymaps 'enh-ruby-mode-map
-         :prefix ","
-         "t" '(:ignore t :wk "test")
-         "tt" 'rspec-verify
-         "ts" 'rspec-verify-single
-         "tA" 'rspec-verify-all)
+                 :prefix ","
+                 "t" '(:ignore t :wk "test")
+                 "tt" 'rspec-verify
+                 "ts" 'rspec-verify-single
+                 "tA" 'rspec-verify-all)
   ;; TODO: more keybindings!
   :config
   ;; look in lib for test files by removing it from 'rspec-primary-source-dirs

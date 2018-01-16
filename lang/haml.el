@@ -10,7 +10,7 @@
   :mode "\\.haml\\'"
   :config
   (add-hook 'haml-mode-hook
-	    (setq indent-tabs-mode nil)))
+            (setq indent-tabs-mode nil)))
 
 (provide 'haml)
 

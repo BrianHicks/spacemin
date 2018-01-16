@@ -11,9 +11,9 @@
 (use-package markdown-toc
   :general
   (general-nvmap :keymaps 'markdown-mode-map
-		 :prefix ","
-		 "e" '(:ignore t :wk "edit")
-		 "et" 'markdown-toc-generate-or-refresh-toc))
+                 :prefix ","
+                 "e" '(:ignore t :wk "edit")
+                 "et" 'markdown-toc-generate-or-refresh-toc))
 
 (provide 'markdown)
 

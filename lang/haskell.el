@@ -10,12 +10,12 @@
   :mode "\\.\\(hs\\|lhs\\|hsc\\|cpphs\\|c2hs\\)\\'"
   :general
   (general-nvmap :keymaps 'haskell-mode-map
-		 "gI" 'haskell-navigate-imports)
+                 "gI" 'haskell-navigate-imports)
 
   (general-nmap :keymaps 'haskell-mode-map
-		:prefix ","
-		"e" '(:ignore t :which-key "edit")
-		"ei" 'haskell-mode-format-imports))
+                :prefix ","
+                "e" '(:ignore t :which-key "edit")
+                "ei" 'haskell-mode-format-imports))
 
 (use-package intero
   :after haskell-mode
@@ -26,10 +26,10 @@
   :after haskell-mode
   :general
   (general-nvmap :keymaps 'haskell-mode-map
-		 :prefix ","
-		 "f" '(:ignore t :which-key "format")
-		 "ff" 'hindent-reformat-buffer
-		 "fd" 'hindent-reformat-decl)
+                 :prefix ","
+                 "f" '(:ignore t :which-key "format")
+                 "ff" 'hindent-reformat-buffer
+                 "fd" 'hindent-reformat-decl)
 
   :config
   (add-hook 'haskell-mode-hook 'hindent-mode)
@@ -39,9 +39,9 @@
   :after haskell-mode
   :general
   (general-nvmap :keymap 'haskell-mode-map
-		 :prefix ","
-		 "er" 'hlint-refactor-refactor-at-point
-		 "eR" 'hlint-refactor-refactor-buffer))
+                 :prefix ","
+                 "er" 'hlint-refactor-refactor-at-point
+                 "eR" 'hlint-refactor-refactor-buffer))
 
 (provide 'haskell)
 
