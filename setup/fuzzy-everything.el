@@ -10,12 +10,12 @@
   :delight
   :general
   (general-nvmap :prefix "SPC"
-		 "<SPC>" 'helm-M-x
+                 "<SPC>" 'helm-M-x
 
-		 "bb" 'helm-mini
+                 "bb" 'helm-mini
 
-		 "y" '(:ignore t :wk "yanking")
-		 "yp" 'helm-show-kill-ring)
+                 "y" '(:ignore t :wk "yanking")
+                 "yp" 'helm-show-kill-ring)
 
   :config
   (helm-mode 1)
