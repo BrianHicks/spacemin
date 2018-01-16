@@ -21,6 +21,9 @@
                 "cc" 'compile
                 "cr" 'recompile
 
+                "l" '(:ignore t :which-key "clean")
+                "lw" 'whitespace-cleanup
+
                 "f" '(:ignore t :which-key "files")
                 "fs" 'save-buffer
 
