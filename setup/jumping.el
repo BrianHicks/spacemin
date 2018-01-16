@@ -10,12 +10,12 @@
 (use-package avy
   :general
   (general-nvmap :prefix "SPC"
-		 "j" 'avy-goto-word-1))
+                 "j" 'avy-goto-word-1))
 
 (use-package ace-window
   :general
   (general-nmap :prefix "SPC"
-		 "J" 'ace-window))
+                "J" 'ace-window))
 
 (provide 'jumping)
 
