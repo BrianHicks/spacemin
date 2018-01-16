@@ -19,6 +19,12 @@
 
 (use-package intero
   :after haskell-mode
+  :general
+  (general-nmap :keymaps 'haskell-mode-map
+                :prefix ","
+                "i" '(:ignore t :which-key "intero")
+                "ir" 'intero-repl
+                "iR" 'intero-restart)
   :config
   (add-hook 'haskell-mode-hook 'intero-mode))
 
