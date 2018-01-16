@@ -20,8 +20,8 @@
 
 (defun use-package-handler/:bind-leader (name-symbol keyword args rest state)
   `((general-define-key :states '(normal visual)
-			:prefix "<SPC>"
-			,@args)))
+                        :prefix "<SPC>"
+                        ,@args)))
 
 (add-to-list 'use-package-keywords :bind-leader t)
 
@@ -40,10 +40,10 @@
 (defun use-package-handler/:bind-leader-local (name-symbol keyword args rest state)
   (let ((mode-map (intern (format "%s-map" name-symbol))))
     `((general-define-key :states '(normal visual)
-			  :prefix ","
-			  :maps ',mode-map
-			  ,@args))))
-					    
+                          :prefix ","
+                          :maps ',mode-map
+                          ,@args))))
+
 (add-to-list 'use-package-keywords :bind-leader-local t)
 
 ;; (add-to-list use-package-keywords :bind-leader-mode t)
