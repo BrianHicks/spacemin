@@ -91,7 +91,7 @@
 ;; - XXXX
 ;; - ???
 (use-package hl-todo
-  :defer t
+  :defer nil
   :config
   (global-hl-todo-mode))
 
