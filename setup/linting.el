@@ -12,10 +12,10 @@
 
   :general
   (general-nmap :prefix "SPC"
-		"e" '(:ignore t :which-key "errors")
-		"el" 'flycheck-list-errors
-		"en" 'next-error
-		"ep" 'previous-error))
+                "e" '(:ignore t :which-key "errors")
+                "el" 'flycheck-list-errors
+                "en" 'next-error
+                "ep" 'previous-error))
 
 (use-package flycheck-status-emoji
   :after flycheck
