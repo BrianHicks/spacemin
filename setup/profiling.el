@@ -7,8 +7,8 @@
 (use-package esup
   :general
   (general-nmap :prefix "SPC"
-		"m" '(:ignore t :wk "meta")
-		"mp" 'esup))
+                "m" '(:ignore t :wk "meta")
+                "mp" 'esup))
 
 (provide 'profiling)
 
