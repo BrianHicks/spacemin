@@ -47,11 +47,6 @@
   :config
   (global-evil-surround-mode 1))
 
-;; enable evil keybindings in a bunch of modes
-;(use-package evil-collection
-;  :init
-;  (evil-collection-init))
-
 ;; toggle comments
 ;; cmd-/ on a line or block
 (use-package evil-commentary
