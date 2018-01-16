@@ -57,15 +57,15 @@
 
   :config
   (setq shackle-rules '(("\\`*helm.*?\\*\\'" :regexp t :align t :size 0.4)
-			(neotree-mode        :align left))))
+                        (neotree-mode        :align left))))
 
 ;; emojify things like :smile: and :wave:
 (use-package emojify
   :init
   ;; not in :general because it makes this package too lazy
   (general-nvmap :prefix "SPC"
-		 "i" '(:ignore t :wk "inserting")
-		 "ie" 'emojify-insert-emoji)
+                 "i" '(:ignore t :wk "inserting")
+                 "ie" 'emojify-insert-emoji)
 
   ;; TODO: these mess up the line height. I'd like them a little smaller, please!
   (add-hook 'after-init-hook #'global-emojify-mode))
@@ -85,6 +85,21 @@
 
 ;; automatically reload tags
 (setq tags-revert-without-query t)
+
+;; I care about whitespace
+(setq-default c-basic-indent 4
+              tab-width 4
+              indent-tabs-mode nil)
+
+(global-whitespace-mode 1)
+(setq whitespace-style '(face             ;; enable visualization via faces
+                         trailing         ;; show trailing blanks
+                         tabs             ;; show tabs
+                         empty            ;; empty lines at beginning/end of buffer
+                         indentation      ;; "wrong" indentation according to indent-tabs-mode
+                         space-after-tab  ;; mixing
+                         space-before-tab ;; mixing
+                         ))
 
 (provide 'basics)
 
