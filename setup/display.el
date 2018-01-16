@@ -17,7 +17,7 @@
 (use-package doom-themes
   :config
   (setq doom-themes-enable-bold t
-	doom-themes-enable-italic t)
+        doom-themes-enable-italic t)
 
   (doom-themes-visual-bell-config)
 
@@ -44,26 +44,26 @@
 (use-package telephone-line
   :config
   (setq telephone-line-primary-left-separator 'telephone-line-flat
-	telephone-line-secondary-left-separator 'telephone-line-flat
-	telephone-line-primary-right-separator 'telephone-line-flat
-	telephone-line-seconary-right-separator 'telephone-line-flat
+        telephone-line-secondary-left-separator 'telephone-line-flat
+        telephone-line-primary-right-separator 'telephone-line-flat
+        telephone-line-seconary-right-separator 'telephone-line-flat
 
-	telephone-line-height 30
+        telephone-line-height 30
 
-	;; TODO: make nice small names for all the minor modes, or diminish/delight them
-	;; TODO: remove Git: or Git- from the branch name
+        ;; TODO: make nice small names for all the minor modes, or diminish/delight them
+        ;; TODO: remove Git: or Git- from the branch name
 
-	;; TODO:
-	;; NORMAL | project (git-branch) | filename --- minors | major | position
+        ;; TODO:
+        ;; NORMAL | project (git-branch) | filename --- minors | major | position
 
-	telephone-line-lhs '((evil   . (telephone-line-evil-tag-segment))
-			     (accent . (telephone-line-vc-segment))
-			     (nil    . (telephone-line-minor-mode-segment
-					telephone-line-buffer-segment)))
+        telephone-line-lhs '((evil   . (telephone-line-evil-tag-segment))
+                             (accent . (telephone-line-vc-segment))
+                             (nil    . (telephone-line-minor-mode-segment
+                                        telephone-line-buffer-segment)))
 
-	telephone-line-rhs '((nil    . (telephone-line-misc-info-segment))
-			     (accent . (telephone-line-major-mode-segment))
-			     (evil   . (telephone-line-airline-position-segment))))
+        telephone-line-rhs '((nil    . (telephone-line-misc-info-segment))
+                             (accent . (telephone-line-major-mode-segment))
+                             (evil   . (telephone-line-airline-position-segment))))
 
   (telephone-line-mode 1))
 
