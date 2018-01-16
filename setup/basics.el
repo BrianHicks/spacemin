@@ -46,7 +46,7 @@
 
 ;; I like to wrap my lines after they reach 80 characters... so 81 should be the
 ;; fill column.
-(setq fill-column 81)
+(setq-default fill-column 81)
 
 ;; add shackle, with which we will define a bunch of custom rules for popup
 ;; buffers.
