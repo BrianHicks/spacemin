@@ -42,8 +42,7 @@
 (setq create-lockfiles nil)
 
 ;; highlight the current line
-;; TODO: why isn't it working on startup?
-(hl-line-mode 1)
+(global-hl-line-mode 1)
 
 ;; I like to wrap my lines after they reach 80 characters... so 81 should be the
 ;; fill column.
