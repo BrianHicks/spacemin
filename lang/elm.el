@@ -10,18 +10,18 @@
 
   :general
   (general-nvmap :prefix ","
-		 :keymaps 'elm-mode-map
-		 "c" '(:ignore t :which-key "compile")
-		 "cc" 'elm-compile-buffer
+         :keymaps 'elm-mode-map
+         "c" '(:ignore t :which-key "compile")
+         "cc" 'elm-compile-buffer
 
-		 "e" '(:ignore t :which-key "edit")
-		 "ea" 'elm-compile-add-annotations
-		 "eI" 'elm-compile-clean-imports
-		 "ef" 'elm-mode-format-buffer)
+         "e" '(:ignore t :which-key "edit")
+         "ea" 'elm-compile-add-annotations
+         "eI" 'elm-compile-clean-imports
+         "ef" 'elm-mode-format-buffer)
 
   :config
   (setq elm-tags-on-save t
-	elm-format-on-save t)
+        elm-format-on-save t)
 
   (add-to-list 'company-backends 'company-elm))
 
