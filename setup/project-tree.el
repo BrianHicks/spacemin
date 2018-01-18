@@ -13,7 +13,10 @@
   :config
   (treemacs-follow-mode t)
   (treemacs-git-mode 'simple)
-  (treemacs-filewatch-mode t))
+  (treemacs-filewatch-mode t)
+
+  ;; TODO: port neotree theme from doom-one
+  )
 
 (use-package treemacs-evil
   :after treemacs
