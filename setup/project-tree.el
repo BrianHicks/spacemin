@@ -6,66 +6,18 @@
 
 ;;; Code:
 
-(use-package neotree
-  :init
-  (add-hook 'after-init-hook #'neotree-toggle)
-
-  :general
-  (general-nmap :prefix "SPC"
-                "ft" 'neotree-toggle
-                "ff" 'neotree-find
-                "fp" 'neotree-project-dir)
-
+(use-package treemacs
   :config
-  (doom-themes-neotree-config)
+  (treemacs-follow-mode t)
+  (treemacs-git-mode 'simple)
+  (treemacs-filewatch-mode t)
+  )
 
-  ;; configure neotree
-  (setq neo-window-width 30
-        neo-smart-open t
-        neo-autorefresh t
-        neo-vc-integration '(face))
+(use-package treemacs-projectile
+  :general
+  (general-nmap "-" 'treemacs-projectile))
 
-  (evil-global-set-key 'normal "-" 'neotree-find)
-
-  ;; keybindings for inside neotree
-  ;; TODO: redo these with general
-  (add-hook 'neotree-mode-hook
-            (lambda ()
-              ;; basics
-              (evil-local-set-key 'normal "q" 'neotree-hide)
-              (evil-local-set-key 'normal "R" 'neotree-refresh)
-              (evil-local-set-key 'normal "-" 'neotree-select-up-node)
-              (evil-local-set-key 'normal "y" 'neotree-copy-filepath-to-yank-ring)
-
-              ;; toggles
-              (evil-local-set-key 'normal "I" 'neotree-hidden-file-toggle)
-              (evil-local-set-key 'normal "z" 'neotree-stretch-toggle)
-
-              ;; filesystem modification
-              (evil-local-set-key 'normal "m" 'neotree-rename-node)
-              (evil-local-set-key 'normal "c" 'neotree-create-node)
-              (evil-local-set-key 'normal "C" 'neotree-copy-node)
-              (evil-local-set-key 'normal "d" 'neotree-delete-node)
-
-              ;; opening
-              (evil-local-set-key 'normal "v" 'neotree-enter-vertical-split)
-              (evil-local-set-key 'normal "s" 'neotree-enter-horizontal-split)
-              (evil-local-set-key 'normal (kbd "RET") 'neotree-enter)
-              )))
-
-(use-package find-file-in-project
-  :after neotree)
-
-(defun neotree-project-dir ()
-  "Open NeoTree using the git root."
-  (interactive)
-  (let ((project-dir (ffip-project-root))
-        (file-name (buffer-file-name)))
-    (if project-dir
-        (progn
-          (neotree-dir project-dir)
-          (neotree-find file-name))
-      (message "Could not find git project root."))))
+(use-package treemacs-evil)
 
 (provide 'project-tree)
 
