@@ -7,17 +7,17 @@
 ;;; Code:
 
 (use-package treemacs
+  :general
+  (general-nmap "-" 'treemacs)
+
   :config
   (treemacs-follow-mode t)
   (treemacs-git-mode 'simple)
-  (treemacs-filewatch-mode t)
+  (treemacs-filewatch-mode t))
+
+(use-package treemacs-evil
+  :after treemacs
   )
-
-(use-package treemacs-projectile
-  :general
-  (general-nmap "-" 'treemacs-projectile))
-
-(use-package treemacs-evil)
 
 (provide 'project-tree)
 
