@@ -48,6 +48,7 @@
  ("helm-projectile" . "4466adbcada8be19ec97b9dba52e12b8da3da849")
  ("hindent" . "cb0987ca0a0a97db298cbb70167b81c195d54884")
  ("hl-todo" . "961db3116f1396dc4f903e3a59824a40e0bbb6a2")
+ ("hlint-refactor-mode" . "92c69aa01c65968e86c15db087bb1ea785e4736c")
  ("ht.el" . "64af52688eb09eb42b7228a4e8e40d4a81cd983b")
  ("hydra" . "1deed8a00e6936903cace1dac123364b6c0cde90")
  ("idris-mode" . "2206501895668e1cd395119921bbcd2b16165600")
