@@ -71,7 +71,7 @@
 (use-package yard-mode
   :after enh-ruby-mode
   :config
-  (add-hook 'ruby-mode-hook 'yard-mode))
+  (add-hook 'enh-ruby-mode-hook 'yard-mode))
 
 (provide 'ruby)
 
