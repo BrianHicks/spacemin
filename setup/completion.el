@@ -8,7 +8,6 @@
 ;;; Code:
 
 (use-package company
-  :defer t
   :delight
   :config
   (global-company-mode 1)
