@@ -63,7 +63,9 @@
   ;; TODO: more keybindings!
   :config
   ;; look in spec for lib test files by removing it from 'rspec-primary-source-dirs
-  (setq rspec-primary-source-dirs '("app")))
+  (setq rspec-primary-source-dirs '("app")
+        rspec-use-opts-file-when-available nil
+        rspec-command-options "--format documentation"))
 
 (use-package rbenv
   :after enh-ruby-mode
