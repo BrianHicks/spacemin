@@ -15,8 +15,6 @@
                  "eb" 'enh-ruby-toggle-block
                  "ei" 'enh-ruby-indent-exp
 
-                 "g" 'hydra-ruby-navigation/body
-
                  "m" '(:ignore t :which-key "meta")
                  "mR" 'erm-reset
                  "mF" 'enh-ruby-fontify-buffer)
@@ -34,17 +32,7 @@
         enh-ruby-hanging-brace-indent-level 2
         enh-ruby-hanging-indent-level 2
         enh-ruby-hanging-paren-indent-level 2
-        enh-ruby-indent-level 2)
-
-  (defhydra hydra-ruby-navigation (:foreign-keys nil :hint "navigate")
-    "navigate ruby code"
-    ("n" enh-ruby-forward-sexp "forward sexp")
-    ("p" enh-ruby-backward-sexp "backward sexp")
-    ("b" enh-ruby-end-of-block "forward block")
-    ("B" enh-ruby-beginning-of-block "backward block")
-    ("d" enh-ruby-end-of-defun "forward defun")
-    ("D" enh-ruby-beginning-of-defun "backward defun")
-    ("q" nil "quit")))
+        enh-ruby-indent-level 2))
 
 (use-package robe
   :after enh-ruby-mode
@@ -59,9 +47,18 @@
   (general-nvmap :keymaps 'enh-ruby-mode-map
                  :prefix ","
                  "t" '(:ignore t :wk "test")
-                 "tt" 'rspec-verify
+                 "tt" 'rspec-rerun
+                 "tv" 'rspec-verify
                  "ts" 'rspec-verify-single
-                 "tA" 'rspec-verify-all)
+                 "tA" 'rspec-verify-all
+                 "tf" 'rspec-run-last-failed
+
+                 ;; edit already defined
+                 "ep" 'rspec-toggle-example-pendingness
+
+                 "g" '(:ignore t :wd "go")
+                 "gt" 'rspec-toggle-spec-and-target
+                 "gT" 'rspec-find-spec-or-target-other-window)
   ;; TODO: more keybindings!
   :config
   ;; look in spec for lib test files by removing it from 'rspec-primary-source-dirs
