@@ -44,9 +44,13 @@
     ("B" enh-ruby-beginning-of-block "backward block")
     ("d" enh-ruby-end-of-defun "forward defun")
     ("D" enh-ruby-beginning-of-defun "backward defun")
-    ("q" nil "quit"))
+    ("q" nil "quit")))
 
-  ;; TODO: robe mode (https://github.com/dgutov/robe)
+(use-package robe
+  :after enh-ruby-mode
+  :config
+  (add-hook 'enh-ruby-mode-hook 'robe-mode)
+  ;; TODO: keybindings
   )
 
 (use-package rspec-mode
