@@ -52,6 +52,7 @@
                  "ts" 'rspec-verify-single
                  "tA" 'rspec-verify-all
                  "tf" 'rspec-run-last-failed
+                 "ty" 'rspec-yank-last-command
 
                  ;; edit already defined
                  "ep" 'rspec-toggle-example-pendingness
