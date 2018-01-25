@@ -60,7 +60,7 @@
                  "tA" 'rspec-verify-all)
   ;; TODO: more keybindings!
   :config
-  ;; look in lib for test files by removing it from 'rspec-primary-source-dirs
+  ;; look in spec for lib test files by removing it from 'rspec-primary-source-dirs
   (setq rspec-primary-source-dirs '("app")))
 
 (use-package rbenv
