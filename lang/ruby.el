@@ -34,10 +34,11 @@
         enh-ruby-hanging-paren-indent-level 2
         enh-ruby-indent-level 2)
 
-  (add-hook 'enh-ruby-mode-hook
-            (lambda ()
-              (setq tab-width 2
-                    evil-shift-width 2)))
+  (defun spacemin/setup-ruby-indentation ()
+    (setq tab-width 2
+          evil-shift-width 2))
+
+  (add-hook 'enh-ruby-mode-hook 'spacemin/setup-ruby-indentation))
 
 (use-package robe
   :after enh-ruby-mode
