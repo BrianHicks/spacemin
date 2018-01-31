@@ -32,7 +32,12 @@
         enh-ruby-hanging-brace-indent-level 2
         enh-ruby-hanging-indent-level 2
         enh-ruby-hanging-paren-indent-level 2
-        enh-ruby-indent-level 2))
+        enh-ruby-indent-level 2)
+
+  (add-hook 'enh-ruby-mode-hook
+            (lambda ()
+              (setq tab-width 2
+                    evil-shift-width 2)))
 
 (use-package robe
   :after enh-ruby-mode
