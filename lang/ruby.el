@@ -74,9 +74,8 @@
         rspec-command-options "--format documentation --profile 30"))
 
 (use-package rbenv
-  :after enh-ruby-mode
-  :config
-  (add-hook 'enh-ruby-mode-hook 'rbenv-mode))
+  :init
+  (global-rbenv-mode))
 
 (use-package yard-mode
   :after enh-ruby-mode
