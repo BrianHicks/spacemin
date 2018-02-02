@@ -47,9 +47,11 @@
 (local "setup" keys) ;; needs to be first to register :bind-leader and :bind-leader-local
 (local "setup" vim) ;; needs to be second to register evil state maps
 
+;; and the rest of the editor setup...
 (local "setup" basics)
 (local "setup" compilation)
 (local "setup" completion)
+(local "setup" diff)
 (local "setup" display)
 (local "setup" fuzzy-everything)
 (local "setup" git)
