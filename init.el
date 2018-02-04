@@ -51,7 +51,7 @@
 (local "setup" basics)
 (local "setup" compilation)
 (local "setup" completion)
-(local "setup" diff)
+(local "setup" diffing)
 (local "setup" display)
 (local "setup" fuzzy-everything)
 (local "setup" git)

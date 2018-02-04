@@ -1,4 +1,4 @@
-;;; diff.el --- nice diff resolving in emacs
+;;; diffing.el --- nice diff resolving in emacs
 
 ;;; Commentary:
 
@@ -25,5 +25,7 @@
 
 (use-package evil-ediff
   :after ediff)
+
+(provide 'diffing)
 
 ;;; diff.el ends here
