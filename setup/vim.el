@@ -9,6 +9,7 @@
 
 (use-package evil
   :init
+  (setq evil-want-C-u-scroll 1)
   (evil-mode 1)
 
   :general
