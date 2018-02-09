@@ -107,6 +107,12 @@
 (setq recentf-max-menu-items 25)
 (run-at-time nil (* 5 60) 'recentf-save-list)
 
+;; window undo/redo
+(winner-mode 1)
+(general-nmap :prefix "<SPC>"
+              "wu" 'winner-undo
+              "wU" 'winner-redo)
+
 (provide 'basics)
 
 ;;; basics.el ends here
