@@ -61,6 +61,7 @@
 (local "setup" profiling)
 (local "setup" project-tree)
 (local "setup" projects)
+(local "setup" services)
 
 ;; language packages
 (local "lang" coffeescript)
