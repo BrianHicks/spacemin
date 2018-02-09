@@ -59,7 +59,7 @@
 (local "setup" jumping)
 (local "setup" linting)
 (local "setup" profiling)
-(local "setup" project-tree)
+(local "setup" project-nav)
 (local "setup" projects)
 (local "setup" services)
 
