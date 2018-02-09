@@ -100,6 +100,9 @@
                          space-before-tab ;; mixing
                          ))
 
+;; save various histories
+(savehist-mode 1)
+
 (provide 'basics)
 
 ;;; basics.el ends here
