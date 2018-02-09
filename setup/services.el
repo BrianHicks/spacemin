@@ -9,53 +9,27 @@
   (general-nmap :prefix "<SPC>"
                 "S" 'prodigy)
 
-  ;; C-w             prodigy-copy-cmd
-  ;;   (that binding is currently shadowed by another mode)
-  ;; $               prodigy-display-process
-  ;; F               prodigy-clear-filters
-  ;; M               prodigy-mark-all
-  ;; S               prodigy-stop
-  ;; T               prodigy-unmark-tag
-  ;; U               prodigy-unmark-all
-  ;; f               Prefix Command
-  ;; g               revert-buffer
-  ;; h               describe-mode
-  ;; j               Prefix Command
-  ;; m               prodigy-mark
-  ;; r               prodigy-restart
-  ;; s               prodigy-start
-  ;; t               prodigy-mark-tag
-  ;; u               prodigy-unmark
-  ;; DEL             scroll-down-command
-  ;; S-SPC           scroll-down-command
-  ;; <backtab>       backward-button
-  ;; <follow-link>   mouse-face
-  ;; <mouse-2>       mouse-select-window
-  ;;   (that binding is currently shadowed by another mode)
-  ;; <remap>         Prefix Command
-  ;;
-  ;; j d             prodigy-jump-dired
-  ;; j m             prodigy-jump-magit
-  ;;
-  ;; f n             prodigy-add-name-filter
-  ;; f t             prodigy-add-tag-filter
-  ;;
-  ;; M-<             prodigy-first
-  ;; M->             prodigy-last
+  (general-nmap :keymaps 'prodigy-mode-map
+                "s" 'prodigy-start
+                "S" 'prodigy-stop
+                "R" 'prodigy-restart
+                "$" 'prodigy-display-process
+                "o" 'prodigy-browse
+                "G" 'prodigy-refresh)
 
-  ;; (general-nmap :keymaps 'prodigy-mode-map
-  ;;               "j" 'prodigy-next
-  ;;               "J" 'prodigy-next-with-status
-  ;;               "k" 'prodigy-prev
-  ;;               "K" 'prodigy-prev-with-status
-  ;;               "<RET>" 'prodigy-restart
-  ;;               "q" 'quit-window
-  ;;               )
+  (general-nmap :keymaps 'prodigy-mode-map
+                :prefix ","
+                "y" 'prodigy-copy-cmd
+                "d" 'prodigy-jump-dired
+                "g" 'prodigy-jump-magit
 
-  ;; (general-nmap :keymaps 'prodigy-mode-map
-  ;;               :prefix ","
-  ;;               "y" 'prodigy-copy-cmd
-  ;;               "o" 'prodigy-browse)
+                "f" '(:ignore t :wk "filter")
+                "fn" 'prodigy-add-name-filter
+                "ft" 'prodigy-add-tag-filter
+                "fa" 'prodigy-clear-filters)
+
+  (general-nmap :keymaps '(prodigy-mode-map prodigy-view-mode-map)
+                "q" 'quit-window)
 
   :config
   ;; https://github.com/dgtized/dotfiles/blob/master/site-lisp/clgc-prodigy.el
