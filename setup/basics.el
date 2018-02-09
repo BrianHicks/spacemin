@@ -113,6 +113,24 @@
               "wu" 'winner-undo
               "wU" 'winner-redo)
 
+;; easy file renaming
+; http://emacsredux.com/blog/2013/05/04/rename-file-and-buffer/
+(defun rename-file-and-buffer ()
+  "Rename the current buffer and the file it is visiting."
+  (interactive)
+  (let ((filename (buffer-file-name)))
+    (if (not (and filename (file-exists-p filename)))
+        (message "Buffer is not visiting a file!")
+      (let ((new-name (read-file-name "New name: " filename)))
+        (cond
+         ((vc-backend filename) (vc-rename-file filename new-name))
+         (t
+          (rename-file filename new-name t)
+          (set-visited-file-name new-name t t)))))))
+
+(general-nvmap :prefix "<SPC>"
+               "fR" 'rename-file-and-buffer)
+
 (provide 'basics)
 
 ;;; basics.el ends here
