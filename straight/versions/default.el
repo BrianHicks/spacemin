@@ -71,6 +71,7 @@
  ("pkg-info.el" . "76ba7415480687d05a4353b27fea2ae02b8d9d61")
  ("popup-el" . "80829dd46381754639fb764da11c67235fe63282")
  ("prettier-emacs" . "6cc79cc933968f9ecae988ed79398d9dc97790e2")
+ ("prodigy.el" . "da9ab59dc807968841ef369617edd6a67a9ad1de")
  ("projectile" . "184d3451c9258cfbbfa2b26a07c7daeee2e9a605")
  ("prop-menu-el" . "50b102c1c0935fd3e0c465feed7f27d66b21cdf3")
  ("rbenv.el" . "2ea1a5bdc1266caef1dd77700f2c8f42429b03f1")
