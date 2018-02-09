@@ -70,6 +70,7 @@
 (local "lang" graphviz)
 (local "lang" haml)
 (local "lang" haskell)
+(local "lang" html)
 (local "lang" idris)
 (local "lang" javascript)
 (local "lang" lang-json)
