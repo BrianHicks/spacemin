@@ -103,6 +103,10 @@
 ;; save various histories
 (savehist-mode 1)
 
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(run-at-time nil (* 5 60) 'recentf-save-list)
+
 (provide 'basics)
 
 ;;; basics.el ends here
