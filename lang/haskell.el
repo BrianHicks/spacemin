@@ -38,6 +38,7 @@
                  "fd" 'hindent-reformat-decl)
 
   :config
+  ;; TODO: this isn't always activating. Why?
   (add-hook 'haskell-mode-hook 'hindent-mode)
   (setq hindent-reformat-buffer-on-save t))
 
