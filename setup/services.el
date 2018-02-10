@@ -61,6 +61,15 @@
             (cons "exec" (cons "resque-scheduler" (plist-get service :resque-scheduler-args))))
     :ready-message "Schedules Loaded")
 
+  (prodigy-define-tag
+    :name 'hugo
+    :command "hugo"
+    :args '("serve"
+            "--bind" "127.0.0.1"
+            "--port" "1313")
+    :port 1313
+    :ready-message "Press Ctrl\\+C to stop")
+
   (let ((local-services "~/.emacs.d/prodigy-services.el"))
     (if (file-exists-p local-services) (load-file local-services))))
 
