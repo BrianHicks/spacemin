@@ -74,6 +74,7 @@
  ("prodigy.el" . "da9ab59dc807968841ef369617edd6a67a9ad1de")
  ("projectile" . "184d3451c9258cfbbfa2b26a07c7daeee2e9a605")
  ("prop-menu-el" . "50b102c1c0935fd3e0c465feed7f27d66b21cdf3")
+ ("rake" . "9c204334b03b4e899fadae6e59c20cf105404128")
  ("rbenv.el" . "2ea1a5bdc1266caef1dd77700f2c8f42429b03f1")
  ("robe" . "7829f4fdda41eee0add8868646ab86e6b17de4b4")
  ("rspec-mode" . "94a04f148922852b591957b0b3b22de5c4237448")

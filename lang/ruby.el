@@ -82,6 +82,13 @@
   :config
   (add-hook 'enh-ruby-mode-hook 'yard-mode))
 
+(use-package rake
+  :after enh-ruby-mode
+  :general
+  (general-nvmap :keymaps 'enh-ruby-mode-map
+                 :prefix ","
+                 "r" 'rake))
+
 (provide 'ruby)
 
 ;;; ruby.el ends here
