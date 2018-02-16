@@ -67,6 +67,7 @@
 ;; language packages
 (local "lang" coffeescript)
 (local "lang" csv)
+(local "lang" elixir)
 (local "lang" elm)
 (local "lang" graphviz)
 (local "lang" haml)
