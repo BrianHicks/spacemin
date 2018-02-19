@@ -13,25 +13,9 @@
               "ff" 'dired-jump-other-window)
 
 (general-nmap :keymaps 'dired-mode-map
-              "G" 'dired-do-redisplay
-
-              ; moving around
-              "-" 'dired-jump
-              "J" 'dired-goto-file
-              "<RET>" 'dired-find-file
-
-              ; display
-              "(" 'dired-hide-details-mode
-
-              ; shell commands
-              "!" 'dired-do-shell-command
-              "&" 'dired-do-async-shell-command
-
-              ; flagging
-              "#" 'dired-flag-auto-save-files
-
-              ; hiding
-              "$" 'dired-hide-subdir
+              ;; overrides
+              ";" 'evil-ex
+              ;; "e" 'epa-encrypt-file
               )
 
 (general-nmap :keymaps 'dired-mode-map
