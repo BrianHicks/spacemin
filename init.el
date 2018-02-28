@@ -80,6 +80,7 @@
 (local "lang" markdown)
 (local "lang" ruby)
 (local "lang" rust)
+(local "lang" terraform)
 (local "lang" toml)
 (local "lang" yaml)
 
