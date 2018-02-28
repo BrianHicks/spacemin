@@ -10,4 +10,6 @@
 (use-package terraform-mode
   :mode "\\.tf\\'")
 
+(provide 'terraform)
+
 ;;; terraform.el ends here
