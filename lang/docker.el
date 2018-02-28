@@ -5,6 +5,6 @@
 ;;; Code:
 
 (use-package dockerfile-mode
-  :mode "Dockerfile\'")
+  :mode "Dockerfile\\'")
 
 ;;; docker.el ends here
