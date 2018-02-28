@@ -15,8 +15,9 @@
 (general-nmap :keymaps 'dired-mode-map
               ;; overrides
               ";" 'evil-ex
-              ;; "e" 'epa-encrypt-file
-              )
+
+              ; moving around
+              "-" 'dired-jump)
 
 (general-nmap :keymaps 'dired-mode-map
               :prefix ","
@@ -33,6 +34,19 @@
 
 ; TODO: go through the rest of these and explicitly map or drop them, then turn
 ; off the automatic clobbering of : and friends that evil does.
+;; "G" 'dired-do-redisplay
+;; "J" 'dired-goto-file
+;; "<RET>" 'dired-find-file
+;; ; display
+;; "(" 'dired-hide-details-mode
+;; ; shell commands
+;; "!" 'dired-do-shell-command
+;; "&" 'dired-do-async-shell-command
+;; ; flagging
+;; "#" 'dired-flag-auto-save-files
+;; ; hiding
+;; "$" 'dired-hide-subdir
+;; ; not previously bound...
 ;; +               dired-create-directory
 ;; .               dired-clean-directory
 ;; <               dired-prev-dirline
