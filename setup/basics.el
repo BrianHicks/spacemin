@@ -13,6 +13,16 @@
 ;; installed in a non-default (homebrewed) path.
 (use-package exec-path-from-shell
   :config
+  (setq exec-path-from-shell-variables
+        '("PATH" "MANPATH"
+
+          ;; easy access for server processes and tasks
+          "AWS_ACCESS_KEY" "AWS_SECRET_KEY"
+
+          ;; sekey
+          "SSH_AUTH_SOCK"
+          ))
+
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize)))
 
