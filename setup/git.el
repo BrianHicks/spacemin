@@ -22,10 +22,6 @@
   :config
   (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
-(use-package git-gutter-fringe
-  :config
-  (global-git-gutter-mode 1))
-
 ;; TODO:
 ;;
 ;; - github integration
