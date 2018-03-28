@@ -30,6 +30,27 @@
   :config
   (add-hook 'flycheck-mode-hook 'flycheck-elm-setup))
 
+(use-package elm-test-el
+  ;; :after 'elm-mode
+
+  :straight
+  (:host github :repo "juanedi/elm-test-el" :branch "master")
+
+  :general
+  (general-nvmap :prefix ","
+                 :keymaps 'elm-mode-map
+                 "t" '(:ignore t :which-key "test")
+                 "tv" 'elm-test-run
+                 "tt" 'elm-test-rerun
+                 "tp" 'elm-test-run-project
+                 "td" 'elm-test-run-directory
+
+                 "g" '(:ignore t :which-key "go")
+                 "gt" 'elm-test-toggle-test-and-target)
+
+  :config
+  (setq elm-test-preferred-test-suffix "Spec"))
+
 (provide 'elm)
 
 ;;; elm.el ends here

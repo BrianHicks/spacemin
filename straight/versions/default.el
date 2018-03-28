@@ -11,6 +11,7 @@
  ("delight" . "d2cc2fc00aa91f6f26d4bfd2dedbd022be449343")
  ("dockerfile-mode" . "4ab78f678e9ee40c7c5729dc8f1f5c1a847be2e7")
  ("elm-mode" . "a01626ce462fffc11af1f7e64f6d520e363157f9")
+ ("elm-test-el" . "896b0b74d17e8fa5f330eda31b164ed09564d253")
  ("emacs-async" . "66e685659654d01d9531a2fee071d2fc853b8374")
  ("emacs-doom-themes" . "5189ef50a0224c0557d6f604b93a58ee91727e7d")
  ("emacs-elixir" . "e928aaf118e399fca2df47c91712b9a469eb1764")
