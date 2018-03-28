@@ -26,11 +26,9 @@
   (add-to-list 'company-backends 'company-elm))
 
 (use-package flycheck-elm
-  :after '(flycheck elm)
+  :after 'elm-mode
   :config
-  ;; TODO: this isn't working. Why?
-  (with-eval-after-load 'flycheck
-    '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup)))
+  (add-hook 'flycheck-mode-hook 'flycheck-elm-setup))
 
 (provide 'elm)
 
