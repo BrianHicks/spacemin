@@ -78,6 +78,7 @@
 (local "lang" javascript)
 (local "lang" lang-json)
 (local "lang" markdown)
+(local "lang" nix)
 (local "lang" ruby)
 (local "lang" rust)
 (local "lang" terraform)

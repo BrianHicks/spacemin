@@ -71,6 +71,7 @@
  ("markdown-toc" . "7038f4f6d5c2bc7e4aea89699a607ac2b7dd16a8")
  ("marshal.el" . "6a31133b25addabc5ec9c87ba959d69c5122171b")
  ("melpa" . "3945f7eba7d5f248cace11a7946262ac2500b01a")
+ ("nix-mode" . "0ac0271f6c8acdbfddfdbb1211a1972ae562ec17")
  ("pcache" . "1f8086077d770e524492e6fa59b07856e85a6fea")
  ("pkg-info.el" . "76ba7415480687d05a4353b27fea2ae02b8d9d61")
  ("popup-el" . "80829dd46381754639fb764da11c67235fe63282")
