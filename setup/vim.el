@@ -21,6 +21,7 @@
                 "c" '(:ignore t :which-key "compilation")
                 "cc" 'compile
                 "cr" 'recompile
+                "ck" 'kill-compilation
 
                 "l" '(:ignore t :which-key "clean")
                 "lw" 'whitespace-cleanup
