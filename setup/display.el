@@ -23,9 +23,8 @@
 
   (doom-themes-org-config)
 
-  (add-to-list 'custom-safe-themes "9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64")
-  (add-to-list 'custom-safe-themes "a7e7804313dbf827a441c86a8109ef5b64b03011383322cbdbf646eb02692f76")
-  (load-theme 'doom-one)
+  ;; the 't' argument here tells emacs not to confirm the load is safe
+  (load-theme 'doom-vibrant t)
 
   (set-face-attribute 'font-lock-comment-face nil :foreground "#828B92")
 
