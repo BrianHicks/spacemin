@@ -95,5 +95,6 @@
  ("web-mode" . "fdc2f984c98e12889a8a0fbae163933c1e7323b9")
  ("with-editor" . "ad5bb005ed3afec2d8b9b2bc1df19fb9b5e2dd84")
  ("yaml-mode" . "40067a10ac1360f0b9533f0bbbb2eea128e2574d")
- ("yard-mode.el" . "ba74a47463b0320ae152bd42a7dd7aeecd7b5748"))
+ ("yard-mode.el" . "ba74a47463b0320ae152bd42a7dd7aeecd7b5748")
+ ("yasnippet" . "f9231b0e3d43cfcf69198f72af3a048ca60aec6e"))
 :jupiter

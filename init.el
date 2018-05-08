@@ -63,6 +63,7 @@
 (local "setup" project-nav)
 (local "setup" projects)
 (local "setup" services)
+(local "setup" snippets)
 
 ;; language packages
 (local "lang" coffeescript)
