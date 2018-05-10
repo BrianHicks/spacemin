@@ -51,7 +51,6 @@
   :config
   (setq elm-test-preferred-test-suffix "Spec"))
 
-
 (defun spacemin/elm-module-for-path ()
   "Figure out the module name for a path.  Useful in snippets!"
   (let* ((raw-components
