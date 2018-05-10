@@ -1,9 +1,8 @@
 # -*- mode: snippet -*-
 # name: module
 # key: mod
-# TODO: make this autofill the calculated module name
 # --
-module $1 exposing (${2:..})
+module ${1:`(spacemin/elm-module-for-path)`} exposing (${2:..})
 
 {-| -}
 
