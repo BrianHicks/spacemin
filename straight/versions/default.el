@@ -1,7 +1,6 @@
 (("ace-window" . "208ea2a4e809f0c91caf3354b44a8f4a4f1cbb73")
  ("ag.el" . "77b4f50c5372bf219da496567b2b867261f0d354")
  ("alchemist.el" . "6f99367511ae209f8fe2c990779764bbb4ccb6ed")
- ("all-the-icons-dired" . "980b7747d6c4a7992a1ec56afad908956db0a519")
  ("all-the-icons.el" . "52d1f2d36468146c93aaf11399f581401a233306")
  ("apiwrap.el" . "d80ae8d80520786dd5527e53c0a9374534168d41")
  ("avy" . "08370cdbc35ff41646461a02d6d9758dfce30c20")
