@@ -10,6 +10,7 @@
  ("csv-mode" . "f13ff11870ab406b9fc871a980290df2747e3d32")
  ("dash.el" . "a74f4cfcdc8d0642a9f602ad494f0354f27dacc9")
  ("delight" . "05ef4d7d1a371884defcb47e881904f2a25a40b7")
+ ("dired-plus" . "b9d7d09e37cef5ab778def5c55ac8989cc4d0a4a")
  ("dockerfile-mode" . "818e6946fcf2d58438ab78ea06761a372cc5435a")
  ("elm-mode" . "09c6e62e14a2c9afaad03a867c7a268b6bc68ab0")
  ("elm-test-el" . "896b0b74d17e8fa5f330eda31b164ed09564d253")
