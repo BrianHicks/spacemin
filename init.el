@@ -54,6 +54,7 @@
 (local "setup" diffing)
 (local "setup" display)
 (local "setup" fake-shell)
+(local "setup" folding)
 (local "setup" fuzzy-everything)
 (local "setup" git)
 (local "setup" icons)
