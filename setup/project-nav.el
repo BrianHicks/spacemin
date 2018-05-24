@@ -31,9 +31,8 @@
   :config
   (diredp-toggle-find-file-reuse-dir 1)
 
-  (setqq diredp-hide-details-initially-flag t
-         diredp-hide-details-propagate-flag t)
-  )
+  (setq diredp-hide-details-initially-flag t
+        diredp-hide-details-propagate-flag t))
 
 ;; from https://github.com/syl20bnr/spacemacs/blob/c7a103a772d808101d7635ec10f292ab9202d9ee/layers/%2Bvim/vinegar/funcs.el#L42-L55
 (defun spacemin/up-directory (&optional other-window)
