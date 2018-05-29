@@ -8,4 +8,6 @@
   :config
   (global-origami-mode t))
 
+(provide 'folding)
+
 ;;; folding.el ends here
