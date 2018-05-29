@@ -65,8 +65,7 @@
   (shackle-mode 1)
 
   :config
-  (setq shackle-rules '(("\\`*helm.*?\\*\\'" :regexp t :align t :size 0.4)
-                        (neotree-mode        :align left))))
+  (setq shackle-rules '(("\\`*helm.*?\\*\\'" :regexp t :align t :size 0.4))))
 
 ;; emojify things like :smile: and :wave:
 (use-package emojify
