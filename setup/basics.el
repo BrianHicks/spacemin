@@ -46,7 +46,7 @@
       version-control t
       delete-old-versions t
       kept-new-versions 20
-      kept-old-version 5)
+      kept-old-versions 5)
 
 ;; lock files are really not necessary for how I use emacs
 (setq create-lockfiles nil)
