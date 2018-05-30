@@ -67,17 +67,6 @@
   :config
   (setq shackle-rules '(("\\`*helm.*?\\*\\'" :regexp t :align t :size 0.4))))
 
-;; emojify things like :smile: and :wave:
-(use-package emojify
-  :init
-  ;; not in :general because it makes this package too lazy
-  (general-nvmap :prefix "SPC"
-                 "i" '(:ignore t :wk "inserting")
-                 "ie" 'emojify-insert-emoji)
-
-  ;; TODO: these mess up the line height. I'd like them a little smaller, please!
-  (add-hook 'after-init-hook #'global-emojify-mode))
-
 ;; hydra lets us make nice little GUIs for common tasks like file navigation
 (use-package hydra)
 

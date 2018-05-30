@@ -17,7 +17,6 @@
  ("emacs-async" . "6fa6a866b4b31908166e010ac60e77927bdbfc5a")
  ("emacs-doom-themes" . "fb2fe17b30e55916c55ad4b0d367053a9aa15b7d")
  ("emacs-elixir" . "a00233c57c38e9dc2f4b6c1136776966b805f819")
- ("emacs-emojify" . "a86afc14e20ec7287c2b37f5b64318c209c9bbd3")
  ("emacs-hcl-mode" . "0f2c5ec7e7bcf77c8548e8cac8721ea935ca1b5e")
  ("emacs-helm-ag" . "2fc02c4ead29bf0db06fd70740cc7c364cb650ac")
  ("emacs-memoize" . "636defefa9168f90bce6fc27431352ac7d01a890")
