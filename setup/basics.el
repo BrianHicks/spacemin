@@ -140,6 +140,9 @@
 (general-nvmap :prefix "<SPC>"
                "fR" 'rename-file-and-buffer)
 
+;; bisect this configuration to find bugs
+(use-package bug-hunter)
+
 (provide 'basics)
 
 ;;; basics.el ends here
