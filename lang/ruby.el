@@ -42,10 +42,24 @@
 
 (use-package robe
   :after enh-ruby-mode
+  :general
+  (general-nvmap :keymaps 'enh-ruby-mode-map
+                 :prefix ","
+                 ;; g for go is already defined
+                 "gd" 'robe-jump
+
+                 "h" '(:ignore t :wk "help")
+                 "hd" 'robe-doc
+                 "hD" 'robe-ask
+
+                 ;; m for meta is already defined
+                 "mr" 'robe-start)
   :config
   (add-hook 'enh-ruby-mode-hook 'robe-mode)
-  ;; TODO: keybindings
-  )
+
+  ;; auto completion
+  (eval-after-load 'company
+    '(push 'company-robe company-backends)))
 
 (use-package rspec-mode
   :after enh-ruby-mode
