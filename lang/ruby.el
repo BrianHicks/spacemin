@@ -89,6 +89,19 @@
                  :prefix ","
                  "r" 'rake))
 
+(use-package bundler
+  :after enh-ruby-mode
+  :general
+  (general-nvmap :keymaps 'enh-ruby-mode-map
+                 :prefix ","
+                 "b" '(:ignore t :wk "bundler")
+                 "bs" 'bundle-show
+                 "bo" 'bundle-open
+                 "bc" 'bundle-check
+                 "bI" 'bundle-install
+                 "bU" 'bundle-update
+                 "be" 'bundle-exec))
+
 (provide 'ruby)
 
 ;;; ruby.el ends here

@@ -4,6 +4,7 @@
  ("all-the-icons.el" . "52d1f2d36468146c93aaf11399f581401a233306")
  ("apiwrap.el" . "d80ae8d80520786dd5527e53c0a9374534168d41")
  ("avy" . "58e8636d32d0e0a987f60e1620787951f31d0020")
+ ("bundler.el" . "f981f67c33b42243e57a78c358dffff70022b56b")
  ("coffee-mode" . "86ab8aae8662e8eff54d3013010b9c693b16eac5")
  ("company-mode" . "779662f9e994c351002107a18f99cd06e00ed6c1")
  ("company-statistics" . "e62157d43b2c874d2edbd547c3bdfb05d0a7ae5c")
