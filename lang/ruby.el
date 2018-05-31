@@ -116,6 +116,14 @@
                  "bU" 'bundle-update
                  "be" 'bundle-exec))
 
+(use-package rubocop
+  :after enh-ruby-mode
+  :general
+  (general-nvmap :keymaps 'enh-ruby-mode-map
+                 :prefix ","
+                 ;; e for edit already defined
+                 "ec" 'rubocop-autocorrect-current-file))
+
 (provide 'ruby)
 
 ;;; ruby.el ends here

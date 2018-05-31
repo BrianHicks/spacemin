@@ -82,6 +82,7 @@
  ("rbenv.el" . "2ea1a5bdc1266caef1dd77700f2c8f42429b03f1")
  ("robe" . "7829f4fdda41eee0add8868646ab86e6b17de4b4")
  ("rspec-mode" . "94a04f148922852b591957b0b3b22de5c4237448")
+ ("rubocop-emacs" . "980bedb455e3551d35a212fae515c054888907c1")
  ("rust-mode" . "07e16c6364bf0362f76c6aa46604453dec3ac640")
  ("s.el" . "03410e6a7a2b11e47e1fea3b7d9899c7df26435e")
  ("shackle" . "4189c1c773aab533969b587f7801ffbcd1d7d613")
