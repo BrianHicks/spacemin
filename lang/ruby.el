@@ -124,6 +124,21 @@
                  ;; e for edit already defined
                  "ec" 'rubocop-autocorrect-current-file))
 
+(use-package ruby-refactor
+  :after enh-ruby-mode
+  :general
+  (general-nvmap :keymaps 'enh-ruby-mode-map
+                 :prefix ","
+                 ;; e for edit already defined
+                 "ea" 'ruby-refactor
+                 "ec" 'ruby-refactor-convert-post-conditional
+
+                 "ee" '(:ignore t :wk "extract")
+                 "eec" 'ruby-refactor-extract-constant
+                 "eel" 'ruby-refactor-extract-to-let
+                 "eem" 'ruby-refactor-extract-to-method
+                 "eev" 'ruby-refactor-extract-local-variable))
+
 (provide 'ruby)
 
 ;;; ruby.el ends here
