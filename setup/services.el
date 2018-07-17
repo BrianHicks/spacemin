@@ -48,6 +48,19 @@
     :ready-message "environment: development_environment status: ready")
 
   (prodigy-define-tag
+    :name 'spring
+    :command "spring"
+    :args '("server")
+    :ready-message "started on")
+
+  (prodigy-define-tag
+    :name 'rails-server
+    :command "rails"
+    :args '("server"
+            "-p" "9000")
+    :ready-message "Listening on .+, CTRL\\+C to stop")
+
+  (prodigy-define-tag
     :name 'resque-pool
     :command "bundle"
     :args (prodigy-callback (service)
