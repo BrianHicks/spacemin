@@ -6,7 +6,10 @@
 
 ;; TODO: thaw/update/freeze cycle for this when the auto-format PR lands.
 (use-package elixir-mode
-  :mode "\\.exs?\\'")
+  :mode "\\.exs?\\'"
+  :config
+  (add-hook 'elixir-mode-hook
+          (lambda () (add-hook 'before-save-hook 'elixir-format nil t))))
 
 ;; TODO: uncomment this once I've researched what Alechemist actually does. It's
 ;; a big surface area to just say "meh, ok, turn it on" without bindings or any
