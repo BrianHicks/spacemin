@@ -19,18 +19,6 @@
   ;; TODO: https://github.com/bodil/ohai-emacs/blob/master/modules/ohai-elixir.el
   )
 
-(use-package elixir-format
-  :after elixir-mode
-
-  :straight
-  (:host github :repo "anildigital/mix-format.el" :branch "master")
-
-  ;; TODO: keybindings
-
-  :config
-  (add-hook 'elixir-mode-hook
-            (lambda () (add-hook 'before-save-hook 'elixir-format-before-save))))
-
 (provide 'elixir)
 
 ;;; elixir.el ends here
