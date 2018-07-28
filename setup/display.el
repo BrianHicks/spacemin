@@ -68,7 +68,7 @@
 
 ;; fonts and ligatures
 (when (window-system)
-  (set-face-attribute 'default nil :height 160 :family "Fantasque Sans Mono")
+  (set-face-attribute 'default nil :height 150 :family "Fira Code")
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend))
 
 ;; transparent title bar
